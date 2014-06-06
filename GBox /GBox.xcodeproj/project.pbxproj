@@ -1,0 +1,1064 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF271FFD18B752D800D50BEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF248C2A18B74D8D00729E19 /* AudioToolbox.framework */; };
+		FF27200718B76BCE00D50BEF /* XboxJSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = FF27200218B76BCE00D50BEF /* XboxJSDPad.m */; };
+		FF27200818B76BCE00D50BEF /* XboxJSAnalogueStick.m in Sources */ = {isa = PBXBuildFile; fileRef = FF27200418B76BCE00D50BEF /* XboxJSAnalogueStick.m */; };
+		FF27200918B76BCE00D50BEF /* XboxJSControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FF27200618B76BCE00D50BEF /* XboxJSControlLayout.m */; };
+		FF392B4918B77D3C008E5591 /* ComputerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF392B4718B77D3C008E5591 /* ComputerViewController.m */; };
+		FF392B4A18B77D3C008E5591 /* ComputerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF392B4818B77D3C008E5591 /* ComputerViewController.xib */; };
+		FF392B5218B784EF008E5591 /* ComputerJSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = FF392B4D18B784EF008E5591 /* ComputerJSDPad.m */; };
+		FF392B5318B784EF008E5591 /* ComputerJSAnalogueStick.m in Sources */ = {isa = PBXBuildFile; fileRef = FF392B4F18B784EF008E5591 /* ComputerJSAnalogueStick.m */; };
+		FF392B5418B784EF008E5591 /* ComputerJSControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FF392B5118B784EF008E5591 /* ComputerJSControlLayout.m */; };
+		FF3D7D1D18D2C8C30079E212 /* Blackback.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3D7D1C18D2C8C30079E212 /* Blackback.png */; };
+		FF3D7D1E18D2C8C30079E212 /* Blackback.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3D7D1C18D2C8C30079E212 /* Blackback.png */; };
+		FF45D11E18A8AEE7000418CE /* GBox Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D11D18A8AEE7000418CE /* GBox Logo.png */; };
+		FF45D12018A8B1C0000418CE /* XboxLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D11F18A8B1C0000418CE /* XboxLogo.png */; };
+		FF45D12218A8B2DE000418CE /* PlayStation-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D12118A8B2DE000418CE /* PlayStation-Logo.png */; };
+		FF45D12418A8B75B000418CE /* finder logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D12318A8B75B000418CE /* finder logo.png */; };
+		FF45D12618A8B85A000418CE /* Bluetooth-Smart-scanner.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D12518A8B85A000418CE /* Bluetooth-Smart-scanner.png */; };
+		FF45D12A18A8BCFE000418CE /* Natural-Paper-Background-Texture-HD.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF45D12918A8BCFE000418CE /* Natural-Paper-Background-Texture-HD.jpg */; };
+		FF45D12C18A8BDA6000418CE /* PS LOGO.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D12B18A8BDA6000418CE /* PS LOGO.png */; };
+		FF45D12E18A8BDFD000418CE /* Joystick Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D12D18A8BDFD000418CE /* Joystick Logo.png */; };
+		FF45D13018A8BEC4000418CE /* wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D12F18A8BEC4000418CE /* wheel.png */; };
+		FF45D13618A8D3BF000418CE /* SonyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45D13418A8D3BF000418CE /* SonyViewController.m */; };
+		FF45D13718A8D3BF000418CE /* SonyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF45D13518A8D3BF000418CE /* SonyViewController.xib */; };
+		FF45D13E18A8D528000418CE /* ps4-controller.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D13D18A8D528000418CE /* ps4-controller.png */; };
+		FF45D14018A8D8D9000418CE /* original copy 4.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D13F18A8D8D9000418CE /* original copy 4.png */; };
+		FF45D14818A8DB6F000418CE /* dPad.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D14118A8DB6F000418CE /* dPad.png */; };
+		FF45D14918A8DB6F000418CE /* Left Joy.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D14218A8DB6F000418CE /* Left Joy.png */; };
+		FF45D14C18A8DB6F000418CE /* Right Joy.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D14518A8DB6F000418CE /* Right Joy.png */; };
+		FF45D15218A8DD10000418CE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45D15118A8DD10000418CE /* MessageUI.framework */; };
+		FF45D15A18A8DD68000418CE /* JSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45D15518A8DD68000418CE /* JSDPad.m */; };
+		FF45D15B18A8DD68000418CE /* JSAnalogueStick.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45D15718A8DD68000418CE /* JSAnalogueStick.m */; };
+		FF45D15C18A8DD68000418CE /* JSControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45D15918A8DD68000418CE /* JSControlLayout.m */; };
+		FF45D15E18A8EE91000418CE /* Joy Back.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D15D18A8EE91000418CE /* Joy Back.png */; };
+		FF45D16018A8EF20000418CE /* round.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D15F18A8EF20000418CE /* round.png */; };
+		FF45D16218A8F0E3000418CE /* round right.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D16118A8F0E3000418CE /* round right.png */; };
+		FF45D16E18A90805000418CE /* buttonpad.png in Resources */ = {isa = PBXBuildFile; fileRef = FF45D16D18A90805000418CE /* buttonpad.png */; };
+		FF45D17018A909F6000418CE /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF45D16F18A909F6000418CE /* CoreBluetooth.framework */; };
+		FF8BF6C218B61E60008D064E /* gbox29.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8BF6BC18B61E60008D064E /* gbox29.png */; };
+		FF8BF6C318B61E60008D064E /* gbox57.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8BF6BD18B61E60008D064E /* gbox57.png */; };
+		FF8BF6C418B61E60008D064E /* gbox58.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8BF6BE18B61E60008D064E /* gbox58.png */; };
+		FF8BF6C518B61E60008D064E /* gbox80.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8BF6BF18B61E60008D064E /* gbox80.png */; };
+		FF8BF6C618B61E60008D064E /* gbox114.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8BF6C018B61E60008D064E /* gbox114.png */; };
+		FF8BF6C718B61E60008D064E /* gbox120.png in Resources */ = {isa = PBXBuildFile; fileRef = FF8BF6C118B61E60008D064E /* gbox120.png */; };
+		FF9D238C18BC9FE400252A70 /* cancle.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9D238B18BC9FE400252A70 /* cancle.png */; };
+		FFA4CB9C18AC75E70040EE9A /* Xselect.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA4CB9A18AC75E70040EE9A /* Xselect.png */; };
+		FFA4CB9D18AC75E70040EE9A /* Xstart.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA4CB9B18AC75E70040EE9A /* Xstart.png */; };
+		FFAD395B18ABCC0A00FF013F /* XDown.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAD395A18ABCC0A00FF013F /* XDown.png */; };
+		FFAD395D18ABD5A500FF013F /* XUp.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAD395C18ABD5A500FF013F /* XUp.png */; };
+		FFAD396018ABD8D800FF013F /* XLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAD395E18ABD8D800FF013F /* XLeft.png */; };
+		FFAD396118ABD8D800FF013F /* XRight.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAD395F18ABD8D800FF013F /* XRight.png */; };
+		FFAD396418ABDAE400FF013F /* Xjoyback.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAD396218ABDAE400FF013F /* Xjoyback.png */; };
+		FFAD396518ABDAE400FF013F /* Xjoybut.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAD396318ABDAE400FF013F /* Xjoybut.png */; };
+		FFAEEEE018AB3BCE00BB1998 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAEEEDF18AB3BCE00BB1998 /* QuartzCore.framework */; };
+		FFAEEEE418AB5A1D00BB1998 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FFAEEEE318AB5A1D00BB1998 /* back.png */; };
+		FFB3FA4F18AF3BF00031A2C5 /* GBoxFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB3FA4D18AF3BF00031A2C5 /* GBoxFinderViewController.m */; };
+		FFB3FA5018AF3BF00031A2C5 /* GBoxFinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB3FA4E18AF3BF00031A2C5 /* GBoxFinderViewController.xib */; };
+		FFBC01A118B12B8500B4809D /* pcjoy logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBC01A018B12B8500B4809D /* pcjoy logo.png */; };
+		FFBC01A318B12D3B00B4809D /* gbsettings logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBC01A218B12D3B00B4809D /* gbsettings logo.png */; };
+		FFBC01A518B12DBC00B4809D /* gboxfinder logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBC01A418B12DBC00B4809D /* gboxfinder logo.png */; };
+		FFBC01A918B1316000B4809D /* Greenback.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBC01A818B1316000B4809D /* Greenback.png */; };
+		FFBC01AB18B1324B00B4809D /* Brownback.png in Resources */ = {isa = PBXBuildFile; fileRef = FFBC01AA18B1324B00B4809D /* Brownback.png */; };
+		FFBDB2A818B1FAAF00FA6C72 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFBDB2A718B1FAAF00FA6C72 /* MapKit.framework */; };
+		FFBDB2AB18B2030E00FA6C72 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBDB2AA18B2030E00FA6C72 /* MapViewAnnotation.m */; };
+		FFC0C96418AD077C00D194C3 /* Xglow.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC0C96218AD077C00D194C3 /* Xglow.png */; };
+		FFC0C96918AD0A6900D194C3 /* XGuide button.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC0C96818AD0A6900D194C3 /* XGuide button.png */; };
+		FFC0C97018AD133C00D194C3 /* PSblack.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC0C96E18AD133C00D194C3 /* PSblack.png */; };
+		FFC0C97118AD133C00D194C3 /* PSblue.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC0C96F18AD133C00D194C3 /* PSblue.png */; };
+		FFC1771218B0DD6A00AEC693 /* gboxnote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFC1771118B0DD6A00AEC693 /* gboxnote.mp3 */; };
+		FFC5AB6618AD38680048892C /* finder.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC5AB6518AD38680048892C /* finder.png */; };
+		FFC5AB6A18AD3AC00048892C /* setting icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC5AB6918AD3AC00048892C /* setting icon.png */; };
+		FFCB056618AB851F0025A4DF /* XboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCB056418AB851F0025A4DF /* XboxViewController.m */; };
+		FFCB056718AB851F0025A4DF /* XboxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFCB056518AB851F0025A4DF /* XboxViewController.xib */; };
+		FFCB056C18AB91F10025A4DF /* XA.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCB056818AB91F10025A4DF /* XA.png */; };
+		FFCB056D18AB91F10025A4DF /* XB.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCB056918AB91F10025A4DF /* XB.png */; };
+		FFCB056E18AB91F10025A4DF /* XX.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCB056A18AB91F10025A4DF /* XX.png */; };
+		FFCB056F18AB91F10025A4DF /* XY.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCB056B18AB91F10025A4DF /* XY.png */; };
+		FFCB057318AB92F20025A4DF /* XdPad.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCB057018AB92F20025A4DF /* XdPad.png */; };
+		FFCB057418AB92F20025A4DF /* XLeft Joy.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCB057118AB92F20025A4DF /* XLeft Joy.png */; };
+		FFCB057518AB92F20025A4DF /* XRight Joy.png in Resources */ = {isa = PBXBuildFile; fileRef = FFCB057218AB92F20025A4DF /* XRight Joy.png */; };
+		FFD936A018A799BB00B8F558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD9369F18A799BB00B8F558 /* Foundation.framework */; };
+		FFD936A218A799BB00B8F558 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD936A118A799BB00B8F558 /* CoreGraphics.framework */; };
+		FFD936A418A799BB00B8F558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD936A318A799BB00B8F558 /* UIKit.framework */; };
+		FFD936AA18A799BB00B8F558 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFD936A818A799BB00B8F558 /* InfoPlist.strings */; };
+		FFD936AC18A799BB00B8F558 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD936AB18A799BB00B8F558 /* main.m */; };
+		FFD936B018A799BB00B8F558 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD936AF18A799BB00B8F558 /* AppDelegate.m */; };
+		FFD936B218A799BB00B8F558 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD936B118A799BB00B8F558 /* Images.xcassets */; };
+		FFD936B918A799BB00B8F558 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD936B818A799BB00B8F558 /* XCTest.framework */; };
+		FFD936BA18A799BB00B8F558 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD9369F18A799BB00B8F558 /* Foundation.framework */; };
+		FFD936BB18A799BB00B8F558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD936A318A799BB00B8F558 /* UIKit.framework */; };
+		FFD936C318A799BB00B8F558 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFD936C118A799BB00B8F558 /* InfoPlist.strings */; };
+		FFD936C518A799BB00B8F558 /* GBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD936C418A799BB00B8F558 /* GBoxTests.m */; };
+		FFD936D418A79A3B00B8F558 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD936D218A79A3B00B8F558 /* HomeViewController.m */; };
+		FFD936D518A79A3B00B8F558 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD936D318A79A3B00B8F558 /* HomeViewController.xib */; };
+		FFD936D918A79E6200B8F558 /* white back.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FFD936D818A79E6200B8F558 /* white back.jpeg */; };
+		FFD936E218A7A79200B8F558 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD936E018A7A79200B8F558 /* SettingsViewController.m */; };
+		FFD936E318A7A79200B8F558 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFD936E118A7A79200B8F558 /* SettingsViewController.xib */; };
+		FFD936E718A7A9E400B8F558 /* SerialGATT.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD936E618A7A9E400B8F558 /* SerialGATT.m */; };
+		FFE051B618AA076F004539B6 /* PS Home Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051AE18AA076F004539B6 /* PS Home Pressed.png */; };
+		FFE051B818AA076F004539B6 /* PS Home.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051B018AA076F004539B6 /* PS Home.png */; };
+		FFE051B918AA076F004539B6 /* Square Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051B118AA076F004539B6 /* Square Pressed.png */; };
+		FFE051BA18AA076F004539B6 /* X Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051B218AA076F004539B6 /* X Pressed.png */; };
+		FFE051BD18AA076F004539B6 /* O Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051B518AA076F004539B6 /* O Pressed.png */; };
+		FFE051C018AA07B2004539B6 /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051BE18AA07B2004539B6 /* Triangle.png */; };
+		FFE051C518AA0C0D004539B6 /* Square.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051C218AA0C0D004539B6 /* Square.png */; };
+		FFE051C618AA0C0D004539B6 /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051C318AA0C0D004539B6 /* O.png */; };
+		FFE051C718AA0C0D004539B6 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051C418AA0C0D004539B6 /* X.png */; };
+		FFE051C918AA0D7E004539B6 /* Triangle Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051C818AA0D7E004539B6 /* Triangle Pressed.png */; };
+		FFE051D718AA164C004539B6 /* L1.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051D618AA164C004539B6 /* L1.png */; };
+		FFE051DB18AA1B26004539B6 /* R2.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051D818AA1B26004539B6 /* R2.png */; };
+		FFE051DC18AA1B26004539B6 /* L2.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051D918AA1B26004539B6 /* L2.png */; };
+		FFE051DD18AA1B26004539B6 /* R1.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051DA18AA1B26004539B6 /* R1.png */; };
+		FFE051EA18AA1EF7004539B6 /* L2 Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051E618AA1EF7004539B6 /* L2 Pressed.png */; };
+		FFE051EB18AA1EF7004539B6 /* R2 Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051E718AA1EF7004539B6 /* R2 Pressed.png */; };
+		FFE051EC18AA1EF7004539B6 /* L1 Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051E818AA1EF7004539B6 /* L1 Pressed.png */; };
+		FFE051ED18AA1EF7004539B6 /* R1 Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051E918AA1EF7004539B6 /* R1 Pressed.png */; };
+		FFE051F018AA2170004539B6 /* Start.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051EE18AA2170004539B6 /* Start.png */; };
+		FFE051F118AA2170004539B6 /* Select.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051EF18AA2170004539B6 /* Select.png */; };
+		FFE051F418AA2419004539B6 /* Select Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051F218AA2419004539B6 /* Select Pressed.png */; };
+		FFE051F518AA2419004539B6 /* Start Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE051F318AA2419004539B6 /* Start Pressed.png */; };
+		FFE99C4018AF9F4B0024002D /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = FFE99C3F18AF9F4B0024002D /* refresh.png */; };
+		FFE99C4218AFC9FD0024002D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE99C4118AFC9FD0024002D /* CoreLocation.framework */; };
+		FFEAF62E18AA45F1006698EA /* pad.png in Resources */ = {isa = PBXBuildFile; fileRef = FFEAF62D18AA45F1006698EA /* pad.png */; };
+		FFEAF63F18AA4D83006698EA /* Up.png in Resources */ = {isa = PBXBuildFile; fileRef = FFEAF63B18AA4D83006698EA /* Up.png */; };
+		FFEAF64018AA4D83006698EA /* Left.png in Resources */ = {isa = PBXBuildFile; fileRef = FFEAF63C18AA4D83006698EA /* Left.png */; };
+		FFEAF64118AA4D83006698EA /* Right.png in Resources */ = {isa = PBXBuildFile; fileRef = FFEAF63D18AA4D83006698EA /* Right.png */; };
+		FFEAF64218AA4D83006698EA /* Down.png in Resources */ = {isa = PBXBuildFile; fileRef = FFEAF63E18AA4D83006698EA /* Down.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFD936BC18A799BB00B8F558 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD9369418A799BB00B8F558 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD9369B18A799BB00B8F558;
+			remoteInfo = GBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF248C2A18B74D8D00729E19 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FF27200118B76BCE00D50BEF /* XboxJSDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XboxJSDPad.h; sourceTree = "<group>"; };
+		FF27200218B76BCE00D50BEF /* XboxJSDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XboxJSDPad.m; sourceTree = "<group>"; };
+		FF27200318B76BCE00D50BEF /* XboxJSAnalogueStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XboxJSAnalogueStick.h; sourceTree = "<group>"; };
+		FF27200418B76BCE00D50BEF /* XboxJSAnalogueStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XboxJSAnalogueStick.m; sourceTree = "<group>"; };
+		FF27200518B76BCE00D50BEF /* XboxJSControlLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XboxJSControlLayout.h; sourceTree = "<group>"; };
+		FF27200618B76BCE00D50BEF /* XboxJSControlLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XboxJSControlLayout.m; sourceTree = "<group>"; };
+		FF392B4618B77D3C008E5591 /* ComputerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerViewController.h; sourceTree = "<group>"; };
+		FF392B4718B77D3C008E5591 /* ComputerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerViewController.m; sourceTree = "<group>"; };
+		FF392B4818B77D3C008E5591 /* ComputerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComputerViewController.xib; sourceTree = "<group>"; };
+		FF392B4C18B784EF008E5591 /* ComputerJSDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerJSDPad.h; sourceTree = "<group>"; };
+		FF392B4D18B784EF008E5591 /* ComputerJSDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerJSDPad.m; sourceTree = "<group>"; };
+		FF392B4E18B784EF008E5591 /* ComputerJSAnalogueStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerJSAnalogueStick.h; sourceTree = "<group>"; };
+		FF392B4F18B784EF008E5591 /* ComputerJSAnalogueStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerJSAnalogueStick.m; sourceTree = "<group>"; };
+		FF392B5018B784EF008E5591 /* ComputerJSControlLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerJSControlLayout.h; sourceTree = "<group>"; };
+		FF392B5118B784EF008E5591 /* ComputerJSControlLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerJSControlLayout.m; sourceTree = "<group>"; };
+		FF3D7D1C18D2C8C30079E212 /* Blackback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blackback.png; sourceTree = "<group>"; };
+		FF45D11D18A8AEE7000418CE /* GBox Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GBox Logo.png"; sourceTree = "<group>"; };
+		FF45D11F18A8B1C0000418CE /* XboxLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XboxLogo.png; sourceTree = "<group>"; };
+		FF45D12118A8B2DE000418CE /* PlayStation-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayStation-Logo.png"; sourceTree = "<group>"; };
+		FF45D12318A8B75B000418CE /* finder logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "finder logo.png"; sourceTree = "<group>"; };
+		FF45D12518A8B85A000418CE /* Bluetooth-Smart-scanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bluetooth-Smart-scanner.png"; sourceTree = "<group>"; };
+		FF45D12918A8BCFE000418CE /* Natural-Paper-Background-Texture-HD.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Natural-Paper-Background-Texture-HD.jpg"; sourceTree = "<group>"; };
+		FF45D12B18A8BDA6000418CE /* PS LOGO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PS LOGO.png"; sourceTree = "<group>"; };
+		FF45D12D18A8BDFD000418CE /* Joystick Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Joystick Logo.png"; sourceTree = "<group>"; };
+		FF45D12F18A8BEC4000418CE /* wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel.png; sourceTree = "<group>"; };
+		FF45D13318A8D3BF000418CE /* SonyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonyViewController.h; sourceTree = "<group>"; };
+		FF45D13418A8D3BF000418CE /* SonyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonyViewController.m; sourceTree = "<group>"; };
+		FF45D13518A8D3BF000418CE /* SonyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SonyViewController.xib; sourceTree = "<group>"; };
+		FF45D13D18A8D528000418CE /* ps4-controller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ps4-controller.png"; sourceTree = "<group>"; };
+		FF45D13F18A8D8D9000418CE /* original copy 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "original copy 4.png"; sourceTree = "<group>"; };
+		FF45D14118A8DB6F000418CE /* dPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dPad.png; sourceTree = "<group>"; };
+		FF45D14218A8DB6F000418CE /* Left Joy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left Joy.png"; sourceTree = "<group>"; };
+		FF45D14518A8DB6F000418CE /* Right Joy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Right Joy.png"; sourceTree = "<group>"; };
+		FF45D15118A8DD10000418CE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FF45D15418A8DD68000418CE /* JSDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDPad.h; sourceTree = "<group>"; };
+		FF45D15518A8DD68000418CE /* JSDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDPad.m; sourceTree = "<group>"; };
+		FF45D15618A8DD68000418CE /* JSAnalogueStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSAnalogueStick.h; sourceTree = "<group>"; };
+		FF45D15718A8DD68000418CE /* JSAnalogueStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSAnalogueStick.m; sourceTree = "<group>"; };
+		FF45D15818A8DD68000418CE /* JSControlLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSControlLayout.h; sourceTree = "<group>"; };
+		FF45D15918A8DD68000418CE /* JSControlLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSControlLayout.m; sourceTree = "<group>"; };
+		FF45D15D18A8EE91000418CE /* Joy Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Joy Back.png"; sourceTree = "<group>"; };
+		FF45D15F18A8EF20000418CE /* round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round.png; sourceTree = "<group>"; };
+		FF45D16118A8F0E3000418CE /* round right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "round right.png"; sourceTree = "<group>"; };
+		FF45D16D18A90805000418CE /* buttonpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonpad.png; sourceTree = "<group>"; };
+		FF45D16F18A909F6000418CE /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FF8BF6BC18B61E60008D064E /* gbox29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gbox29.png; sourceTree = "<group>"; };
+		FF8BF6BD18B61E60008D064E /* gbox57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gbox57.png; sourceTree = "<group>"; };
+		FF8BF6BE18B61E60008D064E /* gbox58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gbox58.png; sourceTree = "<group>"; };
+		FF8BF6BF18B61E60008D064E /* gbox80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gbox80.png; sourceTree = "<group>"; };
+		FF8BF6C018B61E60008D064E /* gbox114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gbox114.png; sourceTree = "<group>"; };
+		FF8BF6C118B61E60008D064E /* gbox120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gbox120.png; sourceTree = "<group>"; };
+		FF9A7FA318B0CA7F00D8A628 /* GBox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GBox.entitlements; sourceTree = "<group>"; };
+		FF9D238B18BC9FE400252A70 /* cancle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancle.png; sourceTree = "<group>"; };
+		FFA4CB9A18AC75E70040EE9A /* Xselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xselect.png; sourceTree = "<group>"; };
+		FFA4CB9B18AC75E70040EE9A /* Xstart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xstart.png; sourceTree = "<group>"; };
+		FFAD395A18ABCC0A00FF013F /* XDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XDown.png; sourceTree = "<group>"; };
+		FFAD395C18ABD5A500FF013F /* XUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XUp.png; sourceTree = "<group>"; };
+		FFAD395E18ABD8D800FF013F /* XLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XLeft.png; sourceTree = "<group>"; };
+		FFAD395F18ABD8D800FF013F /* XRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XRight.png; sourceTree = "<group>"; };
+		FFAD396218ABDAE400FF013F /* Xjoyback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xjoyback.png; sourceTree = "<group>"; };
+		FFAD396318ABDAE400FF013F /* Xjoybut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xjoybut.png; sourceTree = "<group>"; };
+		FFAEEEDF18AB3BCE00BB1998 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FFAEEEE318AB5A1D00BB1998 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		FFB3FA4C18AF3BF00031A2C5 /* GBoxFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBoxFinderViewController.h; sourceTree = "<group>"; };
+		FFB3FA4D18AF3BF00031A2C5 /* GBoxFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBoxFinderViewController.m; sourceTree = "<group>"; };
+		FFB3FA4E18AF3BF00031A2C5 /* GBoxFinderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GBoxFinderViewController.xib; sourceTree = "<group>"; };
+		FFBC01A018B12B8500B4809D /* pcjoy logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pcjoy logo.png"; sourceTree = "<group>"; };
+		FFBC01A218B12D3B00B4809D /* gbsettings logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gbsettings logo.png"; sourceTree = "<group>"; };
+		FFBC01A418B12DBC00B4809D /* gboxfinder logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gboxfinder logo.png"; sourceTree = "<group>"; };
+		FFBC01A818B1316000B4809D /* Greenback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Greenback.png; sourceTree = "<group>"; };
+		FFBC01AA18B1324B00B4809D /* Brownback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brownback.png; sourceTree = "<group>"; };
+		FFBDB2A718B1FAAF00FA6C72 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FFBDB2A918B2030E00FA6C72 /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewAnnotation.h; sourceTree = "<group>"; };
+		FFBDB2AA18B2030E00FA6C72 /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewAnnotation.m; sourceTree = "<group>"; };
+		FFC0C96218AD077C00D194C3 /* Xglow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xglow.png; sourceTree = "<group>"; };
+		FFC0C96818AD0A6900D194C3 /* XGuide button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XGuide button.png"; sourceTree = "<group>"; };
+		FFC0C96E18AD133C00D194C3 /* PSblack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PSblack.png; sourceTree = "<group>"; };
+		FFC0C96F18AD133C00D194C3 /* PSblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PSblue.png; sourceTree = "<group>"; };
+		FFC1771118B0DD6A00AEC693 /* gboxnote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gboxnote.mp3; sourceTree = "<group>"; };
+		FFC5AB6518AD38680048892C /* finder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finder.png; sourceTree = "<group>"; };
+		FFC5AB6918AD3AC00048892C /* setting icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting icon.png"; sourceTree = "<group>"; };
+		FFCB056318AB851F0025A4DF /* XboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XboxViewController.h; sourceTree = "<group>"; };
+		FFCB056418AB851F0025A4DF /* XboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XboxViewController.m; sourceTree = "<group>"; };
+		FFCB056518AB851F0025A4DF /* XboxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XboxViewController.xib; sourceTree = "<group>"; };
+		FFCB056818AB91F10025A4DF /* XA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XA.png; sourceTree = "<group>"; };
+		FFCB056918AB91F10025A4DF /* XB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XB.png; sourceTree = "<group>"; };
+		FFCB056A18AB91F10025A4DF /* XX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XX.png; sourceTree = "<group>"; };
+		FFCB056B18AB91F10025A4DF /* XY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XY.png; sourceTree = "<group>"; };
+		FFCB057018AB92F20025A4DF /* XdPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XdPad.png; sourceTree = "<group>"; };
+		FFCB057118AB92F20025A4DF /* XLeft Joy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XLeft Joy.png"; sourceTree = "<group>"; };
+		FFCB057218AB92F20025A4DF /* XRight Joy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "XRight Joy.png"; sourceTree = "<group>"; };
+		FFD9369C18A799BB00B8F558 /* GBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD9369F18A799BB00B8F558 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFD936A118A799BB00B8F558 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFD936A318A799BB00B8F558 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFD936A718A799BB00B8F558 /* GBox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GBox-Info.plist"; sourceTree = "<group>"; };
+		FFD936A918A799BB00B8F558 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFD936AB18A799BB00B8F558 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFD936AD18A799BB00B8F558 /* GBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBox-Prefix.pch"; sourceTree = "<group>"; };
+		FFD936AE18A799BB00B8F558 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFD936AF18A799BB00B8F558 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFD936B118A799BB00B8F558 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFD936B718A799BB00B8F558 /* GBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD936B818A799BB00B8F558 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FFD936C018A799BB00B8F558 /* GBoxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GBoxTests-Info.plist"; sourceTree = "<group>"; };
+		FFD936C218A799BB00B8F558 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFD936C418A799BB00B8F558 /* GBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBoxTests.m; sourceTree = "<group>"; };
+		FFD936D118A79A3B00B8F558 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FFD936D218A79A3B00B8F558 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FFD936D318A79A3B00B8F558 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FFD936D818A79E6200B8F558 /* white back.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "white back.jpeg"; sourceTree = "<group>"; };
+		FFD936DF18A7A79200B8F558 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		FFD936E018A7A79200B8F558 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		FFD936E118A7A79200B8F558 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		FFD936E518A7A9E400B8F558 /* SerialGATT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialGATT.h; sourceTree = "<group>"; };
+		FFD936E618A7A9E400B8F558 /* SerialGATT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerialGATT.m; sourceTree = "<group>"; };
+		FFE051AE18AA076F004539B6 /* PS Home Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PS Home Pressed.png"; sourceTree = "<group>"; };
+		FFE051B018AA076F004539B6 /* PS Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PS Home.png"; sourceTree = "<group>"; };
+		FFE051B118AA076F004539B6 /* Square Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Square Pressed.png"; sourceTree = "<group>"; };
+		FFE051B218AA076F004539B6 /* X Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Pressed.png"; sourceTree = "<group>"; };
+		FFE051B518AA076F004539B6 /* O Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "O Pressed.png"; sourceTree = "<group>"; };
+		FFE051BE18AA07B2004539B6 /* Triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triangle.png; sourceTree = "<group>"; };
+		FFE051C218AA0C0D004539B6 /* Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Square.png; sourceTree = "<group>"; };
+		FFE051C318AA0C0D004539B6 /* O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = O.png; sourceTree = "<group>"; };
+		FFE051C418AA0C0D004539B6 /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
+		FFE051C818AA0D7E004539B6 /* Triangle Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Triangle Pressed.png"; sourceTree = "<group>"; };
+		FFE051D618AA164C004539B6 /* L1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L1.png; sourceTree = "<group>"; };
+		FFE051D818AA1B26004539B6 /* R2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = R2.png; sourceTree = "<group>"; };
+		FFE051D918AA1B26004539B6 /* L2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L2.png; sourceTree = "<group>"; };
+		FFE051DA18AA1B26004539B6 /* R1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = R1.png; sourceTree = "<group>"; };
+		FFE051E618AA1EF7004539B6 /* L2 Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "L2 Pressed.png"; sourceTree = "<group>"; };
+		FFE051E718AA1EF7004539B6 /* R2 Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R2 Pressed.png"; sourceTree = "<group>"; };
+		FFE051E818AA1EF7004539B6 /* L1 Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "L1 Pressed.png"; sourceTree = "<group>"; };
+		FFE051E918AA1EF7004539B6 /* R1 Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "R1 Pressed.png"; sourceTree = "<group>"; };
+		FFE051EE18AA2170004539B6 /* Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Start.png; sourceTree = "<group>"; };
+		FFE051EF18AA2170004539B6 /* Select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select.png; sourceTree = "<group>"; };
+		FFE051F218AA2419004539B6 /* Select Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select Pressed.png"; sourceTree = "<group>"; };
+		FFE051F318AA2419004539B6 /* Start Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Start Pressed.png"; sourceTree = "<group>"; };
+		FFE99C3F18AF9F4B0024002D /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		FFE99C4118AFC9FD0024002D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FFEAF62D18AA45F1006698EA /* pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pad.png; sourceTree = "<group>"; };
+		FFEAF63B18AA4D83006698EA /* Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Up.png; sourceTree = "<group>"; };
+		FFEAF63C18AA4D83006698EA /* Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Left.png; sourceTree = "<group>"; };
+		FFEAF63D18AA4D83006698EA /* Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Right.png; sourceTree = "<group>"; };
+		FFEAF63E18AA4D83006698EA /* Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Down.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD9369918A799BB00B8F558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF271FFD18B752D800D50BEF /* AudioToolbox.framework in Frameworks */,
+				FFBDB2A818B1FAAF00FA6C72 /* MapKit.framework in Frameworks */,
+				FFE99C4218AFC9FD0024002D /* CoreLocation.framework in Frameworks */,
+				FFAEEEE018AB3BCE00BB1998 /* QuartzCore.framework in Frameworks */,
+				FF45D17018A909F6000418CE /* CoreBluetooth.framework in Frameworks */,
+				FF45D15218A8DD10000418CE /* MessageUI.framework in Frameworks */,
+				FFD936A218A799BB00B8F558 /* CoreGraphics.framework in Frameworks */,
+				FFD936A418A799BB00B8F558 /* UIKit.framework in Frameworks */,
+				FFD936A018A799BB00B8F558 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD936B418A799BB00B8F558 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD936B918A799BB00B8F558 /* XCTest.framework in Frameworks */,
+				FFD936BB18A799BB00B8F558 /* UIKit.framework in Frameworks */,
+				FFD936BA18A799BB00B8F558 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF392B4518B77D10008E5591 /* Computer Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				FF392B4618B77D3C008E5591 /* ComputerViewController.h */,
+				FF392B4718B77D3C008E5591 /* ComputerViewController.m */,
+				FF392B4818B77D3C008E5591 /* ComputerViewController.xib */,
+				FF392B4B18B77D5A008E5591 /* Computer Joystick Supporting Files */,
+			);
+			name = "Computer Joystick";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FF392B4B18B77D5A008E5591 /* Computer Joystick Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF392B4C18B784EF008E5591 /* ComputerJSDPad.h */,
+				FF392B4D18B784EF008E5591 /* ComputerJSDPad.m */,
+				FF392B4E18B784EF008E5591 /* ComputerJSAnalogueStick.h */,
+				FF392B4F18B784EF008E5591 /* ComputerJSAnalogueStick.m */,
+				FF392B5018B784EF008E5591 /* ComputerJSControlLayout.h */,
+				FF392B5118B784EF008E5591 /* ComputerJSControlLayout.m */,
+			);
+			name = "Computer Joystick Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF45D15318A8DD43000418CE /* Sony Joystick Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF45D15418A8DD68000418CE /* JSDPad.h */,
+				FF45D15518A8DD68000418CE /* JSDPad.m */,
+				FF45D15618A8DD68000418CE /* JSAnalogueStick.h */,
+				FF45D15718A8DD68000418CE /* JSAnalogueStick.m */,
+				FF45D15818A8DD68000418CE /* JSControlLayout.h */,
+				FF45D15918A8DD68000418CE /* JSControlLayout.m */,
+			);
+			name = "Sony Joystick Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFCB057618AB98900025A4DF /* Xbox Joystick Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF27200118B76BCE00D50BEF /* XboxJSDPad.h */,
+				FF27200218B76BCE00D50BEF /* XboxJSDPad.m */,
+				FF27200318B76BCE00D50BEF /* XboxJSAnalogueStick.h */,
+				FF27200418B76BCE00D50BEF /* XboxJSAnalogueStick.m */,
+				FF27200518B76BCE00D50BEF /* XboxJSControlLayout.h */,
+				FF27200618B76BCE00D50BEF /* XboxJSControlLayout.m */,
+			);
+			name = "Xbox Joystick Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FFD9369318A799BB00B8F558 = {
+			isa = PBXGroup;
+			children = (
+				FFD936A518A799BB00B8F558 /* GBox */,
+				FFD936BE18A799BB00B8F558 /* GBoxTests */,
+				FFD9369E18A799BB00B8F558 /* Frameworks */,
+				FFD9369D18A799BB00B8F558 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD9369D18A799BB00B8F558 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD9369C18A799BB00B8F558 /* GBox.app */,
+				FFD936B718A799BB00B8F558 /* GBoxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD9369E18A799BB00B8F558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF248C2A18B74D8D00729E19 /* AudioToolbox.framework */,
+				FFBDB2A718B1FAAF00FA6C72 /* MapKit.framework */,
+				FFE99C4118AFC9FD0024002D /* CoreLocation.framework */,
+				FFAEEEDF18AB3BCE00BB1998 /* QuartzCore.framework */,
+				FF45D16F18A909F6000418CE /* CoreBluetooth.framework */,
+				FF45D15118A8DD10000418CE /* MessageUI.framework */,
+				FFD9369F18A799BB00B8F558 /* Foundation.framework */,
+				FFD936A118A799BB00B8F558 /* CoreGraphics.framework */,
+				FFD936A318A799BB00B8F558 /* UIKit.framework */,
+				FFD936B818A799BB00B8F558 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFD936A518A799BB00B8F558 /* GBox */ = {
+			isa = PBXGroup;
+			children = (
+				FF9A7FA318B0CA7F00D8A628 /* GBox.entitlements */,
+				FFD936AE18A799BB00B8F558 /* AppDelegate.h */,
+				FFD936AF18A799BB00B8F558 /* AppDelegate.m */,
+				FFD936B118A799BB00B8F558 /* Images.xcassets */,
+				FFD936D618A79A4600B8F558 /* Home View Controller */,
+				FFD936DE18A7A77900B8F558 /* Settings */,
+				FFD936DA18A7A73E00B8F558 /* Sony */,
+				FFD936DB18A7A74D00B8F558 /* XBox */,
+				FF392B4518B77D10008E5591 /* Computer Joystick */,
+				FFD936DD18A7A76900B8F558 /* GBox Finder */,
+				FFD936D718A79E4000B8F558 /* Image Resources */,
+				FFD936E418A7A9D700B8F558 /* SerialGATT */,
+				FFD936A618A799BB00B8F558 /* Supporting Files */,
+			);
+			path = GBox;
+			sourceTree = "<group>";
+		};
+		FFD936A618A799BB00B8F558 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFC1771118B0DD6A00AEC693 /* gboxnote.mp3 */,
+				FFD936A718A799BB00B8F558 /* GBox-Info.plist */,
+				FFD936A818A799BB00B8F558 /* InfoPlist.strings */,
+				FFD936AB18A799BB00B8F558 /* main.m */,
+				FFD936AD18A799BB00B8F558 /* GBox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFD936BE18A799BB00B8F558 /* GBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD936C418A799BB00B8F558 /* GBoxTests.m */,
+				FFD936BF18A799BB00B8F558 /* Supporting Files */,
+			);
+			path = GBoxTests;
+			sourceTree = "<group>";
+		};
+		FFD936BF18A799BB00B8F558 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFD936C018A799BB00B8F558 /* GBoxTests-Info.plist */,
+				FFD936C118A799BB00B8F558 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFD936D618A79A4600B8F558 /* Home View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFD936D118A79A3B00B8F558 /* HomeViewController.h */,
+				FFD936D218A79A3B00B8F558 /* HomeViewController.m */,
+				FFD936D318A79A3B00B8F558 /* HomeViewController.xib */,
+			);
+			name = "Home View Controller";
+			sourceTree = "<group>";
+		};
+		FFD936D718A79E4000B8F558 /* Image Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF3D7D1C18D2C8C30079E212 /* Blackback.png */,
+				FF9D238B18BC9FE400252A70 /* cancle.png */,
+				FF8BF6BC18B61E60008D064E /* gbox29.png */,
+				FF8BF6BD18B61E60008D064E /* gbox57.png */,
+				FF8BF6BE18B61E60008D064E /* gbox58.png */,
+				FF8BF6BF18B61E60008D064E /* gbox80.png */,
+				FF8BF6C018B61E60008D064E /* gbox114.png */,
+				FF8BF6C118B61E60008D064E /* gbox120.png */,
+				FFBC01AA18B1324B00B4809D /* Brownback.png */,
+				FFBC01A818B1316000B4809D /* Greenback.png */,
+				FFBC01A418B12DBC00B4809D /* gboxfinder logo.png */,
+				FFBC01A218B12D3B00B4809D /* gbsettings logo.png */,
+				FFBC01A018B12B8500B4809D /* pcjoy logo.png */,
+				FFE99C3F18AF9F4B0024002D /* refresh.png */,
+				FFC5AB6918AD3AC00048892C /* setting icon.png */,
+				FFC5AB6518AD38680048892C /* finder.png */,
+				FFC0C96E18AD133C00D194C3 /* PSblack.png */,
+				FFC0C96F18AD133C00D194C3 /* PSblue.png */,
+				FFC0C96818AD0A6900D194C3 /* XGuide button.png */,
+				FFC0C96218AD077C00D194C3 /* Xglow.png */,
+				FFA4CB9A18AC75E70040EE9A /* Xselect.png */,
+				FFA4CB9B18AC75E70040EE9A /* Xstart.png */,
+				FFAD396218ABDAE400FF013F /* Xjoyback.png */,
+				FFAD396318ABDAE400FF013F /* Xjoybut.png */,
+				FFAD395E18ABD8D800FF013F /* XLeft.png */,
+				FFAD395F18ABD8D800FF013F /* XRight.png */,
+				FFAD395C18ABD5A500FF013F /* XUp.png */,
+				FFAD395A18ABCC0A00FF013F /* XDown.png */,
+				FFCB057018AB92F20025A4DF /* XdPad.png */,
+				FFCB057118AB92F20025A4DF /* XLeft Joy.png */,
+				FFCB057218AB92F20025A4DF /* XRight Joy.png */,
+				FFCB056818AB91F10025A4DF /* XA.png */,
+				FFCB056918AB91F10025A4DF /* XB.png */,
+				FFCB056A18AB91F10025A4DF /* XX.png */,
+				FFCB056B18AB91F10025A4DF /* XY.png */,
+				FFAEEEE318AB5A1D00BB1998 /* back.png */,
+				FFEAF63B18AA4D83006698EA /* Up.png */,
+				FFEAF63C18AA4D83006698EA /* Left.png */,
+				FFEAF63D18AA4D83006698EA /* Right.png */,
+				FFEAF63E18AA4D83006698EA /* Down.png */,
+				FFEAF62D18AA45F1006698EA /* pad.png */,
+				FFE051F218AA2419004539B6 /* Select Pressed.png */,
+				FFE051F318AA2419004539B6 /* Start Pressed.png */,
+				FFE051EE18AA2170004539B6 /* Start.png */,
+				FFE051EF18AA2170004539B6 /* Select.png */,
+				FFE051E618AA1EF7004539B6 /* L2 Pressed.png */,
+				FFE051E718AA1EF7004539B6 /* R2 Pressed.png */,
+				FFE051E818AA1EF7004539B6 /* L1 Pressed.png */,
+				FFE051E918AA1EF7004539B6 /* R1 Pressed.png */,
+				FFE051D818AA1B26004539B6 /* R2.png */,
+				FFE051D918AA1B26004539B6 /* L2.png */,
+				FFE051DA18AA1B26004539B6 /* R1.png */,
+				FFE051D618AA164C004539B6 /* L1.png */,
+				FFE051C818AA0D7E004539B6 /* Triangle Pressed.png */,
+				FFE051C218AA0C0D004539B6 /* Square.png */,
+				FFE051C318AA0C0D004539B6 /* O.png */,
+				FFE051C418AA0C0D004539B6 /* X.png */,
+				FFE051BE18AA07B2004539B6 /* Triangle.png */,
+				FFE051AE18AA076F004539B6 /* PS Home Pressed.png */,
+				FFE051B018AA076F004539B6 /* PS Home.png */,
+				FFE051B118AA076F004539B6 /* Square Pressed.png */,
+				FFE051B218AA076F004539B6 /* X Pressed.png */,
+				FFE051B518AA076F004539B6 /* O Pressed.png */,
+				FF45D16D18A90805000418CE /* buttonpad.png */,
+				FF45D16118A8F0E3000418CE /* round right.png */,
+				FF45D15F18A8EF20000418CE /* round.png */,
+				FF45D15D18A8EE91000418CE /* Joy Back.png */,
+				FF45D14118A8DB6F000418CE /* dPad.png */,
+				FF45D14218A8DB6F000418CE /* Left Joy.png */,
+				FF45D14518A8DB6F000418CE /* Right Joy.png */,
+				FF45D13F18A8D8D9000418CE /* original copy 4.png */,
+				FF45D13D18A8D528000418CE /* ps4-controller.png */,
+				FF45D12F18A8BEC4000418CE /* wheel.png */,
+				FF45D12D18A8BDFD000418CE /* Joystick Logo.png */,
+				FF45D12B18A8BDA6000418CE /* PS LOGO.png */,
+				FF45D12918A8BCFE000418CE /* Natural-Paper-Background-Texture-HD.jpg */,
+				FF45D12518A8B85A000418CE /* Bluetooth-Smart-scanner.png */,
+				FF45D12318A8B75B000418CE /* finder logo.png */,
+				FF45D12118A8B2DE000418CE /* PlayStation-Logo.png */,
+				FF45D11F18A8B1C0000418CE /* XboxLogo.png */,
+				FF45D11D18A8AEE7000418CE /* GBox Logo.png */,
+				FFD936D818A79E6200B8F558 /* white back.jpeg */,
+			);
+			name = "Image Resources";
+			sourceTree = "<group>";
+		};
+		FFD936DA18A7A73E00B8F558 /* Sony */ = {
+			isa = PBXGroup;
+			children = (
+				FF45D13318A8D3BF000418CE /* SonyViewController.h */,
+				FF45D13418A8D3BF000418CE /* SonyViewController.m */,
+				FF45D13518A8D3BF000418CE /* SonyViewController.xib */,
+				FF45D15318A8DD43000418CE /* Sony Joystick Supporting Files */,
+			);
+			name = Sony;
+			sourceTree = "<group>";
+		};
+		FFD936DB18A7A74D00B8F558 /* XBox */ = {
+			isa = PBXGroup;
+			children = (
+				FFCB056318AB851F0025A4DF /* XboxViewController.h */,
+				FFCB056418AB851F0025A4DF /* XboxViewController.m */,
+				FFCB056518AB851F0025A4DF /* XboxViewController.xib */,
+				FFCB057618AB98900025A4DF /* Xbox Joystick Supporting Files */,
+			);
+			name = XBox;
+			sourceTree = "<group>";
+		};
+		FFD936DD18A7A76900B8F558 /* GBox Finder */ = {
+			isa = PBXGroup;
+			children = (
+				FFB3FA4C18AF3BF00031A2C5 /* GBoxFinderViewController.h */,
+				FFB3FA4D18AF3BF00031A2C5 /* GBoxFinderViewController.m */,
+				FFB3FA4E18AF3BF00031A2C5 /* GBoxFinderViewController.xib */,
+				FFBDB2A918B2030E00FA6C72 /* MapViewAnnotation.h */,
+				FFBDB2AA18B2030E00FA6C72 /* MapViewAnnotation.m */,
+			);
+			name = "GBox Finder";
+			sourceTree = "<group>";
+		};
+		FFD936DE18A7A77900B8F558 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FFD936DF18A7A79200B8F558 /* SettingsViewController.h */,
+				FFD936E018A7A79200B8F558 /* SettingsViewController.m */,
+				FFD936E118A7A79200B8F558 /* SettingsViewController.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		FFD936E418A7A9D700B8F558 /* SerialGATT */ = {
+			isa = PBXGroup;
+			children = (
+				FFD936E518A7A9E400B8F558 /* SerialGATT.h */,
+				FFD936E618A7A9E400B8F558 /* SerialGATT.m */,
+			);
+			name = SerialGATT;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFD9369B18A799BB00B8F558 /* GBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD936C818A799BB00B8F558 /* Build configuration list for PBXNativeTarget "GBox" */;
+			buildPhases = (
+				FFD9369818A799BB00B8F558 /* Sources */,
+				FFD9369918A799BB00B8F558 /* Frameworks */,
+				FFD9369A18A799BB00B8F558 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBox;
+			productName = GBox;
+			productReference = FFD9369C18A799BB00B8F558 /* GBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFD936B618A799BB00B8F558 /* GBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD936CB18A799BB00B8F558 /* Build configuration list for PBXNativeTarget "GBoxTests" */;
+			buildPhases = (
+				FFD936B318A799BB00B8F558 /* Sources */,
+				FFD936B418A799BB00B8F558 /* Frameworks */,
+				FFD936B518A799BB00B8F558 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD936BD18A799BB00B8F558 /* PBXTargetDependency */,
+			);
+			name = GBoxTests;
+			productName = GBoxTests;
+			productReference = FFD936B718A799BB00B8F558 /* GBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD9369418A799BB00B8F558 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = DHIRAJJADHAO;
+				TargetAttributes = {
+					FFD9369B18A799BB00B8F558 = {
+						DevelopmentTeam = DUXG8V348H;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					FFD936B618A799BB00B8F558 = {
+						TestTargetID = FFD9369B18A799BB00B8F558;
+					};
+				};
+			};
+			buildConfigurationList = FFD9369718A799BB00B8F558 /* Build configuration list for PBXProject "GBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FFD9369318A799BB00B8F558;
+			productRefGroup = FFD9369D18A799BB00B8F558 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD9369B18A799BB00B8F558 /* GBox */,
+				FFD936B618A799BB00B8F558 /* GBoxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFD9369A18A799BB00B8F558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8BF6C218B61E60008D064E /* gbox29.png in Resources */,
+				FF45D14C18A8DB6F000418CE /* Right Joy.png in Resources */,
+				FFCB056D18AB91F10025A4DF /* XB.png in Resources */,
+				FFAD396118ABD8D800FF013F /* XRight.png in Resources */,
+				FFBC01A518B12DBC00B4809D /* gboxfinder logo.png in Resources */,
+				FF45D15E18A8EE91000418CE /* Joy Back.png in Resources */,
+				FFE051F518AA2419004539B6 /* Start Pressed.png in Resources */,
+				FFE051F118AA2170004539B6 /* Select.png in Resources */,
+				FFEAF63F18AA4D83006698EA /* Up.png in Resources */,
+				FFC0C96418AD077C00D194C3 /* Xglow.png in Resources */,
+				FF45D12E18A8BDFD000418CE /* Joystick Logo.png in Resources */,
+				FF45D12018A8B1C0000418CE /* XboxLogo.png in Resources */,
+				FFD936AA18A799BB00B8F558 /* InfoPlist.strings in Resources */,
+				FFA4CB9D18AC75E70040EE9A /* Xstart.png in Resources */,
+				FFC5AB6618AD38680048892C /* finder.png in Resources */,
+				FFCB056F18AB91F10025A4DF /* XY.png in Resources */,
+				FFE051DB18AA1B26004539B6 /* R2.png in Resources */,
+				FFA4CB9C18AC75E70040EE9A /* Xselect.png in Resources */,
+				FFBC01A118B12B8500B4809D /* pcjoy logo.png in Resources */,
+				FFCB056C18AB91F10025A4DF /* XA.png in Resources */,
+				FFE051C518AA0C0D004539B6 /* Square.png in Resources */,
+				FFE051BD18AA076F004539B6 /* O Pressed.png in Resources */,
+				FF45D11E18A8AEE7000418CE /* GBox Logo.png in Resources */,
+				FFBC01A318B12D3B00B4809D /* gbsettings logo.png in Resources */,
+				FFE051B918AA076F004539B6 /* Square Pressed.png in Resources */,
+				FFC0C97018AD133C00D194C3 /* PSblack.png in Resources */,
+				FFE051ED18AA1EF7004539B6 /* R1 Pressed.png in Resources */,
+				FF8BF6C318B61E60008D064E /* gbox57.png in Resources */,
+				FFE051EA18AA1EF7004539B6 /* L2 Pressed.png in Resources */,
+				FF45D12618A8B85A000418CE /* Bluetooth-Smart-scanner.png in Resources */,
+				FF45D14918A8DB6F000418CE /* Left Joy.png in Resources */,
+				FFE051B818AA076F004539B6 /* PS Home.png in Resources */,
+				FFC5AB6A18AD3AC00048892C /* setting icon.png in Resources */,
+				FF8BF6C418B61E60008D064E /* gbox58.png in Resources */,
+				FFC0C97118AD133C00D194C3 /* PSblue.png in Resources */,
+				FFE051D718AA164C004539B6 /* L1.png in Resources */,
+				FFEAF62E18AA45F1006698EA /* pad.png in Resources */,
+				FF45D14018A8D8D9000418CE /* original copy 4.png in Resources */,
+				FFCB056E18AB91F10025A4DF /* XX.png in Resources */,
+				FFB3FA5018AF3BF00031A2C5 /* GBoxFinderViewController.xib in Resources */,
+				FFAD395B18ABCC0A00FF013F /* XDown.png in Resources */,
+				FF45D13018A8BEC4000418CE /* wheel.png in Resources */,
+				FFE051DC18AA1B26004539B6 /* L2.png in Resources */,
+				FFE051C918AA0D7E004539B6 /* Triangle Pressed.png in Resources */,
+				FFE051BA18AA076F004539B6 /* X Pressed.png in Resources */,
+				FFEAF64018AA4D83006698EA /* Left.png in Resources */,
+				FFEAF64218AA4D83006698EA /* Down.png in Resources */,
+				FFD936D918A79E6200B8F558 /* white back.jpeg in Resources */,
+				FFE051B618AA076F004539B6 /* PS Home Pressed.png in Resources */,
+				FFE051C718AA0C0D004539B6 /* X.png in Resources */,
+				FF9D238C18BC9FE400252A70 /* cancle.png in Resources */,
+				FFAD396418ABDAE400FF013F /* Xjoyback.png in Resources */,
+				FFE051EC18AA1EF7004539B6 /* L1 Pressed.png in Resources */,
+				FFE051F418AA2419004539B6 /* Select Pressed.png in Resources */,
+				FF392B4A18B77D3C008E5591 /* ComputerViewController.xib in Resources */,
+				FFEAF64118AA4D83006698EA /* Right.png in Resources */,
+				FF45D12418A8B75B000418CE /* finder logo.png in Resources */,
+				FFD936B218A799BB00B8F558 /* Images.xcassets in Resources */,
+				FFCB057518AB92F20025A4DF /* XRight Joy.png in Resources */,
+				FF45D16E18A90805000418CE /* buttonpad.png in Resources */,
+				FF45D12218A8B2DE000418CE /* PlayStation-Logo.png in Resources */,
+				FF8BF6C718B61E60008D064E /* gbox120.png in Resources */,
+				FFBC01AB18B1324B00B4809D /* Brownback.png in Resources */,
+				FFE051DD18AA1B26004539B6 /* R1.png in Resources */,
+				FFAD396018ABD8D800FF013F /* XLeft.png in Resources */,
+				FFE051EB18AA1EF7004539B6 /* R2 Pressed.png in Resources */,
+				FFCB056718AB851F0025A4DF /* XboxViewController.xib in Resources */,
+				FFD936D518A79A3B00B8F558 /* HomeViewController.xib in Resources */,
+				FFE051C018AA07B2004539B6 /* Triangle.png in Resources */,
+				FFAD395D18ABD5A500FF013F /* XUp.png in Resources */,
+				FF45D16218A8F0E3000418CE /* round right.png in Resources */,
+				FFBC01A918B1316000B4809D /* Greenback.png in Resources */,
+				FFE051C618AA0C0D004539B6 /* O.png in Resources */,
+				FFC1771218B0DD6A00AEC693 /* gboxnote.mp3 in Resources */,
+				FFC0C96918AD0A6900D194C3 /* XGuide button.png in Resources */,
+				FFCB057318AB92F20025A4DF /* XdPad.png in Resources */,
+				FF45D16018A8EF20000418CE /* round.png in Resources */,
+				FF45D12A18A8BCFE000418CE /* Natural-Paper-Background-Texture-HD.jpg in Resources */,
+				FF45D12C18A8BDA6000418CE /* PS LOGO.png in Resources */,
+				FF8BF6C518B61E60008D064E /* gbox80.png in Resources */,
+				FF45D14818A8DB6F000418CE /* dPad.png in Resources */,
+				FFE99C4018AF9F4B0024002D /* refresh.png in Resources */,
+				FFCB057418AB92F20025A4DF /* XLeft Joy.png in Resources */,
+				FFAD396518ABDAE400FF013F /* Xjoybut.png in Resources */,
+				FF8BF6C618B61E60008D064E /* gbox114.png in Resources */,
+				FF3D7D1D18D2C8C30079E212 /* Blackback.png in Resources */,
+				FF45D13E18A8D528000418CE /* ps4-controller.png in Resources */,
+				FFAEEEE418AB5A1D00BB1998 /* back.png in Resources */,
+				FFD936E318A7A79200B8F558 /* SettingsViewController.xib in Resources */,
+				FFE051F018AA2170004539B6 /* Start.png in Resources */,
+				FF45D13718A8D3BF000418CE /* SonyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD936B518A799BB00B8F558 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3D7D1E18D2C8C30079E212 /* Blackback.png in Resources */,
+				FFD936C318A799BB00B8F558 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD9369818A799BB00B8F558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF45D15B18A8DD68000418CE /* JSAnalogueStick.m in Sources */,
+				FF392B4918B77D3C008E5591 /* ComputerViewController.m in Sources */,
+				FFBDB2AB18B2030E00FA6C72 /* MapViewAnnotation.m in Sources */,
+				FF392B5418B784EF008E5591 /* ComputerJSControlLayout.m in Sources */,
+				FF27200918B76BCE00D50BEF /* XboxJSControlLayout.m in Sources */,
+				FF45D15A18A8DD68000418CE /* JSDPad.m in Sources */,
+				FFD936B018A799BB00B8F558 /* AppDelegate.m in Sources */,
+				FFD936AC18A799BB00B8F558 /* main.m in Sources */,
+				FFD936D418A79A3B00B8F558 /* HomeViewController.m in Sources */,
+				FF392B5218B784EF008E5591 /* ComputerJSDPad.m in Sources */,
+				FF392B5318B784EF008E5591 /* ComputerJSAnalogueStick.m in Sources */,
+				FF27200718B76BCE00D50BEF /* XboxJSDPad.m in Sources */,
+				FF27200818B76BCE00D50BEF /* XboxJSAnalogueStick.m in Sources */,
+				FF45D13618A8D3BF000418CE /* SonyViewController.m in Sources */,
+				FFD936E218A7A79200B8F558 /* SettingsViewController.m in Sources */,
+				FFCB056618AB851F0025A4DF /* XboxViewController.m in Sources */,
+				FFB3FA4F18AF3BF00031A2C5 /* GBoxFinderViewController.m in Sources */,
+				FF45D15C18A8DD68000418CE /* JSControlLayout.m in Sources */,
+				FFD936E718A7A9E400B8F558 /* SerialGATT.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD936B318A799BB00B8F558 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD936C518A799BB00B8F558 /* GBoxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFD936BD18A799BB00B8F558 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD9369B18A799BB00B8F558 /* GBox */;
+			targetProxy = FFD936BC18A799BB00B8F558 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFD936A818A799BB00B8F558 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD936A918A799BB00B8F558 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFD936C118A799BB00B8F558 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD936C218A799BB00B8F558 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFD936C618A799BB00B8F558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFD936C718A799BB00B8F558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFD936C918A799BB00B8F558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos7.0]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GBox/GBox-Prefix.pch";
+				INFOPLIST_FILE = "GBox/GBox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFD936CA18A799BB00B8F558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos7.0]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GBox/GBox-Prefix.pch";
+				INFOPLIST_FILE = "GBox/GBox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FFD936CC18A799BB00B8F558 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GBox.app/GBox";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GBox/GBox-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GBoxTests/GBoxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FFD936CD18A799BB00B8F558 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GBox.app/GBox";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GBox/GBox-Prefix.pch";
+				INFOPLIST_FILE = "GBoxTests/GBoxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD9369718A799BB00B8F558 /* Build configuration list for PBXProject "GBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD936C618A799BB00B8F558 /* Debug */,
+				FFD936C718A799BB00B8F558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD936C818A799BB00B8F558 /* Build configuration list for PBXNativeTarget "GBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD936C918A799BB00B8F558 /* Debug */,
+				FFD936CA18A799BB00B8F558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD936CB18A799BB00B8F558 /* Build configuration list for PBXNativeTarget "GBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD936CC18A799BB00B8F558 /* Debug */,
+				FFD936CD18A799BB00B8F558 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFD9369418A799BB00B8F558 /* Project object */;
+}

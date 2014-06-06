@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SonyViewController">
+            <connections>
+                <outlet property="GBoxConnect" destination="z5h-p8-OpW" id="JGT-51-6mc"/>
+                <outlet property="HMSoftUUID" destination="GB5-SA-g8M" id="EZ4-Jf-aXb"/>
+                <outlet property="L1" destination="cw7-vK-hN2" id="heH-to-INQ"/>
+                <outlet property="L2" destination="ihg-T5-QuB" id="DRd-fQ-eY5"/>
+                <outlet property="LeftanalogueStick" destination="3zD-N2-3mW" id="ISf-jm-syw"/>
+                <outlet property="PSHome" destination="XTh-wi-ISO" id="5Il-QI-F16"/>
+                <outlet property="PSstatus" destination="M35-gB-Qk4" id="OB7-Xg-4kk"/>
+                <outlet property="R1" destination="fow-oF-fnr" id="Jwu-gk-p6C"/>
+                <outlet property="R2" destination="Muc-78-lCI" id="a5O-Yf-Mfi"/>
+                <outlet property="Scan" destination="tuZ-a6-3Kh" id="VWY-C3-Zk2"/>
+                <outlet property="analogueStick" destination="fr1-gj-ai3" id="qmS-M3-06f"/>
+                <outlet property="back" destination="dla-F4-g7Z" id="TdX-TS-cem"/>
+                <outlet property="ble" destination="6Tl-MO-YAk" id="wCe-f2-iuh"/>
+                <outlet property="btHMSoftTableView" destination="ZgP-JR-NGL" id="dnS-zg-8MQ"/>
+                <outlet property="circle" destination="QL9-Lh-Lth" id="vZG-UR-M1q"/>
+                <outlet property="cross" destination="2Bl-tH-HwO" id="69U-wP-V3E"/>
+                <outlet property="dPad" destination="Dbc-Lt-sOC" id="AYt-fP-AyO"/>
+                <outlet property="select" destination="Mcr-e8-zJv" id="v5D-N5-xLu"/>
+                <outlet property="start" destination="muC-S9-Anc" id="Yfc-CR-cqH"/>
+                <outlet property="suqare" destination="pYA-6k-3sl" id="yT4-16-p53"/>
+                <outlet property="triangle" destination="ngD-c5-aQG" id="ZY8-0W-yrD"/>
+                <outlet property="tvRecv" destination="nfb-Yg-rJr" id="6gE-iX-7br"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Natural-Paper-Background-Texture-HD.jpg" id="wGJ-YV-Peb">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GBox Logo.png" id="4PE-vG-zO1">
+                    <rect key="frame" x="117" y="87" width="196" height="145"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.64999999999999969" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blackback.png" id="Sd7-PA-XPZ">
+                    <rect key="frame" x="-57" y="-35" width="596" height="373"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonpad.png" id="9fh-5I-Zjd">
+                    <rect key="frame" x="104" y="20" width="274" height="211"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonpad.png" id="qYA-iH-dBs">
+                    <rect key="frame" x="292" y="19" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round right.png" id="YKv-Om-OHr">
+                    <rect key="frame" x="261" y="180" width="151" height="151"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="fr1-gj-ai3" customClass="JSAnalogueStick">
+                    <rect key="frame" x="281" y="206" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0W4-3n-5mB"/>
+                    </connections>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonpad.png" id="JIg-2H-ByK">
+                    <rect key="frame" x="-9" y="18" width="200" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round.png" id="PRv-KZ-v02">
+                    <rect key="frame" x="66" y="180" width="151" height="151"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="3zD-N2-3mW" customClass="JSAnalogueStick">
+                    <rect key="frame" x="94" y="206" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="SnH-rH-4kn"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" id="Dbc-Lt-sOC" customClass="JSDPad">
+                    <rect key="frame" x="13" y="39" width="157" height="157"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="qL2-GV-WcZ"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="XTh-wi-ISO">
+                    <rect key="frame" x="215" y="171" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="PS Home.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="PS Home Pressed.png"/>
+                    <connections>
+                        <action selector="PSHomePressed:" destination="-1" eventType="touchDown" id="XyD-z5-Rai"/>
+                        <action selector="PSHomeReleased:" destination="-1" eventType="touchUpInside" id="2A2-v0-TPw"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Joy Back.png" id="qIa-Fa-diM">
+                    <rect key="frame" x="364" y="39" width="56" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Joy Back.png" id="dNj-iv-67q">
+                    <rect key="frame" x="310" y="90" width="56" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Joy Back.png" id="ZpV-s2-iv0">
+                    <rect key="frame" x="415" y="90" width="56" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Joy Back.png" id="Sbb-nI-iwT">
+                    <rect key="frame" x="363" y="139" width="56" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="2Bl-tH-HwO">
+                    <rect key="frame" x="365" y="140" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    <state key="normal" image="X.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="X Pressed.png"/>
+                    <connections>
+                        <action selector="crossPressed:" destination="-1" eventType="touchDown" id="wlh-Qk-2lH"/>
+                        <action selector="crossReleased:" destination="-1" eventType="touchUpInside" id="okA-MF-UmE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="QL9-Lh-Lth">
+                    <rect key="frame" x="417" y="91" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    <state key="normal" image="O.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="O Pressed.png"/>
+                    <connections>
+                        <action selector="circlePressed:" destination="-1" eventType="touchDown" id="X6c-6J-03d"/>
+                        <action selector="circleReleased:" destination="-1" eventType="touchUpInside" id="yud-RB-2Di"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="pYA-6k-3sl">
+                    <rect key="frame" x="312" y="91" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    <state key="normal" image="Square.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="Square Pressed.png"/>
+                    <connections>
+                        <action selector="squarePressed:" destination="-1" eventType="touchDown" id="9kK-re-rw8"/>
+                        <action selector="squareReleased:" destination="-1" eventType="touchUpInside" id="Yvo-7o-Bzw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ngD-c5-aQG">
+                    <rect key="frame" x="366" y="41" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    <state key="normal" image="Triangle.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="Triangle Pressed.png"/>
+                    <connections>
+                        <action selector="trianglePressed:" destination="-1" eventType="touchDown" id="gmI-XR-29y"/>
+                        <action selector="triangleReleased:" destination="-1" eventType="touchUpInside" id="V6y-he-hc0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="cw7-vK-hN2">
+                    <rect key="frame" x="124" y="17" width="45" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="L1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="L1 Pressed.png"/>
+                    <connections>
+                        <action selector="L1Pressed:" destination="-1" eventType="touchDown" id="Px6-9W-6Ud"/>
+                        <action selector="L1Released:" destination="-1" eventType="touchUpInside" id="CjE-QD-flW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="fow-oF-fnr">
+                    <rect key="frame" x="313" y="18" width="45" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="R1.png"/>
+                    <state key="highlighted" image="R1 Pressed.png"/>
+                    <connections>
+                        <action selector="R1Pressed:" destination="-1" eventType="touchDown" id="oOi-yR-k9N"/>
+                        <action selector="R1Released:" destination="-1" eventType="touchUpInside" id="2x7-Y2-fRc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ihg-T5-QuB">
+                    <rect key="frame" x="13" y="18" width="45" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="L2.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="L2 Pressed.png"/>
+                    <connections>
+                        <action selector="L2Pressed:" destination="-1" eventType="touchDown" id="bgX-xE-Y1C"/>
+                        <action selector="L2Released:" destination="-1" eventType="touchUpInside" id="ehp-Wy-7KD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Muc-78-lCI">
+                    <rect key="frame" x="424" y="18" width="45" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="R2.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="R2 Pressed.png"/>
+                    <connections>
+                        <action selector="R2Pressed:" destination="-1" eventType="touchDown" id="7lZ-bi-fNr"/>
+                        <action selector="R2Released:" destination="-1" eventType="touchUpInside" id="hG8-E0-TuV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mcr-e8-zJv">
+                    <rect key="frame" x="182" y="148" width="34" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <state key="normal" image="Select.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="Select Pressed.png"/>
+                    <connections>
+                        <action selector="selectPressed:" destination="-1" eventType="touchDown" id="bb8-Xb-EbQ"/>
+                        <action selector="selectReleased:" destination="-1" eventType="touchUpInside" id="Vvg-0L-jw4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="muC-S9-Anc">
+                    <rect key="frame" x="267" y="148" width="34" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    <state key="normal" image="Start.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="Start Pressed.png"/>
+                    <connections>
+                        <action selector="startPressed:" destination="-1" eventType="touchDown" id="9bS-Oa-OzN"/>
+                        <action selector="startReleased:" destination="-1" eventType="touchUpInside" id="W30-up-TUB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u2k-1f-f78">
+                    <rect key="frame" x="269" y="170" width="30" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jbp-DU-ACF">
+                    <rect key="frame" x="180" y="170" width="38" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Tl-MO-YAk">
+                    <rect key="frame" x="211" y="123" width="46" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="&lt;" image="GBox Logo.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ble:" destination="-1" eventType="touchUpInside" id="dU0-K6-h6A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dla-F4-g7Z">
+                    <rect key="frame" x="6" y="284" width="36" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="89F67072-5AA3-4631-A5E5-814C03DBCD81">
+                        <color key="titleColor" red="0.9683794379234314" green="0.57312250137329102" blue="0.098814234137535095" alpha="0.99215692281723022" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="tMp-aW-f07"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PSblack.png" id="M35-gB-Qk4">
+                    <rect key="frame" x="198" y="44" width="93" height="51"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round.png" id="sDj-Nc-ddA">
+                    <rect key="frame" x="178" y="34" width="128" height="69"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view alpha="0.94999999999999996" contentMode="scaleToFill" id="z5h-p8-OpW">
+                    <rect key="frame" x="76" y="63" width="329" height="177"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <navigationBar contentMode="scaleToFill" id="eUf-EA-2XJ">
+                            <rect key="frame" x="0.0" y="0.0" width="329" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="1" green="0.66688095130000002" blue="0.16334981279999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </textAttributes>
+                            <items>
+                                <navigationItem title="GBox Connect" id="jWo-Uw-upu"/>
+                            </items>
+                        </navigationBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tuZ-a6-3Kh">
+                            <rect key="frame" x="4" y="96" width="106" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Scan">
+                                <color key="titleColor" red="1" green="0.66688095130000002" blue="0.16334981279999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="scanHMSoftDevices:" destination="-1" eventType="touchUpInside" id="Y2l-Y6-H1R"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" alpha="0.99000000953674316" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZgP-JR-NGL">
+                            <rect key="frame" x="114" y="44" width="215" height="133"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="tintColor" red="1" green="0.66688095130000002" blue="0.16334981279999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="separatorColor" red="1" green="0.66688095130000002" blue="0.16334981279999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="sectionIndexTrackingBackgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="WnY-vp-wjz"/>
+                                <outlet property="delegate" destination="-1" id="0UF-xR-Ja1"/>
+                            </connections>
+                        </tableView>
+                        <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nfb-Yg-rJr">
+                            <rect key="frame" x="14" y="134" width="86" height="39"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="FtC-Rb-fwh"/>
+                            </connections>
+                        </textView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UUID will load here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GB5-SA-g8M">
+                            <rect key="frame" x="14" y="51" width="86" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="89F67072-5AA3-4631-A5E5-814C03DBCD81" width="28" height="28">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOzxYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
+GxwgISksLzU4VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
+DBIAwAAAgAKACtISCRMVWk5TLm9iamVjdHOhFIADgAnSEgkXGqIYGYAEgAWACBAA0h0JHh9fEBROU1RJ
+RkZSZXByZXNlbnRhdGlvboAGgAdPERlOTU0AKgAADEgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAAH
+AAAADXt7ex/q6up39PT0s/j49/D5+fj/+fn4//n5+P/5+fj/+Pj38PX09LLw8PB0rq6uFgAAAAQAAAAB
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAYAAAAMdHR0Ie7u7ab6+vn/
+/Pz7//z8+//8/Pv//f38//39/P/9/fz//f38//z8+//8/Pv//Pz7//r6+f/29PKirq6uFgAAAAQAAAAB
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAwAAAAcAAAAP0NDQXfj39fH8+/r//fz7//79/P/+/fz/
+/v38//79/P/+/fz//v38//79/P/+/fz//v38//79/P/9/Pv//Pv6//n49/Dk5OFVAAAABgAAAAIAAAAA
+AAAAAAAAAAAAAAABAAAAAwAAAAoAAAAS6ObimPn49//8+/r//fz7//38+//9/Pv//fz7//38+//9/Pv/
+/fz7//38+//9/Pv//fz7//38+//9/Pv//fz7//38+//8+/r/+fj3/+/u7JMAAAAGAAAAAQAAAAAAAAAA
+AAAAAgAAAAgAAAAS4+Pgmvj39f/7+vj//Pv5//z7+f/8+/n//Pv5//z7+f/8+/n//Pv5//z7+f/8+/n/
+/Pv5//z7+f/8+/n//Pv5//z7+f/8+/n//Pv5//v6+P/49/X/7+7skgAAAAQAAAABAAAAAAAAAAYAAAAP
+zMzJX/j29P/7+ff//Pr4//z6+P/8+vj//Pr4//z6+P/8+vj//Pr4//z6+P/8+vj//Pr4//z6+P/8+vj/
+/Pr4//z6+P/8+vj//Pr4//z6+P/8+vj/+/n3//j29P/p6eZTAAAAAgAAAAAAAAAMZ2dnJfXz8fH6+Pb/
++/n3//v59//7+ff/+/n3//v59//7+ff/+/n3//v59//7+ff/+/n3//v59//7+ff/+/n3//v59//7+ff/
++/n3//v59//7+ff/+/n3//v59//6+Pb/+PXy77a2thUAAAABAAAAE+Xl4an59vP/+vj1//r49f/6+PX/
++vj1//r49f/6+PX/+vj1//r49f/6+PX/+vn2//r49f/6+PX/+vj1//r49f/6+PX/+vj1//r49f/6+PX/
++vj1//r49f/6+PX/+vj1//j28//x7+qhAAAAA2JiYif38/D/+vbz//r39P/69/T/+vf0//r39P/69/T/
++vf0//r39P/6+PT/+/j1//v49f/69/T/+vf0//r39P/69/T/+vf0//r39P/69/T/+vf0//r39P/69/T/
++vf0//r39P/69vP/9/Pw/7a2thXX089/9/Tw//n28v/59vL/+fby//n28v/59vL/+fby//n28v/59/P/
++vj1/9KJb//6+PX/+fby//n28v/59vL/+fby//n28v/59vL/+fby//n28v/59vL/+fby//n28v/59vL/
++fby//f08P/t6+Zy5uPeuff07//49vH/+Pbx//j28f/49vH/+Pbx//j28f/59/L/+vj1/96Ncf+kPhz/
++vj1//j28f/49vH/+Pbx//j28f/49vH/+Pbx//j28f/49vH/+Pbx//j28f/49vH/+Pbx//j28f/39O//
+8e7osfDs5/H38+7/+PXw//j18P/49fD/+PXw//j18P/59vL/+vj1/+SPcv/GSyH/vEcf//r49f/6+PX/
++vj1//r49f/6+PX/+vj1//r49f/6+PX/+vj1//r49f/49fD/+PXw//j18P/49fD/9/Tv//Lv6vDx7uj/
+9vPt//f07v/39O7/9/Tu//f07v/49fH/+vj1/+SPcv/QTiP/4VQl/9dRJP/GSiH/wEgg/8BIIP/ASCD/
+wEgg/8BIIP/ASCD/u0Yf/6g/HP/6+PX/9/Tu//f07v/39O7/9/Tu//fz7f/z8Or/8O3n//Xy7P/28+3/
+9vPt//bz7f/49PD/+vj1/+OPcv/OTiP/5lYm/+1ZKP/rWCf/51cn/+ZWJ//mVif/5lYn/+ZWJ//mVif/
+5VYm/9tTJf+7Rh//+vj1//bz7f/28+3/9vPt//bz7f/28uz/8u/p//Ds5v/18ev/9vLs//by7P/28uz/
+9vLs//r49P/lkHP/3VMl/+1ZKP/wWij/8Foo//BaKP/wWij/8Foo//BaKP/wWij/8Foo//BaKP/lVib/
+wEgg//v59v/28uz/9vLs//by7P/28uz/9fHr//Ht5//v6+T/9PDp//Xx6v/18er/9fHq//Xx6v/18ev/
++vj1/++Udf/mVib/7Vko/+tYJ//nVyf/5lYn/+ZWJ//mVif/5lYn/+ZWJ//lVib/21Ml/7tGH//7+ff/
+9fHq//Xx6v/18er/9fHq//Tw6f/w6+T/7Ojh8fTu5//18On/9fDp//Xw6f/18On/9fDp//Xw6v/6+PX/
+8JR1/+FUJf/XUST//Pr4//z6+P/8+vj//Pr4//z6+P/8+vj//Pr4//z6+P/8+vj//Pr4//Xw6f/18On/
+9fDp//Xw6f/07+j/7uni8N/b1brz7eb/9O/o//Tv6P/07+j/9O/o//Tv6P/07+j/9e/p//v49v/qk3X/
+vEcf//z7+f/07+j/9O/o//Tv6P/07+j/9O/o//Tv6P/07+j/9O/o//Tv6P/07+j/9O/o//Tv6P/07+j/
+8+3m/+rl3bPMxsCC8ezk//Pu5v/z7ub/8+7m//Pu5v/z7ub/8+7m//Pu5v/07+f/+/n2/9iMcv/9/Pr/
+8+7m//Pu5v/z7ub/8+7m//Pu5v/z7ub/8+7m//Pu5v/z7ub/8+7m//Pu5v/z7ub/8+7m//Hs5P/h2tR2
+U05OLvDp4f/z7OT/8+3l//Pt5f/z7eX/8+3l//Pt5f/z7eX/8+3l//Pu5v/7+vf//v38//Pt5f/z7eX/
+8+3l//Pt5f/z7eX/8+3l//Pt5f/z7eX/8+3l//Pt5f/z7eX/8+3l//Ps5P/w6eH/joSEGwAAAB7a1c2s
+8eri//Ls5P/y7OT/8uzk//Ls5P/y7OT/8uzk//Ls5P/y7OT/8+3l//z6+P/y7OT/8uzk//Ls5P/y7OT/
+8uzk//Ls5P/y7OT/8uzk//Ls5P/y7OT/8uzk//Ls5P/w6uL/5uDYpAAAAAgAAAAZUEpKMOvl3PHw6uH/
+8evi//Hr4v/x6+L/8evi//Hr4v/x6+L/8evi//Hr4v/y7OT/8evi//Hr4v/x6+L/8evi//Hr4v/x6+L/
+8evi//Hr4v/x6+L/8evi//Hr4v/w6uD/7Ofc8I6EhBsAAAAEAAAAEwAAAB6zrqdo7ufd//Dp4P/x6uH/
+8erh//Hq4f/x6uH/8erh//Hq4f/x6uH/8erh//Hq4f/x6uH/8erh//Hq4f/x6uH/8erh//Hq4f/x6uH/
+8erh//Hq4f/w6d//7ebd/8/JwVoAAAAIAAAAAgAAAAwAAAAYAAAAINLMwp/t5tv/7+je//Dp3//w6d//
+8Onf//Dp3//w6d//8Onf//Dp3//w6d//8Onf//Dp3//w6d//8Onf//Dp3//w6d//8Onf//Dp3//v6N3/
+7OXb/93WzJcAAAAMAAAABAAAAAEAAAAGAAAADgAAABgAAAAg0MzCn+zl2v/u593/7+je/+/o3v/v6N7/
+7+je/+/o3v/v6N7/7+je/+/o3v/v6N7/7+je/+/o3v/v6N7/7+je/+/o3v/u59z/6+Ta/9zWy5cAAAAO
+AAAABgAAAAEAAAAAAAAAAgAAAAYAAAAOAAAAGAAAAB+0r6hm6eLX8e3m2//v6N3/7+jd/+/o3f/v6N3/
+7+jd/+/o3f/v6N3/7+jd/+/o3f/v6N3/7+jd/+/o3f/t5tv/6eLX8cO+tl4AAAAOAAAABgAAAAIAAAAA
+AAAAAAAAAAAAAAACAAAABgAAAAwAAAATAAAAGk5OSC7X0Mes6+TY/+zl2f/t5tr/7eba/+3m2v/t5tr/
+7eba/+3m2v/t5tr/7eba/+zl2f/r5Nj/29XKqWBgWiUAAAAOAAAABgAAAAIAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAEAAAAEAAAACAAAAA8AAAAXAAAAHk5OSC7Jw7eA29TJuebe0vHn4NT/5+DU/+fg1P/n4NT/
+5t7S8dzVyrjMxrp+XFxVJwAAABMAAAAMAAAABgAAAAIAAAAAAAAAAAAAAAAAAAAAAA4BAAADAAAAAQAc
+AAABAQADAAAAAQAcAAABAgADAAAABAAADPYBAwADAAAAAQABAAABBgADAAAAAQACAAABEQAEAAAAAQAA
+AAgBEgADAAAAAQABAAABFQADAAAAAQAEAAABFgADAAAAAQAcAAABFwAEAAAAAQAADEABHAADAAAAAQAB
+AAABUgADAAAAAQACAAABUwADAAAABAAADP6HcwAHAAAMSAAADQYAAAAAAAgACAAIAAgAAQABAAEAAQAA
+DEhMaW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBzUkdCAAAAAAAA
+AAAAAAAAAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQAAAIEAAAAFHJY
+WVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRtbmQAAAJUAAAAcGRtZGQAAALEAAAAiHZ1
+ZWQAAANMAAAAhnZpZXcAAAPUAAAAJGx1bWkAAAP4AAAAFG1lYXMAAAQMAAAAJHRlY2gAAAQwAAAADHJU
+UkMAAAQ8AAAIDGdUUkMAAAQ8AAAIDGJUUkMAAAQ8AAAIDHRleHQAAAAAQ29weXJpZ2h0IChjKSAxOTk4
+IEhld2xldHQtUGFja2FyZCBDb21wYW55AABkZXNjAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAAAAAA
+AAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAABYWVogAAAAAAAA81EAAQAAAAEWzFhZWiAAAAAAAAAAAAAAAAAAAAAAWFlaIAAA
+AAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAAD4QAALbPZGVzYwAA
+AAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNo
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALklF
+QyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAALklFQyA2
+MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0gc1JHQgAAAAAAAAAAAAAAAAAAAAAAAAAA
+AABkZXNjAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAA
+AAAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29uZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAdmlldwAAAAAAE6T+ABRfLgAQzxQAA+3MAAQTCwADXJ4AAAABWFlaIAAA
+AAAATAlWAFAAAABXH+dtZWFzAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACjwAAAAJzaWcgAAAAAENS
+VCBjdXJ2AAAAAAAABAAAAAAFAAoADwAUABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQAWQBeAGMAaABt
+AHIAdwB8AIEAhgCLAJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA8AD2APsBAQEH
+AQ0BEwEZAR8BJQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZ
+AeEB6QHyAfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsECywLVAuAC6wL1
+AwADCwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRj
+BHEEfgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF5QX2BgYGFgYn
+BjcGSAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgLCB8IMghG
+CFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQKagqBCpgKrgrF
+CtwK8wsLCyILOQtRC2kLgAuYC7ALyAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0NDSYNQA1aDXQNjg2p
+DcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MPzw/sEAkQJhBDEGEQfhCbELkQ1xD1
+ERMRMRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxODE6QTxRPlFAYUJxRJFGoUixSt
+FM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcdF0EXZReJF64X0hf3GBsYQBhlGIoYrxjV
+GPoZIBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuKG7Ib2hwCHCocUhx7HKMczBz1HR4dRx1w
+HZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUgQSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKC
+Iq8i3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4JWgllyXHJfcmJyZXJocmtyboJxgnSSd6J6sn3CgN
+KD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsqzysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4W
+Lkwugi63Lu4vJC9aL5Evxy/+MDUwbDCkMNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38zuDPxNCs0ZTSe
+NNg1EzVNNYc1wjX9Njc2cjauNuk3JDdgN5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuq
+O+g8JzxlPKQ84z0iPWE9oT3gPiA+YD6gPuA/IT9hP6I/4kAjQGRApkDnQSlBakGsQe5CMEJyQrVC90M6
+Q31DwEQDREdEikTORRJFVUWaRd5GIkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtT
+S5pL4kwqTHJMuk0CTUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2
+VEJUj1TbVShVdVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0n
+XXhdyV4aXmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1lkmXnZj1mkmbo
+Zz1nk2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6
+cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7wnwh
+fIF84X1BfaF+AX5ifsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZyhteHO4ef
+iASIaYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE/kaiSEZJ6kuOTTZO2
+lCCUipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3SnkCerp8dn4uf+qBp
+oNihR6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhSqMSpN6mpqhyqj6sCq3Wr6axcrNCtRK24
+ri2uoa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7Lrun
+vCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4
+yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls
+2fHadtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG
+6dDqW+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH
++lf65/t3/Af8mP0p/br+S/7c/23//9IiIyQlWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU0JpdG1hcElt
+YWdlUmVwoyYnKF8QEE5TQml0bWFwSW1hZ2VSZXBaTlNJbWFnZVJlcFhOU09iamVjdNIiIyorV05TQXJy
+YXmiKijSIiMtLl5OU011dGFibGVBcnJheaMtKijTMDEJMjM0V05TV2hpdGVcTlNDb2xvclNwYWNlRDAg
+MAAQA4AL0iIjNjdXTlNDb2xvcqI2KNIiIzk6V05TSW1hZ2WiOShfEA9OU0tleWVkQXJjaGl2ZXLRPT5U
+cm9vdIABAAgAEQAaACMALQAyADcARQBLAFQAWwBoAG8AdwB5AH4AgACCAIcAkgCUAJYAmACdAKAAogCk
+AKYAqACtAMQAxgDIGhoaHxoqGjMaRhpKGl0aaBpxGnYafhqBGoYalRqZGqAaqBq1GroavBq+GsMayxrO
+GtMa2xreGvAa8xr4AAAAAAAAAgEAAAAAAAAAPwAAAAAAAAAAAAAAAAAAGvo
+</mutableData>
+        </image>
+        <image name="Blackback.png" width="736" height="412"/>
+        <image name="GBox Logo.png" width="544" height="469"/>
+        <image name="Joy Back.png" width="124" height="124"/>
+        <image name="L1 Pressed.png" width="60" height="56"/>
+        <image name="L1.png" width="60" height="56"/>
+        <image name="L2 Pressed.png" width="60" height="56"/>
+        <image name="L2.png" width="60" height="56"/>
+        <image name="Natural-Paper-Background-Texture-HD.jpg" width="1920" height="1080"/>
+        <image name="O Pressed.png" width="104" height="106"/>
+        <image name="O.png" width="105" height="109"/>
+        <image name="PS Home Pressed.png" width="95" height="95"/>
+        <image name="PS Home.png" width="95" height="95"/>
+        <image name="PSblack.png" width="127" height="63"/>
+        <image name="R1 Pressed.png" width="60" height="56"/>
+        <image name="R1.png" width="60" height="56"/>
+        <image name="R2 Pressed.png" width="60" height="56"/>
+        <image name="R2.png" width="60" height="56"/>
+        <image name="Select Pressed.png" width="68" height="42"/>
+        <image name="Select.png" width="68" height="42"/>
+        <image name="Square Pressed.png" width="105" height="106"/>
+        <image name="Square.png" width="106" height="107"/>
+        <image name="Start Pressed.png" width="76" height="47"/>
+        <image name="Start.png" width="76" height="47"/>
+        <image name="Triangle Pressed.png" width="105" height="106"/>
+        <image name="Triangle.png" width="105" height="106"/>
+        <image name="X Pressed.png" width="104" height="105"/>
+        <image name="X.png" width="104" height="108"/>
+        <image name="buttonpad.png" width="392" height="392"/>
+        <image name="round right.png" width="183" height="184"/>
+        <image name="round.png" width="184" height="183"/>
+    </resources>
+</document>
