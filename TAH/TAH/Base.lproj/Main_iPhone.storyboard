@@ -16,20 +16,21 @@
                                 <rect key="frame" x="0.0" y="-1" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lft-e4-mqG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Lft-e4-mqG">
                                 <rect key="frame" x="0.0" y="70" width="320" height="120"/>
                                 <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.0" green="0.68235296010000002" blue="0.93725496529999996" alpha="1" colorSpace="deviceRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexColor" red="0.01190476213" green="0.69047617910000003" blue="0.94841271640000002" alpha="0.98823535439999999" colorSpace="deviceRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="YUi-f9-bh9" id="U7a-iB-HnR"/>
                                     <outlet property="delegate" destination="YUi-f9-bh9" id="3yd-8b-5LX"/>
                                 </connections>
                             </tableView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Icb-Xi-vRM">
-                                <rect key="frame" x="0.0" y="189" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="189" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.68235296010000002" blue="0.93725496529999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -37,14 +38,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - - " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uOY-zs-trs">
-                                <rect key="frame" x="98" y="189" width="215" height="30"/>
+                                <rect key="frame" x="98" y="192" width="215" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dac-FP-jrh">
-                                <rect key="frame" x="0.0" y="227" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="232" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.68235296010000002" blue="0.93725496529999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -52,21 +53,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5yq-aG-ka8">
-                                <rect key="frame" x="7" y="227" width="51" height="30"/>
+                                <rect key="frame" x="7" y="235" width="51" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vs9-D5-PuW">
-                                <rect key="frame" x="160" y="227" width="93" height="30"/>
+                                <rect key="frame" x="160" y="235" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IBV-xM-cme">
-                                <rect key="frame" x="0.0" y="266" width="320" height="68"/>
+                                <rect key="frame" x="0.0" y="275" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.68235296010000002" blue="0.93725496529999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -74,14 +75,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Device Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oNr-kI-YXA">
-                                <rect key="frame" x="7" y="276" width="153" height="20"/>
+                                <rect key="frame" x="7" y="283" width="153" height="20"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t2X-gA-hBR">
-                                <rect key="frame" x="0.0" y="343" width="320" height="76"/>
+                                <rect key="frame" x="0.0" y="318" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.68235296010000002" blue="0.93725496529999996" alpha="1" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -89,37 +90,37 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e20-3b-eG3">
-                                <rect key="frame" x="135" y="383" width="183" height="31"/>
+                                <rect key="frame" x="69" y="385" width="183" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Set Password">
+                                <state key="normal" title="Apply Settings">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="changePassword:" destination="YUi-f9-bh9" eventType="touchUpInside" id="VHR-pW-oOm"/>
+                                    <action selector="ApplySettings:" destination="YUi-f9-bh9" eventType="touchUpInside" id="OPp-Eh-lgD"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="Mln-17-tFV">
-                                <rect key="frame" x="135" y="349" width="178" height="30"/>
+                                <rect key="frame" x="135" y="324" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.01190476213" green="0.69047617910000003" blue="0.94841271640000002" alpha="0.98823535439999999" colorSpace="deviceRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="YUi-f9-bh9" id="gqa-mi-pQ9"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fbu-xK-SHi">
-                                <rect key="frame" x="7" y="354" width="120" height="20"/>
+                                <rect key="frame" x="7" y="329" width="120" height="20"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAH Device:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="weH-X6-UiW">
-                                <rect key="frame" x="7" y="189" width="83" height="30"/>
+                                <rect key="frame" x="7" y="192" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,8 +133,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TAH trans logo 2.png" id="u3p-2n-TgT">
-                                <rect key="frame" x="140" y="19" width="38" height="46"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tah.png" id="u3p-2n-TgT">
+                                <rect key="frame" x="137" y="21" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2f8-nc-LIf">
@@ -199,8 +200,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="xvm-YQ-f1r">
-                                <rect key="frame" x="166" y="271" width="147" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="xvm-YQ-f1r">
+                                <rect key="frame" x="166" y="278" width="147" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.01190476213" green="0.69047617910000003" blue="0.94841271640000002" alpha="0.98823535439999999" colorSpace="deviceRGB"/>
@@ -210,20 +211,8 @@
                                     <outlet property="delegate" destination="YUi-f9-bh9" id="0As-6E-8fc"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1zQ-2l-8W9">
-                                <rect key="frame" x="0.0" y="304" width="320" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Change Name">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeName:" destination="YUi-f9-bh9" eventType="touchUpInside" id="Vwr-9D-jea"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Phz-gb-IzN">
-                                <rect key="frame" x="7" y="383" width="114" height="31"/>
+                                <rect key="frame" x="186" y="359" width="114" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Turn Off PIN">
@@ -234,6 +223,18 @@
                                     <action selector="turnoffpin:" destination="YUi-f9-bh9" eventType="touchUpInside" id="jNg-2g-rq5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aRm-Ky-sPq">
+                                <rect key="frame" x="20" y="358" width="114" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Turn On PIN">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="turnonpin:" destination="YUi-f9-bh9" eventType="touchUpInside" id="bt0-fD-NDa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -241,14 +242,14 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="ApplySettings" destination="e20-3b-eG3" id="BiQ-bb-wsw"/>
                         <outlet property="ConnectedDeviceName" destination="uOY-zs-trs" id="2pe-wO-ion"/>
                         <outlet property="TAHTableView" destination="Lft-e4-mqG" id="hOs-Wt-NMa"/>
-                        <outlet property="changeName" destination="1zQ-2l-8W9" id="ea9-5D-kSP"/>
-                        <outlet property="changePassword" destination="e20-3b-eG3" id="eB1-W8-Oob"/>
                         <outlet property="devicestatus" destination="Vs9-D5-PuW" id="ecc-li-0sE"/>
                         <outlet property="requiredName" destination="xvm-YQ-f1r" id="y27-iy-AdI"/>
                         <outlet property="requiredPassword" destination="Mln-17-tFV" id="GH0-bd-EUm"/>
                         <outlet property="turnoffpin" destination="Phz-gb-IzN" id="bGX-zf-VKf"/>
+                        <outlet property="turnonpin" destination="aRm-Ky-sPq" id="DJL-1e-lna"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HO-zi-zEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -732,8 +733,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TAH trans logo 2.png" id="I1G-W1-2T2">
-                                <rect key="frame" x="141" y="19" width="38" height="46"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tah.png" id="I1G-W1-2T2">
+                                <rect key="frame" x="137" y="21" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Pyf-M9-i35">
@@ -839,6 +840,7 @@
                         <outlet property="blestatusled" destination="Gwd-pO-aYT" id="1Xd-ed-h6q"/>
                         <outlet property="hideScanner" destination="26K-bL-Db9" id="Mcu-x5-Nwn"/>
                         <outlet property="pageControl" destination="Rgd-Ie-5rj" id="6RH-fO-pJ1"/>
+                        <outlet property="rabbit" destination="I1G-W1-2T2" id="zVy-fN-BpE"/>
                         <outlet property="scannerView" destination="1Io-l5-vvy" id="BBp-Vu-eoD"/>
                         <outlet property="sliderView" destination="IsA-R6-CkS" id="ii0-Jg-ogf"/>
                         <outlet property="swipeLeft" destination="CTt-Al-fHo" id="1cG-bB-n9y"/>
@@ -860,7 +862,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-757" y="592"/>
+            <point key="canvasLocation" x="-900" y="584"/>
         </scene>
         <!--Contact View Controller - ContactViewController-->
         <scene sceneID="0uO-ut-mle">
@@ -881,10 +883,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TAH trans logo 2.png" id="in1-vb-okz">
-                                <rect key="frame" x="140" y="19" width="38" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6zu-UX-bdi">
                                 <rect key="frame" x="0.0" y="420" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -959,6 +957,13 @@
                                     <action selector="mail:" destination="bfa-MY-Et0" eventType="touchUpInside" id="G3Z-R0-6A6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j8K-nU-epa">
+                                <rect key="frame" x="107" y="42" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -992,8 +997,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TAH trans logo 2.png" id="xug-hK-1uU">
-                                <rect key="frame" x="140" y="19" width="38" height="46"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tah.png" id="xug-hK-1uU">
+                                <rect key="frame" x="137" y="21" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Sw-Bm-4ID">
@@ -1144,8 +1149,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TAH trans logo 2.png" id="Qbq-aB-5Jo">
-                                <rect key="frame" x="140" y="19" width="38" height="46"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tah.png" id="Qbq-aB-5Jo">
+                                <rect key="frame" x="137" y="21" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sb9-zV-KHe">
@@ -1266,7 +1271,6 @@
     </scenes>
     <resources>
         <image name="TAH Footprint.png" width="253" height="400"/>
-        <image name="TAH trans logo 2.png" width="77" height="100"/>
         <image name="Wood-close-up-iphone-5-wallpaper-ilikewallpaper_com.jpg" width="640" height="917"/>
         <image name="back.png" width="50" height="50"/>
         <image name="disconnect.png" width="70" height="70"/>
@@ -1285,6 +1289,7 @@
         <image name="reload.png" width="50" height="50"/>
         <image name="scan.png" width="80" height="80"/>
         <image name="settings.png" width="80" height="80"/>
+        <image name="tah.png" width="100" height="100"/>
         <image name="twit.png" width="200" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -1293,10 +1298,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Ufl-Bj-laB"/>
         <segue reference="caN-6h-Zqu"/>
-        <segue reference="akt-Ny-Rnl"/>
-        <segue reference="KbV-aI-qsb"/>
-        <segue reference="QX3-Fe-I7R"/>
-        <segue reference="rYJ-sW-anh"/>
+        <segue reference="fVd-SZ-KB1"/>
+        <segue reference="v91-w7-c0Y"/>
+        <segue reference="6r1-El-FUp"/>
     </inferredMetricsTieBreakers>
 </document>

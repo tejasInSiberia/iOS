@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF45583E190E8896005D1C35 /* gestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45583D190E8896005D1C35 /* gestureViewController.m */; };
+		FFC3652A190546EF00EC27A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC36529190546EF00EC27A1 /* Foundation.framework */; };
+		FFC3652C190546EF00EC27A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3652B190546EF00EC27A1 /* CoreGraphics.framework */; };
+		FFC3652E190546EF00EC27A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3652D190546EF00EC27A1 /* UIKit.framework */; };
+		FFC36534190546EF00EC27A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFC36532190546EF00EC27A1 /* InfoPlist.strings */; };
+		FFC36536190546EF00EC27A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC36535190546EF00EC27A1 /* main.m */; };
+		FFC3653A190546EF00EC27A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC36539190546EF00EC27A1 /* AppDelegate.m */; };
+		FFC3653D190546EF00EC27A1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC3653B190546EF00EC27A1 /* Main_iPhone.storyboard */; };
+		FFC36540190546EF00EC27A1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC3653E190546EF00EC27A1 /* Main_iPad.storyboard */; };
+		FFC36543190546EF00EC27A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC36542190546EF00EC27A1 /* ViewController.m */; };
+		FFC36545190546EF00EC27A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC36544190546EF00EC27A1 /* Images.xcassets */; };
+		FFC3654C190546EF00EC27A1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3654B190546EF00EC27A1 /* XCTest.framework */; };
+		FFC3654D190546EF00EC27A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC36529190546EF00EC27A1 /* Foundation.framework */; };
+		FFC3654E190546EF00EC27A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3652D190546EF00EC27A1 /* UIKit.framework */; };
+		FFC36556190546EF00EC27A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFC36554190546EF00EC27A1 /* InfoPlist.strings */; };
+		FFC36558190546EF00EC27A1 /* Tah_Motion_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC36557190546EF00EC27A1 /* Tah_Motion_ControlTests.m */; };
+		FFC365641905475F00EC27A1 /* SerialGATT.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC365631905475F00EC27A1 /* SerialGATT.m */; };
+		FFC365671905482000EC27A1 /* buttonpad.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC365661905482000EC27A1 /* buttonpad.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFC3654F190546EF00EC27A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFC3651E190546EF00EC27A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFC36525190546EF00EC27A1;
+			remoteInfo = "Tah Motion Control";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF45583C190E8896005D1C35 /* gestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gestureViewController.h; sourceTree = "<group>"; };
+		FF45583D190E8896005D1C35 /* gestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gestureViewController.m; sourceTree = "<group>"; };
+		FFC36526190546EF00EC27A1 /* Tah Motion Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tah Motion Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC36529190546EF00EC27A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FFC3652B190546EF00EC27A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFC3652D190546EF00EC27A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFC36531190546EF00EC27A1 /* Tah Motion Control-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tah Motion Control-Info.plist"; sourceTree = "<group>"; };
+		FFC36533190546EF00EC27A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFC36535190546EF00EC27A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFC36537190546EF00EC27A1 /* Tah Motion Control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tah Motion Control-Prefix.pch"; sourceTree = "<group>"; };
+		FFC36538190546EF00EC27A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFC36539190546EF00EC27A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFC3653C190546EF00EC27A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FFC3653F190546EF00EC27A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		FFC36541190546EF00EC27A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFC36542190546EF00EC27A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFC36544190546EF00EC27A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FFC3654A190546EF00EC27A1 /* Tah Motion ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tah Motion ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC3654B190546EF00EC27A1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FFC36553190546EF00EC27A1 /* Tah Motion ControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tah Motion ControlTests-Info.plist"; sourceTree = "<group>"; };
+		FFC36555190546EF00EC27A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFC36557190546EF00EC27A1 /* Tah_Motion_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tah_Motion_ControlTests.m; sourceTree = "<group>"; };
+		FFC365621905475F00EC27A1 /* SerialGATT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialGATT.h; sourceTree = "<group>"; };
+		FFC365631905475F00EC27A1 /* SerialGATT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerialGATT.m; sourceTree = "<group>"; };
+		FFC365661905482000EC27A1 /* buttonpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonpad.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFC36523190546EF00EC27A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC3652C190546EF00EC27A1 /* CoreGraphics.framework in Frameworks */,
+				FFC3652E190546EF00EC27A1 /* UIKit.framework in Frameworks */,
+				FFC3652A190546EF00EC27A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC36547190546EF00EC27A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC3654C190546EF00EC27A1 /* XCTest.framework in Frameworks */,
+				FFC3654E190546EF00EC27A1 /* UIKit.framework in Frameworks */,
+				FFC3654D190546EF00EC27A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFC3651D190546EF00EC27A1 = {
+			isa = PBXGroup;
+			children = (
+				FFC3652F190546EF00EC27A1 /* Tah Motion Control */,
+				FFC365611905474F00EC27A1 /* Serial GATT */,
+				FFC36551190546EF00EC27A1 /* Tah Motion ControlTests */,
+				FFC36528190546EF00EC27A1 /* Frameworks */,
+				FFC36527190546EF00EC27A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFC36527190546EF00EC27A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFC36526190546EF00EC27A1 /* Tah Motion Control.app */,
+				FFC3654A190546EF00EC27A1 /* Tah Motion ControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFC36528190546EF00EC27A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFC36529190546EF00EC27A1 /* Foundation.framework */,
+				FFC3652B190546EF00EC27A1 /* CoreGraphics.framework */,
+				FFC3652D190546EF00EC27A1 /* UIKit.framework */,
+				FFC3654B190546EF00EC27A1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFC3652F190546EF00EC27A1 /* Tah Motion Control */ = {
+			isa = PBXGroup;
+			children = (
+				FFC36538190546EF00EC27A1 /* AppDelegate.h */,
+				FFC36539190546EF00EC27A1 /* AppDelegate.m */,
+				FFC3653B190546EF00EC27A1 /* Main_iPhone.storyboard */,
+				FFC3653E190546EF00EC27A1 /* Main_iPad.storyboard */,
+				FFC36541190546EF00EC27A1 /* ViewController.h */,
+				FFC36542190546EF00EC27A1 /* ViewController.m */,
+				FF45583C190E8896005D1C35 /* gestureViewController.h */,
+				FF45583D190E8896005D1C35 /* gestureViewController.m */,
+				FFC36544190546EF00EC27A1 /* Images.xcassets */,
+				FFC36530190546EF00EC27A1 /* Supporting Files */,
+			);
+			path = "Tah Motion Control";
+			sourceTree = "<group>";
+		};
+		FFC36530190546EF00EC27A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFC365651905481300EC27A1 /* images */,
+				FFC36531190546EF00EC27A1 /* Tah Motion Control-Info.plist */,
+				FFC36532190546EF00EC27A1 /* InfoPlist.strings */,
+				FFC36535190546EF00EC27A1 /* main.m */,
+				FFC36537190546EF00EC27A1 /* Tah Motion Control-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFC36551190546EF00EC27A1 /* Tah Motion ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFC36557190546EF00EC27A1 /* Tah_Motion_ControlTests.m */,
+				FFC36552190546EF00EC27A1 /* Supporting Files */,
+			);
+			path = "Tah Motion ControlTests";
+			sourceTree = "<group>";
+		};
+		FFC36552190546EF00EC27A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFC36553190546EF00EC27A1 /* Tah Motion ControlTests-Info.plist */,
+				FFC36554190546EF00EC27A1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFC365611905474F00EC27A1 /* Serial GATT */ = {
+			isa = PBXGroup;
+			children = (
+				FFC365621905475F00EC27A1 /* SerialGATT.h */,
+				FFC365631905475F00EC27A1 /* SerialGATT.m */,
+			);
+			name = "Serial GATT";
+			path = "Tah Motion Control";
+			sourceTree = "<group>";
+		};
+		FFC365651905481300EC27A1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FFC365661905482000EC27A1 /* buttonpad.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFC36525190546EF00EC27A1 /* Tah Motion Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC3655B190546EF00EC27A1 /* Build configuration list for PBXNativeTarget "Tah Motion Control" */;
+			buildPhases = (
+				FFC36522190546EF00EC27A1 /* Sources */,
+				FFC36523190546EF00EC27A1 /* Frameworks */,
+				FFC36524190546EF00EC27A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tah Motion Control";
+			productName = "Tah Motion Control";
+			productReference = FFC36526190546EF00EC27A1 /* Tah Motion Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFC36549190546EF00EC27A1 /* Tah Motion ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC3655E190546EF00EC27A1 /* Build configuration list for PBXNativeTarget "Tah Motion ControlTests" */;
+			buildPhases = (
+				FFC36546190546EF00EC27A1 /* Sources */,
+				FFC36547190546EF00EC27A1 /* Frameworks */,
+				FFC36548190546EF00EC27A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFC36550190546EF00EC27A1 /* PBXTargetDependency */,
+			);
+			name = "Tah Motion ControlTests";
+			productName = "Tah Motion ControlTests";
+			productReference = FFC3654A190546EF00EC27A1 /* Tah Motion ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFC3651E190546EF00EC27A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = DHIRAJJADHAO;
+				TargetAttributes = {
+					FFC36549190546EF00EC27A1 = {
+						TestTargetID = FFC36525190546EF00EC27A1;
+					};
+				};
+			};
+			buildConfigurationList = FFC36521190546EF00EC27A1 /* Build configuration list for PBXProject "Tah Motion Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFC3651D190546EF00EC27A1;
+			productRefGroup = FFC36527190546EF00EC27A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFC36525190546EF00EC27A1 /* Tah Motion Control */,
+				FFC36549190546EF00EC27A1 /* Tah Motion ControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFC36524190546EF00EC27A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC36540190546EF00EC27A1 /* Main_iPad.storyboard in Resources */,
+				FFC36545190546EF00EC27A1 /* Images.xcassets in Resources */,
+				FFC365671905482000EC27A1 /* buttonpad.png in Resources */,
+				FFC3653D190546EF00EC27A1 /* Main_iPhone.storyboard in Resources */,
+				FFC36534190546EF00EC27A1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC36548190546EF00EC27A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC36556190546EF00EC27A1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFC36522190546EF00EC27A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC36543190546EF00EC27A1 /* ViewController.m in Sources */,
+				FF45583E190E8896005D1C35 /* gestureViewController.m in Sources */,
+				FFC3653A190546EF00EC27A1 /* AppDelegate.m in Sources */,
+				FFC36536190546EF00EC27A1 /* main.m in Sources */,
+				FFC365641905475F00EC27A1 /* SerialGATT.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC36546190546EF00EC27A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC36558190546EF00EC27A1 /* Tah_Motion_ControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFC36550190546EF00EC27A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFC36525190546EF00EC27A1 /* Tah Motion Control */;
+			targetProxy = FFC3654F190546EF00EC27A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFC36532190546EF00EC27A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC36533190546EF00EC27A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFC3653B190546EF00EC27A1 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC3653C190546EF00EC27A1 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FFC3653E190546EF00EC27A1 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC3653F190546EF00EC27A1 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FFC36554190546EF00EC27A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC36555190546EF00EC27A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFC36559190546EF00EC27A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFC3655A190546EF00EC27A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFC3655C190546EF00EC27A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tah Motion Control/Tah Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "Tah Motion Control/Tah Motion Control-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFC3655D190546EF00EC27A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tah Motion Control/Tah Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "Tah Motion Control/Tah Motion Control-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FFC3655F190546EF00EC27A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tah Motion Control.app/Tah Motion Control";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tah Motion Control/Tah Motion Control-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tah Motion ControlTests/Tah Motion ControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FFC36560190546EF00EC27A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tah Motion Control.app/Tah Motion Control";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tah Motion Control/Tah Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "Tah Motion ControlTests/Tah Motion ControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFC36521190546EF00EC27A1 /* Build configuration list for PBXProject "Tah Motion Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC36559190546EF00EC27A1 /* Debug */,
+				FFC3655A190546EF00EC27A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC3655B190546EF00EC27A1 /* Build configuration list for PBXNativeTarget "Tah Motion Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC3655C190546EF00EC27A1 /* Debug */,
+				FFC3655D190546EF00EC27A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC3655E190546EF00EC27A1 /* Build configuration list for PBXNativeTarget "Tah Motion ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC3655F190546EF00EC27A1 /* Debug */,
+				FFC36560190546EF00EC27A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFC3651E190546EF00EC27A1 /* Project object */;
+}

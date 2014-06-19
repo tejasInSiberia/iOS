@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SerialGATT.h"
+#import "TAHble.h"
 #import "RefreshControl.h"
 
 @interface ViewController ()
@@ -26,7 +26,7 @@
 
 @synthesize sensor;
 @synthesize peripheralViewControllerArray;
-@synthesize HMSoftUUID;
+@synthesize TAHUUID;
 @synthesize tvRecv;
 @synthesize rssi_container;
 @synthesize peripheral;
@@ -51,7 +51,7 @@
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]){
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-    sensor = [[SerialGATT alloc] init];
+    sensor = [[TAHble alloc] init];
     [sensor setup];
     sensor.delegate = self;
     peripheralViewControllerArray = [[NSMutableArray alloc] init];
@@ -70,11 +70,27 @@
     ODRefreshControl *refreshControl = [[ODRefreshControl alloc] initInScrollView:self.TAHTableView];
     [refreshControl addTarget:self action:@selector(dropViewDidBeginRefreshing:) forControlEvents:UIControlEventValueChanged];
     
+    
+    
+    
+    
+    rabbitanimationtimer = [NSTimer scheduledTimerWithTimeInterval:4.0
+                                                            target:self
+                                                          selector:@selector(rabbitanimationstart:)
+                                                          userInfo:nil
+                                                           repeats:YES];
+    rabbitearanimationtimer = [NSTimer scheduledTimerWithTimeInterval:5.0
+                                                            target:self
+                                                          selector:@selector(rabbitearanimationstart:)
+                                                          userInfo:nil
+                                                           repeats:YES];
+    
+    
+    
     ////// Status Led Blink Animation //////
     
     [self ledanimationstart];
-    
-    
+
     ////// Setting Circle Progress Indicator ////////
     
     // You can use Appearance Proxy to style the MACircleProgressIndicator
@@ -105,8 +121,7 @@
 {
     if(sensor.activePeripheral.state)
     {
-        command = @"3,0,0R";
-        [self sendCommand];
+        [sensor updateTAHStatus:sensor.activePeripheral UpdateStatus:YES];
     }
    
 }
@@ -167,14 +182,14 @@
     
     [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(scanTimer:) userInfo:nil repeats:NO];
     
-    [sensor findHMSoftPeripherals:5];
+    [sensor findTAHPeripherals:5];
 
     
 }
 
 /*
  * scanTimer
- * when scanHMSoftDevices is timeout, this function will be called
+ * when scanTAHDevices is timeout, this function will be called
  *
  */
 -(void) scanTimer:(NSTimer *)timer
@@ -231,7 +246,7 @@
 }
 
 
-#pragma mark - HMSoftSensorDelegate
+#pragma mark - TAHSensorDelegate
 -(void)sensorReady
 {
     //TODO: it seems useless right now.
@@ -239,9 +254,6 @@
 
 -(void) peripheralFound:(CBPeripheral *)foundedperipheral
 {
-    
-    
-    
     ViewController *controller = [[ViewController alloc] init];
     controller.peripheral = foundedperipheral;
     controller.sensor = sensor;
@@ -252,7 +264,7 @@
 
 
 //recv data
--(void) serialGATTCharValueUpdated:(NSString *)UUID value:(NSData *)data
+-(void) TAHbleCharValueUpdated:(NSString *)UUID value:(NSData *)data
 {
     NSString *value = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
     tvRecv.text= [tvRecv.text stringByAppendingString:value];
@@ -523,24 +535,21 @@
 -(void)setConnect
 {
     CFStringRef s = CFUUIDCreateString(kCFAllocatorDefault, (__bridge CFUUIDRef )sensor.activePeripheral.identifier);
-    HMSoftUUID.text = (__bridge NSString*)s;
+    TAHUUID.text = (__bridge NSString*)s;
     tvRecv.text = @"OK+CONN";
     
     
     [self ledanimationstop];
     
-    
-
-    
 }
+
+
 
 -(void)setDisconnect
 {
     tvRecv.text= [tvRecv.text stringByAppendingString:@"OK+LOST"];
     [sensor disconnect:sensor.activePeripheral];
     [blestatusled startAnimating];
-    
-
 }
 
 
@@ -557,6 +566,35 @@
     [blestatusled startAnimating];
 
 }
+
+
+-(void)rabbitanimationstart:(NSTimer *)theTimer
+{
+    
+    NSArray *eyes=[NSArray arrayWithObjects:[UIImage imageNamed:@"tah close"],[UIImage imageNamed:@"tah"],nil];
+    
+    rabbit.animationImages  = eyes;
+    rabbit.animationDuration = 0.2;
+    rabbit.animationRepeatCount = 2;
+    
+    [rabbit startAnimating];
+
+    
+}
+
+
+-(void)rabbitearanimationstart:(NSTimer *)theTimer
+{
+
+    NSArray *ear=[NSArray arrayWithObjects:[UIImage imageNamed:@"tah ear"],[UIImage imageNamed:@"tah"],nil];
+    rabbit.animationImages  = ear;
+    rabbit.animationDuration = 0.2;
+    rabbit.animationRepeatCount = 2;
+    
+    [rabbit startAnimating];
+    
+}
+
 
 -(void)ledanimationstop
 {
@@ -597,33 +635,12 @@
     
     if (D2switch.on)
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 2;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+        [sensor TAHPin2digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-      
-        
-        PinType = 0;
-        
-        PinNumber = 2;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
-        
+        [sensor TAHPin2digitalWrite:sensor.activePeripheral HIGH:NO];
     }
     
     
@@ -634,32 +651,12 @@
     
     if (D3switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 3;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+         [sensor TAHPin3digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 3;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
-        
+        [sensor TAHPin3digitalWrite:sensor.activePeripheral HIGH:NO];
     }
     
     
@@ -670,31 +667,12 @@
     
     if (D4switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 4;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin4digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 4;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin4digitalWrite:sensor.activePeripheral HIGH:NO];
         
     }
     
@@ -707,31 +685,12 @@
     
     if (D5switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 5;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin5digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 5;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin5digitalWrite:sensor.activePeripheral HIGH:NO];
         
     }
     
@@ -744,31 +703,12 @@
     
     if (D6switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 6;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin6digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 6;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin6digitalWrite:sensor.activePeripheral HIGH:NO];
         
     }
     
@@ -781,32 +721,12 @@
     
     if (D7switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 7;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin7digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 7;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
-        
+       [sensor TAHPin7digitalWrite:sensor.activePeripheral HIGH:NO];
     }
     
     
@@ -818,31 +738,12 @@
     
     if (D8switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 8;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin8digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 8;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin8digitalWrite:sensor.activePeripheral HIGH:NO];
         
     }
     
@@ -855,31 +756,12 @@
     
     if (D9switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 9;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin9digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 9;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin9digitalWrite:sensor.activePeripheral HIGH:NO];
         
     }
     
@@ -892,31 +774,12 @@
     
     if (D10switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 10;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin10digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 10;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin10digitalWrite:sensor.activePeripheral HIGH:NO];
         
     }
     
@@ -929,32 +792,12 @@
     
     if (D11switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 11;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin11digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 11;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
-        
+       [sensor TAHPin11digitalWrite:sensor.activePeripheral HIGH:NO];
     }
     
     
@@ -966,32 +809,12 @@
     
     if (D12switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 12;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin12digitalWrite:sensor.activePeripheral HIGH:YES];
     }
     
     else
     {
-        
-        
-        PinType = 0;
-        
-        PinNumber = 12;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
-        
+       [sensor TAHPin12digitalWrite:sensor.activePeripheral HIGH:NO];
     }
     
     
@@ -1003,16 +826,7 @@
     
     if (D13switch.on)
     {
-        
-        PinType = 0;
-        
-        PinNumber = 13;
-        PinValue = 1;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin13digitalWrite:sensor.activePeripheral HIGH:YES];
         
         D13Slider.value = 1.0;
         
@@ -1023,16 +837,7 @@
     else
     {
         
-        
-        PinType = 0;
-        
-        PinNumber = 13;
-        PinValue = 0;
-        
-        
-        command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-        
-        [self sendCommand];
+       [sensor TAHPin13digitalWrite:sensor.activePeripheral HIGH:NO];
         
         D13Slider.value = 0.0;
         
@@ -1052,19 +857,8 @@
     
     NSString *Value = [NSString stringWithFormat:@"%f",D3Slider.value*255];
     int value = [Value intValue];
-    
-    
-    PinType = 1;
-    
-    PinNumber = 3;
-    PinValue = value;
-    
-    
-    command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-    
-    [self sendCommand];
-    
-    
+
+    [sensor TAHPin3analogWrite:sensor.activePeripheral Value:value];
 }
 
 
@@ -1077,18 +871,7 @@
     NSString *Value = [NSString stringWithFormat:@"%f",D5Slider.value*255];
     int value = [Value intValue];
     
-    
-    PinType = 1;
-    
-    PinNumber = 5;
-    PinValue = value;
-    
-    
-    command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-    
-    [self sendCommand];
-
-    
+    [sensor TAHPin5analogWrite:sensor.activePeripheral Value:value];
 }
 
 
@@ -1099,15 +882,7 @@
     int value = [Value intValue];
     
     
-    PinType = 1;
-    
-    PinNumber = 6;
-    PinValue = value;
-    
-    
-    command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-    
-    [self sendCommand];
+    [sensor TAHPin6analogWrite:sensor.activePeripheral Value:value];
     
     
 }
@@ -1119,17 +894,8 @@
     
     NSString *Value = [NSString stringWithFormat:@"%f",D9Slider.value*255];
     int value = [Value intValue];
-    
-    
-    PinType = 1;
-    
-    PinNumber = 9;
-    PinValue = value;
-    
-    
-    command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-    
-    [self sendCommand];
+
+        [sensor TAHPin9analogWrite:sensor.activePeripheral Value:value];
     
     
 }
@@ -1142,16 +908,7 @@
     NSString *Value = [NSString stringWithFormat:@"%f",D10Slider.value*255];
     int value = [Value intValue];
     
-    
-    PinType = 1;
-    
-    PinNumber = 10;
-    PinValue = value;
-    
-    
-    command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-    
-    [self sendCommand];
+    [sensor TAHPin10analogWrite:sensor.activePeripheral Value:value];
     
     
 }
@@ -1164,17 +921,7 @@
     NSString *Value = [NSString stringWithFormat:@"%f",D11Slider.value*255];
     int value = [Value intValue];
     
-    
-    PinType = 1;
-    
-    PinNumber = 11;
-    PinValue = value;
-    
-    
-    command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-    
-    [self sendCommand];
-    
+    [sensor TAHPin11analogWrite:sensor.activePeripheral Value:value];
     
 }
 
@@ -1186,16 +933,7 @@
     NSString *Value = [NSString stringWithFormat:@"%f",D13Slider.value*255];
     int value = [Value intValue];
     
-    
-    PinType = 1;
-    
-    PinNumber = 13;
-    PinValue = value;
-    
-    
-    command = [NSString stringWithFormat:@"%d%@%d%@%d%@",PinType,seperator,PinNumber,seperator,PinValue,end];
-    
-    [self sendCommand];
+    [sensor TAHPin13analogWrite:sensor.activePeripheral Value:value];
     
     L13sliderled.alpha = D13Slider.value;
     

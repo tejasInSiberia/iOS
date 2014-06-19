@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SerialGATT.h"
-#define RSSI_THRESHOLD -60
-#define WARNING_MESSAGE @"z"
+#import "TAHble.h"
 
-@class SerialGATT;
+
+@class TAHble;
 
 @interface SettingsViewController : UIViewController<BTSmartSensorDelegate, UITableViewDelegate, UITableViewDataSource>
 {
@@ -21,17 +20,17 @@
     IBOutlet UILabel *ConnectedDeviceName;
     IBOutlet UITextField *requiredName;
     IBOutlet UITextField *requiredPassword;
-    IBOutlet UIButton *changeName;
     IBOutlet UILabel *devicestatus;
-    IBOutlet UIButton *changePassword;
+    IBOutlet UIButton *ApplySettings;
     IBOutlet UIButton *turnoffpin;
+    IBOutlet UIButton *turnonpin;
 
     
     
 }
 
 
-@property (strong, nonatomic) SerialGATT *sensor;
+@property (strong, nonatomic) TAHble *sensor;
 @property (nonatomic, retain) NSMutableArray *peripheralViewControllerArray;
 
 
@@ -44,15 +43,15 @@
 @property (strong, nonatomic) CBPeripheral *peripheral;
 @property (strong, nonatomic) NSMutableArray *rssi_container;
 
-@property (weak, nonatomic) IBOutlet UILabel *HMSoftUUID;
+@property (weak, nonatomic) IBOutlet UILabel *TAHUUID;
 @property (weak, nonatomic) IBOutlet UITextView *tvRecv;
 
 
-- (IBAction)changeName:(id)sender;
-- (IBAction)changePassword:(id)sender;
 
 - (IBAction)turnoffpin:(id)sender;
 
+- (IBAction)ApplySettings:(id)sender;
+- (IBAction)turnonpin:(id)sender;
 
 
 @end

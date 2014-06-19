@@ -22,7 +22,7 @@
 
 @synthesize sensor;
 @synthesize peripheralViewControllerArray;
-@synthesize HMSoftUUID;
+@synthesize TAHUUID;
 @synthesize tvRecv;
 @synthesize rssi_container;
 
@@ -45,8 +45,8 @@
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
     requiredName.text = [defaults objectForKey:@"DeviceName"];
     
-    
-    
+    requiredPassword.enabled = NO; // disables device password field
+    requiredPassword.alpha = 0.2;
     
     
     // Do any additional setup after loading the view from its nib.
@@ -54,7 +54,7 @@
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)]){
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-    sensor = [[SerialGATT alloc] init];
+    sensor = [[TAHble alloc] init];
     [sensor setup];
     sensor.delegate = self;
     
@@ -103,6 +103,8 @@
 -(void) scanTAHDevices
 {
     
+    [self updateDeviceStatus];
+    
     if ([sensor activePeripheral]) {
         if (sensor.activePeripheral.state == CBPeripheralStateConnected) {
             [sensor.manager cancelPeripheralConnection:sensor.activePeripheral];
@@ -120,7 +122,7 @@
     printf("now we are searching device...\n");
         [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(scanTimer:) userInfo:nil repeats:NO];
     
-    [sensor findHMSoftPeripherals:5];
+    [sensor findTAHPeripherals:5];
     
     
 }
@@ -176,7 +178,7 @@
 }
 
 
-#pragma mark - HMSoftSensorDelegate
+#pragma mark - TAHSensorDelegate
 -(void)sensorReady
 {
     //TODO: it seems useless right now.
@@ -193,11 +195,13 @@
 
 
 
-//recv data
--(void) serialGATTCharValueUpdated:(NSString *)UUID value:(NSData *)data
+//received data
+
+-(void) TAHbleCharValueUpdated:(NSString *)UUID value:(NSData *)data
 {
     value = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
     tvRecv.text= [tvRecv.text stringByAppendingString:value];
+
 }
 
 
@@ -214,13 +218,10 @@
 -(void)setConnect
 {
     CFStringRef s = CFUUIDCreateString(kCFAllocatorDefault, (__bridge CFUUIDRef )sensor.activePeripheral.identifier);
-    HMSoftUUID.text = (__bridge NSString*)s;
+    TAHUUID.text = (__bridge NSString*)s;
     value = @"OK+CONN";
     
-    ConnectedDeviceName.text = self.sensor.activePeripheral.name;
-    requiredName.text = self.sensor.activePeripheral.name;
-    
-    
+
     
     [self updateDeviceStatus];
     
@@ -249,12 +250,25 @@
 {
     
     
-    if([value isEqual: @"OK+CONN"])
+    if(sensor.activePeripheral.state)
 	{
+        
+        
+        ConnectedDeviceName.text = self.sensor.activePeripheral.name;  // Sets connected device name
+        requiredName.text = self.sensor.activePeripheral.name;
         
         devicestatus.textColor = [UIColor greenColor];
         devicestatus.text = @"Connected";
+
         
+    }
+    
+    else
+    {
+    
+        devicestatus.textColor = [UIColor whiteColor];
+        devicestatus.text = @"Disconnected";
+    
     }
     
     
@@ -267,10 +281,11 @@
 
 -(void)setDisconnect
 {
+
     tvRecv.text= [tvRecv.text stringByAppendingString:@"OK+LOST"];
     [sensor disconnect:sensor.activePeripheral];
-    devicestatus.textColor = [UIColor whiteColor];
-    devicestatus.text = @"Disconnected";
+    
+    [self updateDeviceStatus];
     
 }
 
@@ -279,41 +294,22 @@
 
 
 
-
-- (IBAction)changeName:(id)sender {
-    
+- (IBAction)ApplySettings:(id)sender
+{
     if (sensor.activePeripheral.state)
     {
-        //NSData *data = [@"AT+NAME" dataUsingEncoding:[NSString defaultCStringEncoding]];
-        
-        NSData *AT = [@"AT+NAME" dataUsingEncoding:[NSString defaultCStringEncoding]];
+       
         
         
         
-        NSData *DeviceName = [requiredName.text dataUsingEncoding:[NSString defaultCStringEncoding]];
+        [sensor setTAHDeviceName:sensor.activePeripheral Name:requiredName.text];
+        NSLog(@"Name Changed to: %@",requiredName.text);
         
-        //NSString *DeviceName = [NSString stringWithFormat:@"%@", requiredName.text];
+
+        [sensor setTAHSecurityPin:sensor.activePeripheral Pin:requiredPassword.text];
+        NSLog(@"Password Changed To: %@",requiredPassword.text);
         
-        
-        NSMutableData *name = [NSMutableData data];
-        [name appendData:AT];
-        [name appendData:DeviceName];
-        
-        
-        
-        
-        [sensor write:sensor.activePeripheral data:name];
-        
-        NSString *string= [NSString stringWithUTF8String:[name bytes]];
-        
-        
-        NSLog(@"%@",string);
-        
-        
-        [self resetTAH];
-        
-        [self setDisconnect];
-        
+
         //////// Local Alert Settings
         
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
@@ -328,6 +324,11 @@
         
         NSLog(@"Name Change Alert Sent");
         /////////////////////////////////////////////
+        
+        
+        [sensor resetTAH:sensor.activePeripheral]; //resets TAH
+        
+        
     }
     
     else
@@ -349,116 +350,29 @@
     }
     
     
+    [self updateDeviceStatus];
 }
 
-- (IBAction)changePassword:(id)sender
-{
-    
-    if (sensor.activePeripheral.state)
-    {
-        
-        
-        NSData *pairwithpin = [@"AT+TYPE2" dataUsingEncoding:[NSString defaultCStringEncoding]];
-        
-        [sensor write:sensor.activePeripheral data:pairwithpin];
-        
-        NSLog(@"Device Pairing set to with PIN");
-        
-        
-        
-        NSData *AT = [@"AT+PASS" dataUsingEncoding:[NSString defaultCStringEncoding]];
-        NSData *DevicePassword = [requiredPassword.text dataUsingEncoding:[NSString defaultCStringEncoding]];
-        
-        NSMutableData *name = [NSMutableData data];
-        [name appendData:AT];
-        [name appendData:DevicePassword];
-        
-        
-        [sensor write:sensor.activePeripheral data:name];
-        
-        NSString *string= [NSString stringWithUTF8String:[name bytes]];
-        NSLog(@"Password Changed To: %@",string);
-        
-        
-        [self resetTAH];
-        
-        [self setDisconnect];
-        
-        //////// Local Alert Settings
-        
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"TAH Device Password Changed"
-                                                        message:@"Password of your TAH Device has been successfully changed"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-        
-        
-        NSLog(@"Password Change Alert Sent");
-        /////////////////////////////////////////////
-    
-    }
-    
-    else
-    {
-        //////// Local Alert Settings
-        
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connect to Device"
-                                                        message:@"Please Connect to TAH device first"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-        
-        
-        NSLog(@"Name Change Alert Sent");
-        /////////////////////////////////////////////
-    }
-    
-    
-    
-    
-    
-    
-    
-}
 
 - (IBAction)turnoffpin:(id)sender
 {
- 
-        NSData *pairwithpin = [@"AT+TYPE0" dataUsingEncoding:[NSString defaultCStringEncoding]];
-        
-        [sensor write:sensor.activePeripheral data:pairwithpin];
-        
-        NSLog(@"Device Pairing with PIN OFF");
-        
-        requiredPassword.enabled = NO;
-        changePassword.enabled = NO;
-        
-        [self resetTAH];
-        
     
-        
-  
-}
-
-
--(void)resetTAH
-{
+    [sensor setTAHSecurityType:sensor.activePeripheral WithPin:NO];
+    NSLog(@"Device Pairing with PIN OFF");
     
-    NSData *AT1 = [@"AT+RESET" dataUsingEncoding:[NSString defaultCStringEncoding]];
+    requiredPassword.enabled = NO;
+    requiredPassword.alpha = 0.2;
     
-    [sensor write:sensor.activePeripheral data:AT1];
-    
-    NSString *reset= [NSString stringWithUTF8String:[AT1 bytes]];
-    
-    NSLog(@"%@",reset);
     
 }
 
+- (IBAction)turnonpin:(id)sender {
+    
+    [sensor setTAHSecurityType:sensor.activePeripheral WithPin:YES];
+    NSLog(@"Device Pairing with PIN OFF");
+    
+    requiredPassword.enabled = YES;
+    requiredPassword.alpha = 1.0;
+}
 
 @end

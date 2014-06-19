@@ -7,18 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SerialGATT.h"
+#import "TAHble.h"
 #import "MACircleProgressIndicator.h"
 
-#define RSSI_THRESHOLD -60
-#define WARNING_MESSAGE @"z"
 
-@class SerialGATT;
+@class TAHble;
 
 @interface ViewController : UIViewController<BTSmartSensorDelegate, UITableViewDelegate, UITableViewDataSource>
 {
 
-    NSTimer *TAHstatusupdatetimer;
+    NSTimer *TAHstatusupdatetimer, *rabbitanimationtimer, *rabbitearanimationtimer;
     
     IBOutlet UIPageControl *pageControl;
     IBOutlet UIView *switchView;
@@ -57,6 +55,9 @@
     IBOutlet UIImageView *L13sliderled;
     
     
+    IBOutlet UIImageView *rabbit;
+    
+    
     IBOutlet UILabel *a0ProgressLabel;
     IBOutlet UILabel *a1ProgressLabel;
     IBOutlet UILabel *a2ProgressLabel;
@@ -72,7 +73,7 @@
 }
 
 
-@property (strong, nonatomic) SerialGATT *sensor;
+@property (strong, nonatomic) TAHble *sensor;
 @property (nonatomic, retain) NSMutableArray *peripheralViewControllerArray;
 
 
@@ -85,7 +86,7 @@
 @property (strong, nonatomic) CBPeripheral *peripheral;
 @property (strong, nonatomic) NSMutableArray *rssi_container;
 
-@property (weak, nonatomic) IBOutlet UILabel *HMSoftUUID;
+@property (weak, nonatomic) IBOutlet UILabel *TAHUUID;
 @property (weak, nonatomic) IBOutlet UITextView *tvRecv;
 
 

@@ -129,7 +129,7 @@
 {
     printf("begin reading\n");
     //[peripheral readValueForCharacteristic:dataRecvrCharacteristic];
-    printf("now can reading......\n");
+    printf("now can read......\n");
 }
 
 -(void) notify: (CBPeripheral *)peripheral on:(BOOL)on
@@ -147,6 +147,9 @@
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
 {
+    
+    
+    
     printf("Now we found device\n");
     if (!peripherals) {
         peripherals = [[NSMutableArray alloc] initWithObjects:peripheral, nil];
@@ -162,26 +165,33 @@
         if(peripheral.name.length < 1) return;
         // Add the new peripheral to the peripherals array
         for (int i = 0; i < [peripherals count]; i++) {
-            CBPeripheral *p = peripherals[i];
+            CBPeripheral *p = [peripherals objectAtIndex:i];
             if((__bridge CFUUIDRef )p.identifier == NULL) continue;
             CFUUIDBytes b1 = CFUUIDGetUUIDBytes((__bridge CFUUIDRef )p.identifier);
             CFUUIDBytes b2 = CFUUIDGetUUIDBytes((__bridge CFUUIDRef )peripheral.identifier);
             if (memcmp(&b1, &b2, 16) == 0) {
                 // these are the same, and replace the old peripheral information
-                peripherals[i] = peripheral;
+                [peripherals replaceObjectAtIndex:i withObject:peripheral];
                 printf("Duplicated peripheral is found...\n");
+                 NSLog(@"RSSI %@",RSSI);
                 //[delegate peripheralFound: peripheral];
                 return;
             }
         }
         printf("New peripheral is found...\n");
+         NSLog(@"RSSI %@",RSSI);
         [peripherals addObject:peripheral];
         [delegate peripheralFound:peripheral];
         return;
     }
     printf("%s\n", __FUNCTION__);
-}
+    
 
+    
+   
+    
+}
+ 
 -(void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
 {
     activePeripheral = peripheral;
@@ -212,7 +222,7 @@
 
 -(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
-    printf("in updateValueForCharacteristic function\n");
+   // printf("in updateValueForCharacteristic function\n");
     
     if (error) {
         printf("updateValueForCharacteristic failed\n");
@@ -237,7 +247,6 @@
 
 - (void)peripheralDidUpdateRSSI:(CBPeripheral *)peripheral error:(NSError *)error
 {
-    NSLog(@"Device RSSI: %@",peripheral.RSSI);
     
 }
 
@@ -253,7 +262,7 @@
  */
 -(void) getAllCharacteristicsFromKeyfob:(CBPeripheral *)p{
     for (int i=0; i < p.services.count; i++) {
-        CBService *s = (p.services)[i];
+        CBService *s = [p.services objectAtIndex:i];
         printf("Fetching characteristics for service with UUID : %s\r\n",[self CBUUIDToString:s.UUID]);
         [p discoverCharacteristics:nil forService:s];
     }
@@ -296,7 +305,7 @@
     if (!error) {
         printf("Characteristics of service with UUID : %s found\r\n",[self CBUUIDToString:service.UUID]);
         for(int i = 0; i < service.characteristics.count; i++) { //Show every one
-            CBCharacteristic *c = (service.characteristics)[i]; 
+            CBCharacteristic *c = [service.characteristics objectAtIndex:i]; 
             printf("Found characteristic %s\r\n",[ self CBUUIDToString:c.UUID]);
         }
         
@@ -398,7 +407,7 @@
  */
 -(CBService *) findServiceFromUUIDEx:(CBUUID *)UUID p:(CBPeripheral *)p {
     for(int i = 0; i < p.services.count; i++) {
-        CBService *s = (p.services)[i];
+        CBService *s = [p.services objectAtIndex:i];
         if ([self compareCBUUID:s.UUID UUID2:UUID]) return s;
     }
     return nil; //Service not found on this peripheral
@@ -418,7 +427,7 @@
  */
 -(CBCharacteristic *) findCharacteristicFromUUIDEx:(CBUUID *)UUID service:(CBService*)service {
     for(int i=0; i < service.characteristics.count; i++) {
-        CBCharacteristic *c = (service.characteristics)[i];
+        CBCharacteristic *c = [service.characteristics objectAtIndex:i];
         if ([self compareCBUUID:c.UUID UUID2:UUID]) return c;
     }
     return nil; //Characteristic not found on this service

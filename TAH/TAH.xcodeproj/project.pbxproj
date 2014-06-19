@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15023F22194F2BC9009E9996 /* TAHble.m in Sources */ = {isa = PBXBuildFile; fileRef = 15023F21194F2BC9009E9996 /* TAHble.m */; };
 		151AE44719339DC00008B8DD /* ledg.png in Resources */ = {isa = PBXBuildFile; fileRef = 151AE44619339DC00008B8DD /* ledg.png */; };
 		1522E8F6193352E50003AF37 /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = 1522E8F4193352E50003AF37 /* show.png */; };
 		1522E8F7193352E50003AF37 /* hide.png in Resources */ = {isa = PBXBuildFile; fileRef = 1522E8F5193352E50003AF37 /* hide.png */; };
@@ -15,6 +16,9 @@
 		1522E8FD19335F480003AF37 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1522E8FC19335F480003AF37 /* Accounts.framework */; };
 		1522E8FF193365AB0003AF37 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 1522E8FE193365AB0003AF37 /* like.png */; };
 		15258905193728650045C018 /* ledbdot.png in Resources */ = {isa = PBXBuildFile; fileRef = 15258904193728650045C018 /* ledbdot.png */; };
+		156161D9193FA82900814B4D /* tah.png in Resources */ = {isa = PBXBuildFile; fileRef = 156161D8193FA82900814B4D /* tah.png */; };
+		156161DB193FA96200814B4D /* tah close.png in Resources */ = {isa = PBXBuildFile; fileRef = 156161DA193FA96200814B4D /* tah close.png */; };
+		156161DD193FAE0600814B4D /* tah ear.png in Resources */ = {isa = PBXBuildFile; fileRef = 156161DC193FAE0600814B4D /* tah ear.png */; };
 		159A9EC21938993C002B4BA6 /* TAH Footprint.png in Resources */ = {isa = PBXBuildFile; fileRef = 159A9EC11938993C002B4BA6 /* TAH Footprint.png */; };
 		FF1F9CC0192DDA5F00BEDE0F /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1F9CBD192DDA5F00BEDE0F /* face.png */; };
 		FF1F9CC1192DDA5F00BEDE0F /* twit.png in Resources */ = {isa = PBXBuildFile; fileRef = FF1F9CBE192DDA5F00BEDE0F /* twit.png */; };
@@ -36,7 +40,6 @@
 		FF27A0D4191CA50100EDA58B /* TAHTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF27A0D3191CA50100EDA58B /* TAHTests.m */; };
 		FF27A0E6191CAFF000EDA58B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF27A0E5191CAFF000EDA58B /* CoreBluetooth.framework */; };
 		FF3118B9191FC2AE004026CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3118B8191FC2AE004026CF /* ViewController.m */; };
-		FF3118BC191FC36A004026CF /* SerialGATT.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3118BA191FC36A004026CF /* SerialGATT.m */; };
 		FF68EFD11929D2CA00F94264 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF68EFD01929D2CA00F94264 /* MediaViewController.m */; };
 		FF68EFD51929DA5800F94264 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FF68EFD21929DA5800F94264 /* back.png */; };
 		FF68EFD61929DA5800F94264 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = FF68EFD31929DA5800F94264 /* reload.png */; };
@@ -77,6 +80,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15023F20194F2BC9009E9996 /* TAHble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHble.h; sourceTree = "<group>"; };
+		15023F21194F2BC9009E9996 /* TAHble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHble.m; sourceTree = "<group>"; };
 		151AE44619339DC00008B8DD /* ledg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledg.png; sourceTree = "<group>"; };
 		1522E8F4193352E50003AF37 /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
 		1522E8F5193352E50003AF37 /* hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hide.png; sourceTree = "<group>"; };
@@ -85,6 +90,9 @@
 		1522E8FC19335F480003AF37 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1522E8FE193365AB0003AF37 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like.png; sourceTree = "<group>"; };
 		15258904193728650045C018 /* ledbdot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ledbdot.png; sourceTree = "<group>"; };
+		156161D8193FA82900814B4D /* tah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tah.png; sourceTree = "<group>"; };
+		156161DA193FA96200814B4D /* tah close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tah close.png"; sourceTree = "<group>"; };
+		156161DC193FAE0600814B4D /* tah ear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tah ear.png"; sourceTree = "<group>"; };
 		159A9EC11938993C002B4BA6 /* TAH Footprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TAH Footprint.png"; sourceTree = "<group>"; };
 		FF1F9CBD192DDA5F00BEDE0F /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
 		FF1F9CBE192DDA5F00BEDE0F /* twit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twit.png; sourceTree = "<group>"; };
@@ -111,8 +119,6 @@
 		FF27A0E5191CAFF000EDA58B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		FF3118B7191FC2AE004026CF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FF3118B8191FC2AE004026CF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FF3118BA191FC36A004026CF /* SerialGATT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerialGATT.m; sourceTree = "<group>"; };
-		FF3118BB191FC36A004026CF /* SerialGATT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialGATT.h; sourceTree = "<group>"; };
 		FF68EFCF1929D2CA00F94264 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		FF68EFD01929D2CA00F94264 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
 		FF68EFD21929DA5800F94264 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
@@ -179,14 +185,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15379F56194852C500A72AC4 /* TAH Library */ = {
+			isa = PBXGroup;
+			children = (
+				15023F20194F2BC9009E9996 /* TAHble.h */,
+				15023F21194F2BC9009E9996 /* TAHble.m */,
+			);
+			name = "TAH Library";
+			sourceTree = "<group>";
+		};
 		FF27A099191CA50100EDA58B = {
 			isa = PBXGroup;
 			children = (
 				FF27A0AB191CA50100EDA58B /* TAH */,
-				FF27A0E7191CB00600EDA58B /* SerialGATT */,
 				FF76244319236D8600847EBF /* RefreshControl */,
 				FF7ED1C4192CABF9000607EB /* MACircleProgressIndicator */,
 				FF27A0C0191CA50100EDA58B /* Images.xcassets */,
+				15379F56194852C500A72AC4 /* TAH Library */,
 				FF27A0AC191CA50100EDA58B /* Supporting Files */,
 				FF27A0CD191CA50100EDA58B /* TAHTests */,
 				FF27A0A4191CA50100EDA58B /* Frameworks */,
@@ -240,6 +255,9 @@
 		FF27A0AC191CA50100EDA58B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				156161DC193FAE0600814B4D /* tah ear.png */,
+				156161DA193FA96200814B4D /* tah close.png */,
+				156161D8193FA82900814B4D /* tah.png */,
 				159A9EC11938993C002B4BA6 /* TAH Footprint.png */,
 				15258904193728650045C018 /* ledbdot.png */,
 				151AE44619339DC00008B8DD /* ledg.png */,
@@ -294,15 +312,6 @@
 				FF27A0D0191CA50100EDA58B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FF27A0E7191CB00600EDA58B /* SerialGATT */ = {
-			isa = PBXGroup;
-			children = (
-				FF3118BA191FC36A004026CF /* SerialGATT.m */,
-				FF3118BB191FC36A004026CF /* SerialGATT.h */,
-			);
-			name = SerialGATT;
 			sourceTree = "<group>";
 		};
 		FF3118B5191FA2B3004026CF /* ViewController */ = {
@@ -465,12 +474,15 @@
 				FF7ED1D5192CB9B4000607EB /* ledb.png in Resources */,
 				FF68EFD51929DA5800F94264 /* back.png in Resources */,
 				FFA1F02B192621D200228D20 /* TAH trans logo 2.png in Resources */,
+				156161D9193FA82900814B4D /* tah.png in Resources */,
 				FF27A0BC191CA50100EDA58B /* Main_iPad.storyboard in Resources */,
 				FF1F9CC1192DDA5F00BEDE0F /* twit.png in Resources */,
+				156161DB193FA96200814B4D /* tah close.png in Resources */,
 				FF7624661923B17200847EBF /* TAH logo small.png in Resources */,
 				FFC1F69019291F9300FA3FB8 /* mail.png in Resources */,
 				FFBB1B1C191D2BB000278930 /* TAH trans logo.png in Resources */,
 				FFC1F694192943D000FA3FB8 /* tah silk.png in Resources */,
+				156161DD193FAE0600814B4D /* tah ear.png in Resources */,
 				FFBB1B19191D2BB000278930 /* signal 3.png in Resources */,
 				FF27A0C1191CA50100EDA58B /* Images.xcassets in Resources */,
 				1522E8FF193365AB0003AF37 /* like.png in Resources */,
@@ -508,9 +520,9 @@
 				FF68EFE4192A1E4F00F94264 /* SettingsViewController.m in Sources */,
 				FF27A0B6191CA50100EDA58B /* AppDelegate.m in Sources */,
 				FF7ED1C7192CAC0B000607EB /* MACircleProgressIndicator.m in Sources */,
+				15023F22194F2BC9009E9996 /* TAHble.m in Sources */,
 				FF27A0B2191CA50100EDA58B /* main.m in Sources */,
 				FF3118B9191FC2AE004026CF /* ViewController.m in Sources */,
-				FF3118BC191FC36A004026CF /* SerialGATT.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,13 +658,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dhiraj Jadhao (GR2FA7R2GS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dhiraj Jadhao (GR2FA7R2GS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAH/TAH-Prefix.pch";
 				INFOPLIST_FILE = "TAH/TAH-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "34D2B6A7-2DD9-4956-8CB0-24C8E9647C1F";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -663,13 +675,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dhiraj Jadhao (GR2FA7R2GS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dhiraj Jadhao (GR2FA7R2GS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAH/TAH-Prefix.pch";
 				INFOPLIST_FILE = "TAH/TAH-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "34D2B6A7-2DD9-4956-8CB0-24C8E9647C1F";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
