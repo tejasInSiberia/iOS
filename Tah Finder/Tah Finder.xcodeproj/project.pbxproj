@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF13140F18E940FB005E5EEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF13140E18E940FB005E5EEF /* Foundation.framework */; };
+		FF13141118E940FB005E5EEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF13141018E940FB005E5EEF /* CoreGraphics.framework */; };
+		FF13141318E940FB005E5EEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF13141218E940FB005E5EEF /* UIKit.framework */; };
+		FF13141918E940FB005E5EEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF13141718E940FB005E5EEF /* InfoPlist.strings */; };
+		FF13141B18E940FB005E5EEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF13141A18E940FB005E5EEF /* main.m */; };
+		FF13141F18E940FB005E5EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF13141E18E940FB005E5EEF /* AppDelegate.m */; };
+		FF13142218E940FB005E5EEF /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF13142018E940FB005E5EEF /* Main_iPhone.storyboard */; };
+		FF13142518E940FB005E5EEF /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF13142318E940FB005E5EEF /* Main_iPad.storyboard */; };
+		FF13142818E940FB005E5EEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF13142718E940FB005E5EEF /* ViewController.m */; };
+		FF13142A18E940FB005E5EEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF13142918E940FB005E5EEF /* Images.xcassets */; };
+		FF13143118E940FB005E5EEF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF13143018E940FB005E5EEF /* XCTest.framework */; };
+		FF13143218E940FB005E5EEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF13140E18E940FB005E5EEF /* Foundation.framework */; };
+		FF13143318E940FB005E5EEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF13141218E940FB005E5EEF /* UIKit.framework */; };
+		FF13143B18E940FB005E5EEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF13143918E940FB005E5EEF /* InfoPlist.strings */; };
+		FF13143D18E940FB005E5EEF /* Tah_FInderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF13143C18E940FB005E5EEF /* Tah_FInderTests.m */; };
+		FF13144918E94275005E5EEF /* TahFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF13144818E94275005E5EEF /* TahFinderViewController.m */; };
+		FF13144C18E942E8005E5EEF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF13144B18E942E8005E5EEF /* SettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF13143418E940FB005E5EEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF13140318E940FB005E5EEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF13140A18E940FB005E5EEF;
+			remoteInfo = "Tah FInder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF13140B18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tah Finder.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF13140E18E940FB005E5EEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF13141018E940FB005E5EEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF13141218E940FB005E5EEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF13141618E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tah Finder.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
+		FF13141818E940FB005E5EEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF13141A18E940FB005E5EEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF13141C18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tah Finder.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		FF13141D18E940FB005E5EEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF13141E18E940FB005E5EEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF13142118E940FB005E5EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FF13142418E940FB005E5EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		FF13142618E940FB005E5EEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF13142718E940FB005E5EEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF13142918E940FB005E5EEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF13142F18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tah Finder.temp_caseinsensitive_renameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF13143018E940FB005E5EEF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FF13143818E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tah Finder.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
+		FF13143A18E940FB005E5EEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF13143C18E940FB005E5EEF /* Tah_FInderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tah_FInderTests.m; sourceTree = "<group>"; };
+		FF13144718E94275005E5EEF /* TahFinderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TahFinderViewController.h; sourceTree = "<group>"; };
+		FF13144818E94275005E5EEF /* TahFinderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TahFinderViewController.m; sourceTree = "<group>"; };
+		FF13144A18E942E8005E5EEF /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		FF13144B18E942E8005E5EEF /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF13140818E940FB005E5EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF13141118E940FB005E5EEF /* CoreGraphics.framework in Frameworks */,
+				FF13141318E940FB005E5EEF /* UIKit.framework in Frameworks */,
+				FF13140F18E940FB005E5EEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF13142C18E940FB005E5EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF13143118E940FB005E5EEF /* XCTest.framework in Frameworks */,
+				FF13143318E940FB005E5EEF /* UIKit.framework in Frameworks */,
+				FF13143218E940FB005E5EEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF13140218E940FB005E5EEF = {
+			isa = PBXGroup;
+			children = (
+				FF13144618E941FE005E5EEF /* Controllers */,
+				FF13141418E940FB005E5EEF /* Tah FInder */,
+				FF13143618E940FB005E5EEF /* Tah FInderTests */,
+				FF13140D18E940FB005E5EEF /* Frameworks */,
+				FF13140C18E940FB005E5EEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF13140C18E940FB005E5EEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF13140B18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename.app */,
+				FF13142F18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_renameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF13140D18E940FB005E5EEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF13140E18E940FB005E5EEF /* Foundation.framework */,
+				FF13141018E940FB005E5EEF /* CoreGraphics.framework */,
+				FF13141218E940FB005E5EEF /* UIKit.framework */,
+				FF13143018E940FB005E5EEF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF13141418E940FB005E5EEF /* Tah FInder */ = {
+			isa = PBXGroup;
+			children = (
+				FF13141D18E940FB005E5EEF /* AppDelegate.h */,
+				FF13141E18E940FB005E5EEF /* AppDelegate.m */,
+				FF13142018E940FB005E5EEF /* Main_iPhone.storyboard */,
+				FF13142318E940FB005E5EEF /* Main_iPad.storyboard */,
+				FF13142618E940FB005E5EEF /* ViewController.h */,
+				FF13142718E940FB005E5EEF /* ViewController.m */,
+				FF13142918E940FB005E5EEF /* Images.xcassets */,
+				FF13141518E940FB005E5EEF /* Supporting Files */,
+			);
+			path = "Tah FInder";
+			sourceTree = "<group>";
+		};
+		FF13141518E940FB005E5EEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF13141618E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename-Info.plist */,
+				FF13141718E940FB005E5EEF /* InfoPlist.strings */,
+				FF13141A18E940FB005E5EEF /* main.m */,
+				FF13141C18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF13143618E940FB005E5EEF /* Tah FInderTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF13143C18E940FB005E5EEF /* Tah_FInderTests.m */,
+				FF13143718E940FB005E5EEF /* Supporting Files */,
+			);
+			path = "Tah FInderTests";
+			sourceTree = "<group>";
+		};
+		FF13143718E940FB005E5EEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF13143818E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_renameTests-Info.plist */,
+				FF13143918E940FB005E5EEF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF13144618E941FE005E5EEF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF13144718E94275005E5EEF /* TahFinderViewController.h */,
+				FF13144818E94275005E5EEF /* TahFinderViewController.m */,
+				FF13144A18E942E8005E5EEF /* SettingsViewController.h */,
+				FF13144B18E942E8005E5EEF /* SettingsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF13140A18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF13144018E940FB005E5EEF /* Build configuration list for PBXNativeTarget "Tah Finder.temp_caseinsensitive_rename" */;
+			buildPhases = (
+				FF13140718E940FB005E5EEF /* Sources */,
+				FF13140818E940FB005E5EEF /* Frameworks */,
+				FF13140918E940FB005E5EEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tah Finder.temp_caseinsensitive_rename";
+			productName = "Tah FInder";
+			productReference = FF13140B18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF13142E18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_renameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF13144318E940FB005E5EEF /* Build configuration list for PBXNativeTarget "Tah Finder.temp_caseinsensitive_renameTests" */;
+			buildPhases = (
+				FF13142B18E940FB005E5EEF /* Sources */,
+				FF13142C18E940FB005E5EEF /* Frameworks */,
+				FF13142D18E940FB005E5EEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF13143518E940FB005E5EEF /* PBXTargetDependency */,
+			);
+			name = "Tah Finder.temp_caseinsensitive_renameTests";
+			productName = "Tah FInderTests";
+			productReference = FF13142F18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_renameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF13140318E940FB005E5EEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = DHIRAJJADHAO;
+				TargetAttributes = {
+					FF13142E18E940FB005E5EEF = {
+						TestTargetID = FF13140A18E940FB005E5EEF;
+					};
+				};
+			};
+			buildConfigurationList = FF13140618E940FB005E5EEF /* Build configuration list for PBXProject "Tah Finder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF13140218E940FB005E5EEF;
+			productRefGroup = FF13140C18E940FB005E5EEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF13140A18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename */,
+				FF13142E18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_renameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF13140918E940FB005E5EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF13142518E940FB005E5EEF /* Main_iPad.storyboard in Resources */,
+				FF13142A18E940FB005E5EEF /* Images.xcassets in Resources */,
+				FF13142218E940FB005E5EEF /* Main_iPhone.storyboard in Resources */,
+				FF13141918E940FB005E5EEF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF13142D18E940FB005E5EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF13143B18E940FB005E5EEF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF13140718E940FB005E5EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF13144918E94275005E5EEF /* TahFinderViewController.m in Sources */,
+				FF13142818E940FB005E5EEF /* ViewController.m in Sources */,
+				FF13144C18E942E8005E5EEF /* SettingsViewController.m in Sources */,
+				FF13141F18E940FB005E5EEF /* AppDelegate.m in Sources */,
+				FF13141B18E940FB005E5EEF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF13142B18E940FB005E5EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF13143D18E940FB005E5EEF /* Tah_FInderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF13143518E940FB005E5EEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF13140A18E940FB005E5EEF /* Tah Finder.temp_caseinsensitive_rename */;
+			targetProxy = FF13143418E940FB005E5EEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF13141718E940FB005E5EEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF13141818E940FB005E5EEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF13142018E940FB005E5EEF /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF13142118E940FB005E5EEF /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FF13142318E940FB005E5EEF /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF13142418E940FB005E5EEF /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FF13143918E940FB005E5EEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF13143A18E940FB005E5EEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF13143E18E940FB005E5EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF13143F18E940FB005E5EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF13144118E940FB005E5EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tah FInder/Tah Finder.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "Tah FInder/Tah Finder.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = "Tah Finder.temp_caseinsensitive_rename";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF13144218E940FB005E5EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tah FInder/Tah Finder.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "Tah FInder/Tah Finder.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = "Tah Finder.temp_caseinsensitive_rename";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF13144418E940FB005E5EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tah FInder.app/Tah FInder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tah FInder/Tah FInder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tah FInderTests/Tah Finder.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = "Tah Finder.temp_caseinsensitive_renameTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FF13144518E940FB005E5EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tah FInder.app/Tah FInder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tah FInder/Tah FInder-Prefix.pch";
+				INFOPLIST_FILE = "Tah FInderTests/Tah Finder.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = "Tah Finder.temp_caseinsensitive_renameTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF13140618E940FB005E5EEF /* Build configuration list for PBXProject "Tah Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF13143E18E940FB005E5EEF /* Debug */,
+				FF13143F18E940FB005E5EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF13144018E940FB005E5EEF /* Build configuration list for PBXNativeTarget "Tah Finder.temp_caseinsensitive_rename" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF13144118E940FB005E5EEF /* Debug */,
+				FF13144218E940FB005E5EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF13144318E940FB005E5EEF /* Build configuration list for PBXNativeTarget "Tah Finder.temp_caseinsensitive_renameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF13144418E940FB005E5EEF /* Debug */,
+				FF13144518E940FB005E5EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF13140318E940FB005E5EEF /* Project object */;
+}

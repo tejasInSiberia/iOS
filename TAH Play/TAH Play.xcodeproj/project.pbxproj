@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF44E3E9191955BD0001FEE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3E8191955BD0001FEE9 /* Foundation.framework */; };
+		FF44E3EB191955BE0001FEE9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3EA191955BD0001FEE9 /* CoreGraphics.framework */; };
+		FF44E3ED191955BE0001FEE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3EC191955BE0001FEE9 /* UIKit.framework */; };
+		FF44E3F3191955BE0001FEE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF44E3F1191955BE0001FEE9 /* InfoPlist.strings */; };
+		FF44E3F5191955BE0001FEE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44E3F4191955BE0001FEE9 /* main.m */; };
+		FF44E3F9191955BE0001FEE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44E3F8191955BE0001FEE9 /* AppDelegate.m */; };
+		FF44E3FC191955BE0001FEE9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF44E3FA191955BE0001FEE9 /* Main_iPhone.storyboard */; };
+		FF44E3FF191955BE0001FEE9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF44E3FD191955BE0001FEE9 /* Main_iPad.storyboard */; };
+		FF44E402191955BE0001FEE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44E401191955BE0001FEE9 /* ViewController.m */; };
+		FF44E404191955BE0001FEE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF44E403191955BE0001FEE9 /* Images.xcassets */; };
+		FF44E40B191955BE0001FEE9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E40A191955BE0001FEE9 /* XCTest.framework */; };
+		FF44E40C191955BE0001FEE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3E8191955BD0001FEE9 /* Foundation.framework */; };
+		FF44E40D191955BE0001FEE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3EC191955BE0001FEE9 /* UIKit.framework */; };
+		FF44E415191955BE0001FEE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF44E413191955BE0001FEE9 /* InfoPlist.strings */; };
+		FF44E417191955BE0001FEE9 /* TAH_PlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44E416191955BE0001FEE9 /* TAH_PlayTests.m */; };
+		FF44E42119195F0A0001FEE9 /* buttonpad.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E42019195F0A0001FEE9 /* buttonpad.png */; };
+		FF44E425191964C80001FEE9 /* XboxLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E422191964C80001FEE9 /* XboxLogo.png */; };
+		FF44E426191964C80001FEE9 /* pcjoy logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E423191964C80001FEE9 /* pcjoy logo.png */; };
+		FF44E427191964C80001FEE9 /* PlayStation-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E424191964C80001FEE9 /* PlayStation-Logo.png */; };
+		FF44E4291919661B0001FEE9 /* setting icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E4281919661B0001FEE9 /* setting icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF44E40E191955BE0001FEE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF44E3DD191955BD0001FEE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF44E3E4191955BD0001FEE9;
+			remoteInfo = "TAH Play";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF44E3E5191955BD0001FEE9 /* TAH Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAH Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF44E3E8191955BD0001FEE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF44E3EA191955BD0001FEE9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF44E3EC191955BE0001FEE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF44E3F0191955BE0001FEE9 /* TAH Play-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH Play-Info.plist"; sourceTree = "<group>"; };
+		FF44E3F2191955BE0001FEE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF44E3F4191955BE0001FEE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF44E3F6191955BE0001FEE9 /* TAH Play-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAH Play-Prefix.pch"; sourceTree = "<group>"; };
+		FF44E3F7191955BE0001FEE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF44E3F8191955BE0001FEE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF44E3FB191955BE0001FEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FF44E3FE191955BE0001FEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		FF44E400191955BE0001FEE9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF44E401191955BE0001FEE9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF44E403191955BE0001FEE9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF44E409191955BE0001FEE9 /* TAH PlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAH PlayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF44E40A191955BE0001FEE9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FF44E412191955BE0001FEE9 /* TAH PlayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH PlayTests-Info.plist"; sourceTree = "<group>"; };
+		FF44E414191955BE0001FEE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF44E416191955BE0001FEE9 /* TAH_PlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAH_PlayTests.m; sourceTree = "<group>"; };
+		FF44E42019195F0A0001FEE9 /* buttonpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonpad.png; sourceTree = "<group>"; };
+		FF44E422191964C80001FEE9 /* XboxLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XboxLogo.png; sourceTree = "<group>"; };
+		FF44E423191964C80001FEE9 /* pcjoy logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pcjoy logo.png"; sourceTree = "<group>"; };
+		FF44E424191964C80001FEE9 /* PlayStation-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayStation-Logo.png"; sourceTree = "<group>"; };
+		FF44E4281919661B0001FEE9 /* setting icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting icon.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF44E3E2191955BD0001FEE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF44E3EB191955BE0001FEE9 /* CoreGraphics.framework in Frameworks */,
+				FF44E3ED191955BE0001FEE9 /* UIKit.framework in Frameworks */,
+				FF44E3E9191955BD0001FEE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF44E406191955BE0001FEE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF44E40B191955BE0001FEE9 /* XCTest.framework in Frameworks */,
+				FF44E40D191955BE0001FEE9 /* UIKit.framework in Frameworks */,
+				FF44E40C191955BE0001FEE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF44E3DC191955BD0001FEE9 = {
+			isa = PBXGroup;
+			children = (
+				FF44E3EE191955BE0001FEE9 /* TAH Play */,
+				FF44E410191955BE0001FEE9 /* TAH PlayTests */,
+				FF44E3E7191955BD0001FEE9 /* Frameworks */,
+				FF44E3E6191955BD0001FEE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF44E3E6191955BD0001FEE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF44E3E5191955BD0001FEE9 /* TAH Play.app */,
+				FF44E409191955BE0001FEE9 /* TAH PlayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF44E3E7191955BD0001FEE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF44E3E8191955BD0001FEE9 /* Foundation.framework */,
+				FF44E3EA191955BD0001FEE9 /* CoreGraphics.framework */,
+				FF44E3EC191955BE0001FEE9 /* UIKit.framework */,
+				FF44E40A191955BE0001FEE9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF44E3EE191955BE0001FEE9 /* TAH Play */ = {
+			isa = PBXGroup;
+			children = (
+				FF44E3F7191955BE0001FEE9 /* AppDelegate.h */,
+				FF44E3F8191955BE0001FEE9 /* AppDelegate.m */,
+				FF44E3FA191955BE0001FEE9 /* Main_iPhone.storyboard */,
+				FF44E3FD191955BE0001FEE9 /* Main_iPad.storyboard */,
+				FF44E400191955BE0001FEE9 /* ViewController.h */,
+				FF44E401191955BE0001FEE9 /* ViewController.m */,
+				FF44E403191955BE0001FEE9 /* Images.xcassets */,
+				FF44E3EF191955BE0001FEE9 /* Supporting Files */,
+			);
+			path = "TAH Play";
+			sourceTree = "<group>";
+		};
+		FF44E3EF191955BE0001FEE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF44E4281919661B0001FEE9 /* setting icon.png */,
+				FF44E422191964C80001FEE9 /* XboxLogo.png */,
+				FF44E423191964C80001FEE9 /* pcjoy logo.png */,
+				FF44E424191964C80001FEE9 /* PlayStation-Logo.png */,
+				FF44E42019195F0A0001FEE9 /* buttonpad.png */,
+				FF44E3F0191955BE0001FEE9 /* TAH Play-Info.plist */,
+				FF44E3F1191955BE0001FEE9 /* InfoPlist.strings */,
+				FF44E3F4191955BE0001FEE9 /* main.m */,
+				FF44E3F6191955BE0001FEE9 /* TAH Play-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF44E410191955BE0001FEE9 /* TAH PlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF44E416191955BE0001FEE9 /* TAH_PlayTests.m */,
+				FF44E411191955BE0001FEE9 /* Supporting Files */,
+			);
+			path = "TAH PlayTests";
+			sourceTree = "<group>";
+		};
+		FF44E411191955BE0001FEE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF44E412191955BE0001FEE9 /* TAH PlayTests-Info.plist */,
+				FF44E413191955BE0001FEE9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF44E3E4191955BD0001FEE9 /* TAH Play */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF44E41A191955BE0001FEE9 /* Build configuration list for PBXNativeTarget "TAH Play" */;
+			buildPhases = (
+				FF44E3E1191955BD0001FEE9 /* Sources */,
+				FF44E3E2191955BD0001FEE9 /* Frameworks */,
+				FF44E3E3191955BD0001FEE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TAH Play";
+			productName = "TAH Play";
+			productReference = FF44E3E5191955BD0001FEE9 /* TAH Play.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF44E408191955BE0001FEE9 /* TAH PlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF44E41D191955BE0001FEE9 /* Build configuration list for PBXNativeTarget "TAH PlayTests" */;
+			buildPhases = (
+				FF44E405191955BE0001FEE9 /* Sources */,
+				FF44E406191955BE0001FEE9 /* Frameworks */,
+				FF44E407191955BE0001FEE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF44E40F191955BE0001FEE9 /* PBXTargetDependency */,
+			);
+			name = "TAH PlayTests";
+			productName = "TAH PlayTests";
+			productReference = FF44E409191955BE0001FEE9 /* TAH PlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF44E3DD191955BD0001FEE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = DHIRAJJADHAO;
+				TargetAttributes = {
+					FF44E408191955BE0001FEE9 = {
+						TestTargetID = FF44E3E4191955BD0001FEE9;
+					};
+				};
+			};
+			buildConfigurationList = FF44E3E0191955BD0001FEE9 /* Build configuration list for PBXProject "TAH Play" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF44E3DC191955BD0001FEE9;
+			productRefGroup = FF44E3E6191955BD0001FEE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF44E3E4191955BD0001FEE9 /* TAH Play */,
+				FF44E408191955BE0001FEE9 /* TAH PlayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF44E3E3191955BD0001FEE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF44E3FF191955BE0001FEE9 /* Main_iPad.storyboard in Resources */,
+				FF44E404191955BE0001FEE9 /* Images.xcassets in Resources */,
+				FF44E426191964C80001FEE9 /* pcjoy logo.png in Resources */,
+				FF44E42119195F0A0001FEE9 /* buttonpad.png in Resources */,
+				FF44E4291919661B0001FEE9 /* setting icon.png in Resources */,
+				FF44E3FC191955BE0001FEE9 /* Main_iPhone.storyboard in Resources */,
+				FF44E427191964C80001FEE9 /* PlayStation-Logo.png in Resources */,
+				FF44E3F3191955BE0001FEE9 /* InfoPlist.strings in Resources */,
+				FF44E425191964C80001FEE9 /* XboxLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF44E407191955BE0001FEE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF44E415191955BE0001FEE9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF44E3E1191955BD0001FEE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF44E402191955BE0001FEE9 /* ViewController.m in Sources */,
+				FF44E3F9191955BE0001FEE9 /* AppDelegate.m in Sources */,
+				FF44E3F5191955BE0001FEE9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF44E405191955BE0001FEE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF44E417191955BE0001FEE9 /* TAH_PlayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF44E40F191955BE0001FEE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF44E3E4191955BD0001FEE9 /* TAH Play */;
+			targetProxy = FF44E40E191955BE0001FEE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF44E3F1191955BE0001FEE9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF44E3F2191955BE0001FEE9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF44E3FA191955BE0001FEE9 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF44E3FB191955BE0001FEE9 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		FF44E3FD191955BE0001FEE9 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF44E3FE191955BE0001FEE9 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FF44E413191955BE0001FEE9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF44E414191955BE0001FEE9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF44E418191955BE0001FEE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF44E419191955BE0001FEE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF44E41B191955BE0001FEE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Play/TAH Play-Prefix.pch";
+				INFOPLIST_FILE = "TAH Play/TAH Play-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF44E41C191955BE0001FEE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Play/TAH Play-Prefix.pch";
+				INFOPLIST_FILE = "TAH Play/TAH Play-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF44E41E191955BE0001FEE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Play.app/TAH Play";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Play/TAH Play-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TAH PlayTests/TAH PlayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FF44E41F191955BE0001FEE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Play.app/TAH Play";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Play/TAH Play-Prefix.pch";
+				INFOPLIST_FILE = "TAH PlayTests/TAH PlayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF44E3E0191955BD0001FEE9 /* Build configuration list for PBXProject "TAH Play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF44E418191955BE0001FEE9 /* Debug */,
+				FF44E419191955BE0001FEE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF44E41A191955BE0001FEE9 /* Build configuration list for PBXNativeTarget "TAH Play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF44E41B191955BE0001FEE9 /* Debug */,
+				FF44E41C191955BE0001FEE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF44E41D191955BE0001FEE9 /* Build configuration list for PBXNativeTarget "TAH PlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF44E41E191955BE0001FEE9 /* Debug */,
+				FF44E41F191955BE0001FEE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF44E3DD191955BD0001FEE9 /* Project object */;
+}
