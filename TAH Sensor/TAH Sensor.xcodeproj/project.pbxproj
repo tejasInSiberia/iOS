@@ -64,9 +64,6 @@
 		1535F95019584809007DD1A5 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 1535F92519584809007DD1A5 /* fb.png */; };
 		1535F95119584809007DD1A5 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 1535F92619584809007DD1A5 /* twitter.png */; };
 		1535F95219584809007DD1A5 /* tah.png in Resources */ = {isa = PBXBuildFile; fileRef = 1535F92719584809007DD1A5 /* tah.png */; };
-		1535F955195848B0007DD1A5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F954195848B0007DD1A5 /* MainViewController.m */; };
-		1535F959195848DF007DD1A5 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F958195848DF007DD1A5 /* SidebarViewController.m */; };
-		1535F95D195848F4007DD1A5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F95C195848F4007DD1A5 /* SWRevealViewController.m */; };
 		1535F9681958499B007DD1A5 /* SoilMoistureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F9671958499B007DD1A5 /* SoilMoistureViewController.m */; };
 		1535F96B195849AE007DD1A5 /* MotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F96A195849AE007DD1A5 /* MotionViewController.m */; };
 		1535F96E195849B9007DD1A5 /* WindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F96D195849B9007DD1A5 /* WindViewController.m */; };
@@ -76,8 +73,10 @@
 		1535F97A195849DC007DD1A5 /* TemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F979195849DC007DD1A5 /* TemperatureViewController.m */; };
 		1535F97D195849E1007DD1A5 /* SonarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F97C195849E1007DD1A5 /* SonarViewController.m */; };
 		1535F981195849F6007DD1A5 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F980195849F6007DD1A5 /* CustomCell.m */; };
+		1551F0C21967BA6F00384077 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551F0C11967BA6F00384077 /* HomeViewController.m */; };
+		1566EB6319683D7C002A5CD4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1566EB6219683D7C002A5CD4 /* AudioToolbox.framework */; };
+		1566EB6619685233002A5CD4 /* TAHble.m in Sources */ = {isa = PBXBuildFile; fileRef = 1566EB6519685233002A5CD4 /* TAHble.m */; };
 		1599E444195850F80059DC2B /* TAHbleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1599E443195850F80059DC2B /* TAHbleTableController.m */; };
-		1599E448195851600059DC2B /* TAHble.m in Sources */ = {isa = PBXBuildFile; fileRef = 1599E447195851600059DC2B /* TAHble.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,12 +151,6 @@
 		1535F92519584809007DD1A5 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
 		1535F92619584809007DD1A5 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		1535F92719584809007DD1A5 /* tah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tah.png; sourceTree = "<group>"; };
-		1535F953195848B0007DD1A5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		1535F954195848B0007DD1A5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		1535F957195848DF007DD1A5 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
-		1535F958195848DF007DD1A5 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
-		1535F95B195848F4007DD1A5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		1535F95C195848F4007DD1A5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		1535F9661958499B007DD1A5 /* SoilMoistureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoilMoistureViewController.h; sourceTree = "<group>"; };
 		1535F9671958499B007DD1A5 /* SoilMoistureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoilMoistureViewController.m; sourceTree = "<group>"; };
 		1535F969195849AE007DD1A5 /* MotionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionViewController.h; sourceTree = "<group>"; };
@@ -176,10 +169,13 @@
 		1535F97C195849E1007DD1A5 /* SonarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonarViewController.m; sourceTree = "<group>"; };
 		1535F97F195849F6007DD1A5 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		1535F980195849F6007DD1A5 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		1551F0C01967BA6F00384077 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../HomeViewController.h; sourceTree = "<group>"; };
+		1551F0C11967BA6F00384077 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; };
+		1566EB6219683D7C002A5CD4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1566EB6419685233002A5CD4 /* TAHble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAHble.h; path = "../../TAH SDK/TAH Library/TAHble.h"; sourceTree = "<group>"; };
+		1566EB6519685233002A5CD4 /* TAHble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAHble.m; path = "../../TAH SDK/TAH Library/TAHble.m"; sourceTree = "<group>"; };
 		1599E442195850F80059DC2B /* TAHbleTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHbleTableController.h; sourceTree = "<group>"; };
 		1599E443195850F80059DC2B /* TAHbleTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHbleTableController.m; sourceTree = "<group>"; };
-		1599E446195851600059DC2B /* TAHble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHble.h; sourceTree = "<group>"; };
-		1599E447195851600059DC2B /* TAHble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHble.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1566EB6319683D7C002A5CD4 /* AudioToolbox.framework in Frameworks */,
 				15013A211937005600A1EA7B /* CoreGraphics.framework in Frameworks */,
 				15013A231937005600A1EA7B /* UIKit.framework in Frameworks */,
 				15013A1F1937005600A1EA7B /* Foundation.framework in Frameworks */,
@@ -220,8 +217,6 @@
 				1535F9621958494A007DD1A5 /* Wind View Controller */,
 				1535F9641958495A007DD1A5 /* Motion View Controller */,
 				1535F96519584960007DD1A5 /* Moisture View Controller */,
-				1535F956195848CC007DD1A5 /* Side Bar View Controller */,
-				1535F95A195848E3007DD1A5 /* Side Trey Reveal Library */,
 				15013A461937005600A1EA7B /* TAH SensorTests */,
 				1599E445195851530059DC2B /* TAH Library */,
 				15013A1D1937005600A1EA7B /* Frameworks */,
@@ -241,6 +236,7 @@
 		15013A1D1937005600A1EA7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1566EB6219683D7C002A5CD4 /* AudioToolbox.framework */,
 				15013A1E1937005600A1EA7B /* Foundation.framework */,
 				15013A201937005600A1EA7B /* CoreGraphics.framework */,
 				15013A221937005600A1EA7B /* UIKit.framework */,
@@ -256,8 +252,8 @@
 				15013A2E1937005600A1EA7B /* AppDelegate.m */,
 				1535F8FA195847B7007DD1A5 /* Main_iPhone.storyboard */,
 				15013A331937005600A1EA7B /* Main_iPad.storyboard */,
-				1535F953195848B0007DD1A5 /* MainViewController.h */,
-				1535F954195848B0007DD1A5 /* MainViewController.m */,
+				1551F0C01967BA6F00384077 /* HomeViewController.h */,
+				1551F0C11967BA6F00384077 /* HomeViewController.m */,
 				15013A391937005600A1EA7B /* Images.xcassets */,
 				15013A251937005600A1EA7B /* Supporting Files */,
 			);
@@ -342,24 +338,6 @@
 				1535F92719584809007DD1A5 /* tah.png */,
 			);
 			name = "Image Files";
-			sourceTree = "<group>";
-		};
-		1535F956195848CC007DD1A5 /* Side Bar View Controller */ = {
-			isa = PBXGroup;
-			children = (
-				1535F957195848DF007DD1A5 /* SidebarViewController.h */,
-				1535F958195848DF007DD1A5 /* SidebarViewController.m */,
-			);
-			name = "Side Bar View Controller";
-			sourceTree = "<group>";
-		};
-		1535F95A195848E3007DD1A5 /* Side Trey Reveal Library */ = {
-			isa = PBXGroup;
-			children = (
-				1535F95B195848F4007DD1A5 /* SWRevealViewController.h */,
-				1535F95C195848F4007DD1A5 /* SWRevealViewController.m */,
-			);
-			name = "Side Trey Reveal Library";
 			sourceTree = "<group>";
 		};
 		1535F95E1958490A007DD1A5 /* Sonar View Controller */ = {
@@ -455,8 +433,8 @@
 		1599E445195851530059DC2B /* TAH Library */ = {
 			isa = PBXGroup;
 			children = (
-				1599E446195851600059DC2B /* TAHble.h */,
-				1599E447195851600059DC2B /* TAHble.m */,
+				1566EB6419685233002A5CD4 /* TAHble.h */,
+				1566EB6519685233002A5CD4 /* TAHble.m */,
 			);
 			name = "TAH Library";
 			sourceTree = "<group>";
@@ -605,18 +583,16 @@
 				1535F96E195849B9007DD1A5 /* WindViewController.m in Sources */,
 				15013A2F1937005600A1EA7B /* AppDelegate.m in Sources */,
 				1535F971195849BF007DD1A5 /* RainViewController.m in Sources */,
-				1599E448195851600059DC2B /* TAHble.m in Sources */,
+				1566EB6619685233002A5CD4 /* TAHble.m in Sources */,
 				1535F97A195849DC007DD1A5 /* TemperatureViewController.m in Sources */,
 				1535F981195849F6007DD1A5 /* CustomCell.m in Sources */,
+				1551F0C21967BA6F00384077 /* HomeViewController.m in Sources */,
 				1535F96B195849AE007DD1A5 /* MotionViewController.m in Sources */,
 				1535F977195849D2007DD1A5 /* LightViewController.m in Sources */,
 				1535F9681958499B007DD1A5 /* SoilMoistureViewController.m in Sources */,
-				1535F955195848B0007DD1A5 /* MainViewController.m in Sources */,
 				1535F974195849CC007DD1A5 /* TouchViewController.m in Sources */,
-				1535F95D195848F4007DD1A5 /* SWRevealViewController.m in Sources */,
 				15013A2B1937005600A1EA7B /* main.m in Sources */,
 				1599E444195850F80059DC2B /* TAHbleTableController.m in Sources */,
-				1535F959195848DF007DD1A5 /* SidebarViewController.m in Sources */,
 				1535F97D195849E1007DD1A5 /* SonarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,9 @@
 
 @implementation TemperatureViewController
 
+@synthesize peripheral;
+@synthesize sensor;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,6 +36,8 @@
                                            selector:@selector(updateTimer)
                                            userInfo:nil 
                                             repeats:YES];
+    
+    self.sensor.delegate = self;
 
 
 }
@@ -159,5 +164,26 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+-(void) TAHbleCharValueUpdated:(NSString *)UUID value:(NSData *)data
+{
+    
+    NSString *value = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    
+    
+    NSLog(@"%@",value);
+    
+}
+
+
+
+- (IBAction)command:(id)sender {
+    
+    [sensor updateTAHStatus:sensor.activePeripheral UpdateStatus:YES];
+}
+
+
+
 
 @end

@@ -7,7 +7,33 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TAHble.h"
+#import "AppDelegate.h"
 
-@interface SonarViewController : UIViewController
+@class CBPeripheral;
+@class TAHble;
+
+@interface SonarViewController : UIViewController<BTSmartSensorDelegate>
+{
+    
+    IBOutlet UILabel *distancelabel;
+    IBOutlet UILabel *distanceunitlabel;
+    
+    IBOutlet UIButton *sensoractivate;
+    
+    IBOutlet UISegmentedControl *sensorpinsegment;
+    IBOutlet UISegmentedControl *sensorunitscalesegment;
+    IBOutlet UIView *settingsview;
+    IBOutlet UIButton *settings;
+
+    AppDelegate *appdelegate;
+
+}
+
+@property (strong, nonatomic) CBPeripheral *peripheral;
+@property (strong, nonatomic) TAHble *sensor;
+- (IBAction)settings:(id)sender;
+
+- (IBAction)sensoractivate:(id)sender;
 
 @end

@@ -15,8 +15,8 @@
 @interface TAHbleTableController : UIViewController<BTSmartSensorDelegate, UITableViewDelegate, UITableViewDataSource>
 {
 
-    IBOutlet UIButton *test1;
-    IBOutlet UIButton *test2;
+    IBOutlet UIButton *home;
+    
 
 }
 
@@ -31,8 +31,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *Scan;
 
-- (IBAction)test1:(id)sender;
-- (IBAction)test2:(id)sender;
+- (IBAction)home:(id)sender;
 
 
 @end

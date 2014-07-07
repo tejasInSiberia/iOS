@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TAHble.h"
 
-@interface TemperatureViewController : UIViewController
+@class CBPeripheral;
+@class TAHble;
+
+@interface TemperatureViewController : UIViewController<BTSmartSensorDelegate>
 {
    
     NSTimer *timer;  // timer for updating Real time
@@ -20,6 +24,13 @@
     IBOutlet UILabel *temperatureunitlabel;
     IBOutlet UILabel *humidityunitlabel;
     
+    IBOutlet UIButton *command;
+    
 }
 -(void)updateTimer;
+
+@property (strong, nonatomic) CBPeripheral *peripheral;
+@property (strong, nonatomic) TAHble *sensor;
+- (IBAction)command:(id)sender;
+
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "TAHbleTableController.h"
-#import "MainViewController.h"
+#import "HomeViewController.h"
 #import "TAHble.h"
 
 @interface TAHbleTableController ()
@@ -35,23 +35,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"TAH Write";
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]){
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
+
     sensor = [[TAHble alloc] init];
     [sensor setup];
     sensor.delegate = self;
     
     peripheralViewControllerArray = [[NSMutableArray alloc] init];
     
+  
     
-    UIColor *lightBlue = [UIColor colorWithRed:0.0 / 255.0 green:174.0 / 255.0 blue:239.0 / 255.0 alpha:1.0];
+    /////////////////// Navigation Bar Customisation ////////////
     
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    self.navigationController.navigationBar.barTintColor = lightBlue;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = YES;
+    ////////////////////////////////////////////////////////////////////////
 }
 
 - (void)viewDidUnload
@@ -108,7 +108,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSUInteger row = [indexPath row];
-    MainViewController *controller = [peripheralViewControllerArray objectAtIndex:row];
+    HomeViewController *controller = [peripheralViewControllerArray objectAtIndex:row];
     
     if (sensor.activePeripheral && sensor.activePeripheral != controller.peripheral) {
         [sensor disconnect:sensor.activePeripheral];
@@ -119,17 +119,29 @@
     [sensor stopScan];
     
     [Scan setTitle:@"Scan" forState:UIControlStateNormal];
+    
+    
+    [self performSegueWithIdentifier: @"home" sender: self];
    
 }
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"maincontroller"])
+    if ([[segue identifier] isEqualToString:@"home"])
     {
-        MainViewController *vc = [segue destinationViewController];
+        HomeViewController *vc = [segue destinationViewController];
         //vc.dataThatINeedFromTheFirstViewController = self.theDataINeedToPass;
         vc.sensor = self.sensor;
+        
+        // Changes title of the Back Button in destintion controller
+        UIBarButtonItem *newBackButton =
+        [[UIBarButtonItem alloc] initWithTitle:@"Scanner"
+                                         style:UIBarButtonItemStyleBordered
+                                        target:nil
+                                        action:nil];
+        [[self navigationItem] setBackBarButtonItem:newBackButton];
+        
     }
 
 }
@@ -144,7 +156,7 @@
     
     // Configure the cell
     NSUInteger row = [indexPath row];
-    MainViewController *controller = [peripheralViewControllerArray objectAtIndex:row];
+    HomeViewController *controller = [peripheralViewControllerArray objectAtIndex:row];
     CBPeripheral *peripheral = [controller peripheral];
     cell.textLabel.text = peripheral.name;
     //cell.detailTextLabel.text = [NSString stringWithFormat:<#(NSString *), ...#>
@@ -161,7 +173,7 @@
 
 -(void) peripheralFound:(CBPeripheral *)peripheral
 {
-    MainViewController *controller = [[MainViewController alloc] init];
+    HomeViewController *controller = [[HomeViewController alloc] init];
     controller.peripheral = peripheral;
     controller.sensor = sensor;
     [peripheralViewControllerArray addObject:controller];
@@ -169,14 +181,12 @@
    
 }
 
-- (IBAction)test1:(id)sender {
+- (IBAction)home:(id)sender {
     
-     [self performSegueWithIdentifier: @"test1" sender: self];
-}
+     [self performSegueWithIdentifier: @"home" sender: self];
+    
 
-- (IBAction)test2:(id)sender {
-    
-     [self performSegueWithIdentifier: @"test2" sender: self];
+   
 }
 
 

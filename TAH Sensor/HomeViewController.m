@@ -1,13 +1,15 @@
 //
-//  ViewController.m
-//  SidebarDemo
+//  HomeViewController.m
+//  TAH Sensor
 //
-//  Created by Simon on 28/6/13.
-//  Copyright (c) 2013 Appcoda. All rights reserved.
+//  Created by Dhiraj on 05/07/14.
+//  Copyright (c) 2014 dhirajjadhao. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "SWRevealViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import "HomeViewController.h"
+#import "TAHbleTableController.h"
+#import "TAHble.h"
 #import "CustomCell.h"
 #import "SonarViewController.h"
 #import "TemperatureViewController.h"
@@ -18,27 +20,35 @@
 #import "MotionViewController.h"
 #import "SoilMoistureViewController.h"
 
-@interface MainViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation HomeViewController
 
-@synthesize sidebarButton;
+@synthesize peripheral;
+@synthesize sensor;
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
-   /////////////////// Navigation Bar Customisation ////////////
     
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.shadowImage = [UIImage new];
-    self.navigationController.navigationBar.translucent = YES;
-    ////////////////////////////////////////////////////////////////////////
+    
+    // Settings Up Sensor Delegate
+    self.sensor.delegate = self;
+    
     
     
     /////////////// Setting Collection View Delegate and Datasource /////////////
@@ -53,23 +63,12 @@
     arrayofCellIdentifiers = [[NSArray alloc]initWithObjects:@"Cell1",@"Cell2",@"Cell3",@"Cell4",@"Cell5",@"Cell6",@"Cell7",@"Cell8", nil];
     
     ////////////////////////////////////////////////////////////////////////////
-
-
-    /////////////// Side Menu Settings /////////////
     
-    // Change button color
-    sidebarButton.tintColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
     
-    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
-    sidebarButton.target = self.revealViewController;
-    sidebarButton.action = @selector(revealToggle:);
     
-    // Set the gesture
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    
-   //////////////////////////////////////////////////
 
 }
+
 
 
 ///////////// Collection View Setup /////////////////
@@ -83,25 +82,31 @@
 {
     
     return 8;
-
+    
 }
 
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     //CustomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell1" forIndexPath:indexPath];
     
     CustomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:[arrayofCellIdentifiers objectAtIndex:indexPath.row] forIndexPath:indexPath];
     
-   [[cell myImage]setImage:[UIImage imageNamed:[arrayofImages objectAtIndex:indexPath.row]]];
-
+    [[cell myImage]setImage:[UIImage imageNamed:[arrayofImages objectAtIndex:indexPath.row]]];
     
-   
+    
+    
     return cell;
 }
 
 //////////////////////////////////////////////////
+
+
+
+
+
+
 
 
 
@@ -111,20 +116,42 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+
 
 
 //////////////////////// Preparing Segue for Navigation //////////////////////////
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-   
+    // Changes title of the Back Button in destintion controller
+    UIBarButtonItem *newBackButton =
+    [[UIBarButtonItem alloc] initWithTitle:@"Home"
+                                     style:UIBarButtonItemStyleBordered
+                                    target:nil
+                                    action:nil];
+    [[self navigationItem] setBackBarButtonItem:newBackButton];
+    
+    
     
     if ([[segue identifier] isEqualToString:@"Cell1"])
     {
-      SonarViewController *detailViewController = [segue destinationViewController];
+        SonarViewController *detailViewController = [segue destinationViewController];
+        
+        detailViewController.sensor = self.sensor;
         
         detailViewController.title = @"Sonar Sensor";
-
+        
         
         
     }
@@ -132,6 +159,8 @@
     else if ([[segue identifier] isEqualToString:@"Cell2"])
     {
         TemperatureViewController *detailViewController = [segue destinationViewController];
+        
+        detailViewController.sensor = self.sensor;
         
         detailViewController.title = @"Temperature";
     }
@@ -183,8 +212,53 @@
         
         detailViewController.title = @"Soil Moisture";
     }
+    
+    
 }
 
 //////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+//recv data
+-(void) TAHbleCharValueUpdated:(NSString *)UUID value:(NSData *)data
+{
+    NSString *value = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    
+    NSLog(@"%@",value);
+}
+
+
+
+-(void)setConnect
+{
+    CFStringRef s = CFUUIDCreateString(kCFAllocatorDefault, (__bridge CFUUIDRef )sensor.activePeripheral.identifier);
+    NSLog(@"%@",(__bridge NSString*)s);
+    
+}
+
+-(void)setDisconnect
+{
+    //////// Local Alert Settings
+    
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Disconnected"
+                                                    message:@"Your iPhone got disconnected from TAH"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    
+    
+    NSLog(@"Disconnection Alert Sent");
+    /////////////////////////////////////////////
+
+}
+
+
 
 @end
