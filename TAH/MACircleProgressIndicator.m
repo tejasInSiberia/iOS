@@ -1,6 +1,6 @@
 #import "MACircleProgressIndicator.h"
 
-#define kCircleProgressIndicatorDefaultColor [UIColor grayColor]
+#define kCircleProgressIndicatorDefaultColor [UIColor whiteColor]
 #define kCircleProgressIndicatorDefaultStrokeWidthRatio 0.15
 
 @interface MACircleProgressIndicator ()

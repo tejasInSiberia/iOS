@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Appcoda. All rights reserved.
 //
 
-#import "SonarViewController.h"
+
 #import <AudioToolbox/AudioToolbox.h>
+#import "SonarViewController.h"
 
 @interface SonarViewController ()
 {
@@ -35,27 +36,58 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
- 
-    
-    // Do any additional setup after loading the view.
-    //self.navigationController.navigationItem.backBarButtonItem.tintColor = [UIColor whiteColor];
+
     
 
     
     // Sets TAH class delegate
     self.sensor.delegate = self;
-
+    
+    
+    // Set Connection Status Image
+    [self UpdateConnectionStatusLabel];
+    
+    
+    ///////// TAH Status Update Timer //////////
+    
+   SonarSensorUpdatetimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(SonarSensorUpdate:)
+                                                          userInfo:nil
+                                                           repeats:YES];
     
     
     
 }
 
-
-
--(void)viewDidDisappear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [appdelegate.SonarSensorUpdatetimer invalidate];
+    // Set Connection Status Image
+    [self UpdateConnectionStatusLabel];
+}
+
+
+///////////// Update Device Connection Status Image //////////
+-(void)UpdateConnectionStatusLabel
+{
+    
+    
+    if (sensor.activePeripheral.state)
+    {
+        
+        ConnectionStatusLabel.backgroundColor = [UIColor colorWithRed:128.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1.0];
+    }
+    else
+    {
+        
+        ConnectionStatusLabel.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:128.0/255.0 blue:0.0/255.0 alpha:1.0];
+    }
+}
+
+
+
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [SonarSensorUpdatetimer invalidate];
 }
 
 
@@ -105,29 +137,24 @@
 // Called when TAH is Disconnected
 -(void)setDisconnect
 {
+    [sensor disconnect:sensor.activePeripheral];
+    
+    NSLog(@"TAH Device Disconnected");
+    
+    
     //////// Local Alert Settings
     
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Disconnected"
-                                                    message:@"Your iPhone got disconnected from TAH"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
-    
-    
-    NSLog(@"Disconnection Alert Sent");
     /////////////////////////////////////////////
     
-
-    
+    // Set Connection Status Image
+    [self UpdateConnectionStatusLabel];
 }
 
 
 
 
-// Receined Data
+// Received Data
 
 -(void) TAHbleCharValueUpdated:(NSString *)UUID value:(NSData *)data
 {
@@ -135,13 +162,12 @@
     NSString *value = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 
     
-    
+    if (value.length >= 3)
+    {
     ReceivedData = [value componentsSeparatedByString: @":"];
     durationString = [ReceivedData objectAtIndex: 1];
-
-
     [self durationtodistanceunit];  // update distance
- 
+    }
     
 }
 
@@ -202,39 +228,23 @@
     if (settingsview.hidden == YES)
     {
         settingsview.hidden = NO;
+        [SonarSensorUpdatetimer invalidate];
     }
     
     else
     {
         settingsview.hidden = YES;
-    }
-}
-
-- (IBAction)sensoractivate:(id)sender {
-    
-    
-    if (appdelegate.SonarSensorUpdatetimer.isValid)
-    {
-        [appdelegate.SonarSensorUpdatetimer invalidate];
-    }
-    
-    
-    else
-    {
-    
-    ///////// Sonar Sensor Update Timer //////////
-    
-    appdelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    appdelegate.SonarSensorUpdatetimer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                                                          target:self
-                                                                        selector:@selector(SonarSensorUpdate:)
-                                                                        userInfo:nil
-                                                                         repeats:YES];
         
+        [self durationtodistanceunit];  // Update if any change in  Distance Unit Type
+        
+        ///////// Sonar Sensor Update Timer //////////
+        
+        SonarSensorUpdatetimer = [NSTimer scheduledTimerWithTimeInterval:2.0
+                                                                              target:self
+                                                                            selector:@selector(SonarSensorUpdate:)
+                                                                            userInfo:nil
+                                                                             repeats:YES];
     }
-    
-    
 }
 
 @end

@@ -7,7 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TAHble.h"
 
-@interface SoilMoistureViewController : UIViewController
+@class CBPeripheral;
+@class TAHble;
+
+@interface SoilMoistureViewController : UIViewController<BTSmartSensorDelegate>
+{
+    
+    IBOutlet UILabel *moisturelabel;
+
+    
+    
+    IBOutlet UISegmentedControl *sensorpinsegment;
+    IBOutlet UIView *settingsview;
+    IBOutlet UIButton *settings;
+    
+    NSTimer *MoistureSensorUpdatetimer;
+    
+    IBOutlet UILabel *ConnectionStatusLabel;
+
+}
+
+@property (strong, nonatomic) CBPeripheral *peripheral;
+@property (strong, nonatomic) TAHble *sensor;
+
+- (IBAction)settings:(id)sender;
 
 @end

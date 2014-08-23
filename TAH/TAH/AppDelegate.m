@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  TAH
 //
-//  Created by DHIRAJ JADHAO on 09/05/14.
-//  Copyright (c) 2014 DHIRAJJADHAO. All rights reserved.
+//  Created by Dhiraj on 31/07/14.
+//  Copyright (c) 2014 dhirajjadhao. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -14,7 +14,9 @@
 {
     // Override point for customization after application launch.
     
-    sleep(1);
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], NSForegroundColorAttributeName,[UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName,nil]];
+    
+    
     return YES;
 }
 							

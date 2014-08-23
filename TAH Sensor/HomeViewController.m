@@ -19,6 +19,9 @@
 #import "RainViewController.h"
 #import "MotionViewController.h"
 #import "SoilMoistureViewController.h"
+#import "SocialViewController.h"
+#import "MediaViewController.h"
+#import "SettingsViewController.h"
 
 @interface HomeViewController ()
 
@@ -42,8 +45,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
+
     
     
     // Settings Up Sensor Delegate
@@ -59,14 +61,40 @@
     
     
     /////////////// Setting array of Images and Identifiers for Collection View Cells /////////////
-    arrayofImages = [[NSArray alloc]initWithObjects:@"sonar.png",@"temp.png",@"touch.png",@"light.png",@"rain.png",@"wind.png",@"motion.png",@"soil.png", nil];
-    arrayofCellIdentifiers = [[NSArray alloc]initWithObjects:@"Cell1",@"Cell2",@"Cell3",@"Cell4",@"Cell5",@"Cell6",@"Cell7",@"Cell8", nil];
+    arrayofImages = [[NSArray alloc]initWithObjects:@"sonar.png",@"temp.png",@"touch.png",@"light.png",@"rain.png",@"wind.png",@"motion.png",@"soil.png",@"share",@"youtube.png",@"settings.png", nil];
+    arrayofCellIdentifiers = [[NSArray alloc]initWithObjects:@"Cell1",@"Cell2",@"Cell3",@"Cell4",@"Cell5",@"Cell6",@"Cell7",@"Cell8",@"Cell9",@"Cell10",@"Cell11", nil];
     
     ////////////////////////////////////////////////////////////////////////////
     
     
-    
+    // Set Connection Status Image
+    [self UpdateConnectionStatusLabel];
 
+}
+
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    // Set Connection Status Image
+    [self UpdateConnectionStatusLabel];
+}
+
+
+///////////// Update Device Connection Status Image //////////
+-(void)UpdateConnectionStatusLabel
+{
+    
+    
+    if (sensor.activePeripheral.state)
+    {
+        
+        ConnectionStatusLabel.backgroundColor = [UIColor colorWithRed:128.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1.0];
+    }
+    else
+    {
+        
+        ConnectionStatusLabel.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:128.0/255.0 blue:0.0/255.0 alpha:1.0];
+    }
 }
 
 
@@ -81,7 +109,7 @@
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     
-    return 8;
+    return 11;
     
 }
 
@@ -162,6 +190,7 @@
         
         detailViewController.sensor = self.sensor;
         
+        
         detailViewController.title = @"Temperature";
     }
     
@@ -170,6 +199,8 @@
     {
         TouchViewController *detailViewController = [segue destinationViewController];
         
+        detailViewController.sensor = self.sensor;
+        
         detailViewController.title = @"Touch Sensor";
     }
     
@@ -177,6 +208,7 @@
     else if ([[segue identifier] isEqualToString:@"Cell4"])
     {
         LightViewController *detailViewController = [segue destinationViewController];
+        detailViewController.sensor = self.sensor;
         
         detailViewController.title = @"Light Level";
     }
@@ -186,6 +218,8 @@
     {
         RainViewController *detailViewController = [segue destinationViewController];
         
+        detailViewController.sensor = self.sensor;
+        
         detailViewController.title = @"Rain Sensor";
     }
     
@@ -193,6 +227,8 @@
     else if ([[segue identifier] isEqualToString:@"Cell6"])
     {
         WindViewController *detailViewController = [segue destinationViewController];
+        
+        detailViewController.sensor = self.sensor;
         
         detailViewController.title = @"Wind Sensor";
     }
@@ -202,6 +238,8 @@
     {
         MotionViewController *detailViewController = [segue destinationViewController];
         
+        detailViewController.sensor = self.sensor;
+        
         detailViewController.title = @"Motion Sensor";
     }
     
@@ -210,7 +248,39 @@
     {
         SoilMoistureViewController *detailViewController = [segue destinationViewController];
         
+        detailViewController.sensor = self.sensor;
+        
         detailViewController.title = @"Soil Moisture";
+    }
+    
+    
+    else if ([[segue identifier] isEqualToString:@"Cell9"])
+    {
+        SocialViewController *detailViewController = [segue destinationViewController];
+        
+        detailViewController.sensor = self.sensor;
+        
+        detailViewController.title = @"Share";
+    }
+    
+    
+    else if ([[segue identifier] isEqualToString:@"Cell10"])
+    {
+        MediaViewController *detailViewController = [segue destinationViewController];
+        
+        detailViewController.sensor = self.sensor;
+        
+        detailViewController.title = @"Youtube";
+    }
+    
+    
+    else if ([[segue identifier] isEqualToString:@"Cell11"])
+    {
+        SettingsViewController *detailViewController = [segue destinationViewController];
+        
+        detailViewController.sensor = self.sensor;
+        
+        detailViewController.title = @"SETTINGS";
     }
     
     
@@ -242,21 +312,18 @@
 
 -(void)setDisconnect
 {
+    [sensor disconnect:sensor.activePeripheral];
+    
+    NSLog(@"TAH Device Disconnected");
+    
+    
     //////// Local Alert Settings
     
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Disconnected"
-                                                    message:@"Your iPhone got disconnected from TAH"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
-    
-    
-    NSLog(@"Disconnection Alert Sent");
     /////////////////////////////////////////////
-
+    
+    // Set Connection Status Image
+    [self UpdateConnectionStatusLabel];
 }
 
 

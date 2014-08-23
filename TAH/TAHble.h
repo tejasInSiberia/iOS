@@ -43,7 +43,8 @@
 
 ////////////////// TAH Pin Controls //////////////////
 
--(void)updateTAHStatus:(CBPeripheral *)peripheral UpdateStatus:(BOOL)UpdateStatus;
+-(void)updateTAHAnalogStatus:(CBPeripheral *)peripheral UpdateStatus:(BOOL)UpdateStatus;
+-(void)updateTAHDigitalStatus:(CBPeripheral *)peripheral UpdateStatus:(BOOL)UpdateStatus;
 
 //////// TAH Pins Digital Value Write control
 
@@ -81,6 +82,22 @@
 -(void) TAHPin10Servo:(CBPeripheral *)peripheral angle:(int)angle;
 -(void) TAHPin11Servo:(CBPeripheral *)peripheral angle:(int)angle;
 -(void) TAHPin13Servo:(CBPeripheral *)peripheral angle:(int)angle;
+
+//////////////////////////////////////////////////////
+
+/////////// TAH Keyboard and Mouse Control //////////
+
+-(void) TAHKeyboardUpArrowKey:(CBPeripheral *)peripheral Pressed:(BOOL)Pressed;
+-(void) TAHKeyboardDownArrowKey:(CBPeripheral *)peripheral Pressed:(BOOL)Pressed;
+-(void) TAHKeyboardLeftArrowKey:(CBPeripheral *)peripheral Pressed:(BOOL)Pressed;
+-(void) TAHKeyboardRightArrowKey:(CBPeripheral *)peripheral Pressed:(BOOL)Pressed;
+-(void) TAHMosueMove:(CBPeripheral *)peripheral X:(float)Xaxis Y:(float)Yaxis Scroll:(float)Scroll;
+
+-(void) TAHTrackPad:(CBPeripheral *)peripheral SwipeUp:(BOOL)SwipeUp;
+-(void) TAHTrackPad:(CBPeripheral *)peripheral SwipeDown:(BOOL)SwipeDown;
+-(void) TAHTrackPad:(CBPeripheral *)peripheral SwipeRight:(BOOL)SwipeRight;
+-(void) TAHTrackPad:(CBPeripheral *)peripheral SwipeLeft:(BOOL)SwipeLeft;
+
 
 //////////////////////////////////////////////////////
 
@@ -147,6 +164,23 @@
 -(void)getTAHfirmwareVersion:(CBPeripheral *)peripheral;
 
 //////////////////////////////////////////////////////
+
+
+
+////////////// TAH Sensor Value Updates //////////////
+
+-(void) getTAHSonarSensorUpdate:(CBPeripheral *)peripheral SensorPin:(int)SensorPin;
+-(void) getTAHTemperatureSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin;
+-(void) getTAHTouchSensorUpdate:(CBPeripheral *)peripheral SensorPin:(int)SensorPin;
+-(void) getTAHLightSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin;
+-(void) getTAHRainSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin;
+-(void) getTAHWindSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin;
+-(void) getTAHPIRMotionSensorUpdate:(CBPeripheral *)peripheral SensorPin:(int)SensorPin;
+-(void) getTAHSoilMoistureSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin;
+
+//////////////////////////////////////////////////////
+
+
 
 -(void) setup; //controller setup
 -(void) stopScan;

@@ -242,19 +242,14 @@
 
 -(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
-    printf("in updateValueForCharacteristic function\n");
+    printf("Updating Value For Characteristic function\n");
     
     if (error) {
-        printf("updateValueForCharacteristic failed\n");
+        printf("Updating Value For Characteristic Failed\n");
         return;
     }
     [delegate TAHbleCharValueUpdated:@"FFE1" value:characteristic.value];
-    
-    receivedData = characteristic.value;
-    
-    NSString *receivedString = [[NSString alloc] initWithData:receivedData encoding:NSASCIIStringEncoding];
-    
-    NSLog(@"%@",receivedString);
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -1282,6 +1277,118 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 
+
+/////////// TAH Keyboard and Mouse Control //////////
+
+-(void) TAHKeyboardUpArrowKey:(CBPeripheral *)peripheral Pressed:(BOOL)Pressed
+{
+    if (Pressed)
+    {
+        NSData *data = [@"0,0,0,256M" dataUsingEncoding:[NSString defaultCStringEncoding]];
+        
+        [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    }
+
+
+}
+
+
+-(void) TAHKeyboardDownArrowKey:(CBPeripheral *)peripheral Pressed:(BOOL)Pressed
+{
+    if (Pressed)
+    {
+        NSData *data = [@"0,0,0,257M" dataUsingEncoding:[NSString defaultCStringEncoding]];
+        
+        [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    }
+}
+
+
+-(void) TAHKeyboardRightArrowKey:(CBPeripheral *)peripheral Pressed:(BOOL)Pressed
+{
+    if (Pressed)
+    {
+        NSData *data = [@"0,0,0,258M" dataUsingEncoding:[NSString defaultCStringEncoding]];
+        
+        [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    }
+}
+
+
+-(void) TAHKeyboardLeftArrowKey:(CBPeripheral *)peripheral Pressed:(BOOL)Pressed
+{
+    if (Pressed)
+    {
+        NSData *data = [@"0,0,0,259M" dataUsingEncoding:[NSString defaultCStringEncoding]];
+        
+        [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    }
+}
+
+
+-(void) TAHMosueMove:(CBPeripheral *)peripheral X:(float)Xaxis Y:(float)Yaxis Scroll:(float)Scroll
+{
+
+    NSString *command,*mouseX,*mouseY,*scroll,*keypress,*end,*seperator;
+    
+    mouseX = [NSString stringWithFormat:@"%.0f",Xaxis];
+    mouseY = [NSString stringWithFormat:@"%.0f",Yaxis];
+    scroll = [NSString stringWithFormat:@"%.0f",Scroll];
+    keypress = @"0";
+    seperator = @",";
+    end = @"M";
+    
+    command = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@",mouseX,seperator,mouseY,seperator,scroll,seperator,keypress,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+
+    
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    
+}
+
+
+-(void) TAHTrackPad:(CBPeripheral *)peripheral SwipeUp:(BOOL)SwipeUp
+{
+    if (SwipeUp)
+    {
+        NSData *data = [@"0,0,0,260M" dataUsingEncoding:[NSString defaultCStringEncoding]];
+        
+        [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    }
+}
+-(void) TAHTrackPad:(CBPeripheral *)peripheral SwipeDown:(BOOL)SwipeDown
+{
+    if (SwipeDown)
+    {
+        NSData *data = [@"0,0,0,261M" dataUsingEncoding:[NSString defaultCStringEncoding]];
+        
+        [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    }
+}
+-(void) TAHTrackPad:(CBPeripheral *)peripheral SwipeRight:(BOOL)SwipeRight
+{
+    if (SwipeRight)
+    {
+        NSData *data = [@"0,0,0,262M" dataUsingEncoding:[NSString defaultCStringEncoding]];
+        
+        [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    }
+}
+-(void) TAHTrackPad:(CBPeripheral *)peripheral SwipeLeft:(BOOL)SwipeLeft
+{
+    if (SwipeLeft)
+    {
+        NSData *data = [@"0,0,0,263M" dataUsingEncoding:[NSString defaultCStringEncoding]];
+        
+        [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    }
+}
+
+
+//////////////////////////////////////////////////////
+
+
 ////////////////// TAH AT Command Set //////////////////
 
 // Parameters which are altered takes effect only after Reboot
@@ -1833,9 +1940,9 @@
 }
 
 
-// Update Current State of TAH
+// Update Current Analog State of TAH
 
--(void)updateTAHStatus:(CBPeripheral *)peripheral UpdateStatus:(BOOL)UpdateStatus
+-(void)updateTAHAnalogStatus:(CBPeripheral *)peripheral UpdateStatus:(BOOL)UpdateStatus
 {
     NSData *data = [@"3,0,0R" dataUsingEncoding:[NSString defaultCStringEncoding]];
     [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
@@ -1844,9 +1951,323 @@
 }
 
 
+// Update Current Digital State of TAH
 
+-(void)updateTAHDigitalStatus:(CBPeripheral *)peripheral UpdateStatus:(BOOL)UpdateStatus
+{
+    NSData *data = [@"4,0,0R" dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    NSLog(@"TAH Status Updated");
+}
 
 ///////////////////////////////////////////////////////////
+
+
+
+////////////// TAH Sensor Value Updates //////////////
+
+
+// Sonar Sensor
+
+-(void) getTAHSonarSensorUpdate:(CBPeripheral *)peripheral SensorPin:(int)SensorPin
+{
+    NSString *SensorType,*seperator,*end, *command;
+    
+    SensorType = @"0";
+    seperator = @",";
+    end = @"S";
+    
+    command = [NSString stringWithFormat:@"%@%@%d%@",SensorType,seperator,SensorPin,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+
+}
+
+
+// Temparature Sensor
+
+-(void) getTAHTemperatureSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin
+{
+     NSString *SensorType,*seperator,*end, *command;
+    
+    
+    if (SensorPin == 0)
+    {
+        SensorPin = 410;
+    }
+    
+    else if (SensorPin == 1)
+    {
+        SensorPin = 411;
+    }
+    
+    else if (SensorPin == 2)
+    {
+        SensorPin = 412;
+    }
+    
+    else if (SensorPin == 3)
+    {
+        SensorPin = 413;
+    }
+    
+    else if (SensorPin == 4)
+    {
+        SensorPin = 414;
+    }
+    
+    else if (SensorPin == 5)
+    {
+        SensorPin = 415;
+    }
+
+   
+    SensorType = @"1";
+    seperator = @",";
+    end = @"S";
+    
+    command = [NSString stringWithFormat:@"%@%@%d%@",SensorType,seperator,SensorPin,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    NSLog(@"Temperature Sensor Value Updated");
+
+}
+
+
+// Touch Sensor
+-(void) getTAHTouchSensorUpdate:(CBPeripheral *)peripheral SensorPin:(int)SensorPin
+{
+    NSString *SensorType,*seperator,*end, *command;
+    
+    SensorType = @"2";
+    seperator = @",";
+    end = @"S";
+    
+    command = [NSString stringWithFormat:@"%@%@%d%@",SensorType,seperator,SensorPin,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    NSLog(@"Touch Sensor Value Updated");
+}
+
+
+// Light Sensor
+-(void) getTAHLightSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin
+{
+    NSString *SensorType,*seperator,*end, *command;
+    
+    
+    if (SensorPin == 0)
+    {
+        SensorPin = 410;
+    }
+    
+    else if (SensorPin == 1)
+    {
+        SensorPin = 411;
+    }
+    
+    else if (SensorPin == 2)
+    {
+        SensorPin = 412;
+    }
+    
+    else if (SensorPin == 3)
+    {
+        SensorPin = 413;
+    }
+    
+    else if (SensorPin == 4)
+    {
+        SensorPin = 414;
+    }
+    
+    else if (SensorPin == 5)
+    {
+        SensorPin = 415;
+    }
+    
+    
+    SensorType = @"3";
+    seperator = @",";
+    end = @"S";
+    
+    command = [NSString stringWithFormat:@"%@%@%d%@",SensorType,seperator,SensorPin,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    NSLog(@"Light Sensor Value Updated");
+}
+
+
+// Rain Sensor
+-(void) getTAHRainSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin
+{
+    NSString *SensorType,*seperator,*end, *command;
+    
+    
+    if (SensorPin == 0)
+    {
+        SensorPin = 410;
+    }
+    
+    else if (SensorPin == 1)
+    {
+        SensorPin = 411;
+    }
+    
+    else if (SensorPin == 2)
+    {
+        SensorPin = 412;
+    }
+    
+    else if (SensorPin == 3)
+    {
+        SensorPin = 413;
+    }
+    
+    else if (SensorPin == 4)
+    {
+        SensorPin = 414;
+    }
+    
+    else if (SensorPin == 5)
+    {
+        SensorPin = 415;
+    }
+    
+    
+    SensorType = @"4";
+    seperator = @",";
+    end = @"S";
+    
+    command = [NSString stringWithFormat:@"%@%@%d%@",SensorType,seperator,SensorPin,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    NSLog(@"Rain Sensor Value Updated");
+}
+
+
+// Wind Sensor
+-(void) getTAHWindSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin
+{
+    NSString *SensorType,*seperator,*end, *command;
+    
+    
+    if (SensorPin == 0)
+    {
+        SensorPin = 410;
+    }
+    
+    else if (SensorPin == 1)
+    {
+        SensorPin = 411;
+    }
+    
+    else if (SensorPin == 2)
+    {
+        SensorPin = 412;
+    }
+    
+    else if (SensorPin == 3)
+    {
+        SensorPin = 413;
+    }
+    
+    else if (SensorPin == 4)
+    {
+        SensorPin = 414;
+    }
+    
+    else if (SensorPin == 5)
+    {
+        SensorPin = 415;
+    }
+    
+    
+    SensorType = @"5";
+    seperator = @",";
+    end = @"S";
+    
+    command = [NSString stringWithFormat:@"%@%@%d%@",SensorType,seperator,SensorPin,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    NSLog(@"Wind Sensor Value Updated");
+}
+
+
+// PIR Motion Sensor
+-(void) getTAHPIRMotionSensorUpdate:(CBPeripheral *)peripheral SensorPin:(int)SensorPin
+{
+    NSString *SensorType,*seperator,*end, *command;
+
+    SensorType = @"6";
+    seperator = @",";
+    end = @"S";
+    
+    command = [NSString stringWithFormat:@"%@%@%d%@",SensorType,seperator,SensorPin,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    NSLog(@"PIR Motion Sensor Value Updated");
+}
+
+
+// Soil Moisture Sensor
+-(void) getTAHSoilMoistureSensorUpdate:(CBPeripheral *)peripheral AnalogPin:(int)SensorPin
+{
+    NSString *SensorType,*seperator,*end, *command;
+    
+    
+    if (SensorPin == 0)
+    {
+        SensorPin = 410;
+    }
+    
+    else if (SensorPin == 1)
+    {
+        SensorPin = 411;
+    }
+    
+    else if (SensorPin == 2)
+    {
+        SensorPin = 412;
+    }
+    
+    else if (SensorPin == 3)
+    {
+        SensorPin = 413;
+    }
+    
+    else if (SensorPin == 4)
+    {
+        SensorPin = 414;
+    }
+    
+    else if (SensorPin == 5)
+    {
+        SensorPin = 415;
+    }
+    
+    
+    SensorType = @"7";
+    seperator = @",";
+    end = @"S";
+    
+    command = [NSString stringWithFormat:@"%@%@%d%@",SensorType,seperator,SensorPin,end];
+    
+    NSData *data = [command dataUsingEncoding:[NSString defaultCStringEncoding]];
+    [self writeValue:SERVICE_UUID characteristicUUID:CHAR_UUID p:peripheral data:data];
+    NSLog(@"Soil Moisture Sensor Value Updated");
+}
+
+
+//////////////////////////////////////////////////////
+
 
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation AppDelegate
 
-@synthesize SonarSensorUpdatetimer;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

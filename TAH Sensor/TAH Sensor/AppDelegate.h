@@ -10,7 +10,6 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
-    NSTimer *SonarSensorUpdatetimer;
 }
 @property (strong, nonatomic) UIWindow *window;
 

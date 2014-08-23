@@ -7,10 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TAHble.h"
 
-@interface TouchViewController : UIViewController
+@class CBPeripheral;
+@class TAHble;
+
+@interface TouchViewController : UIViewController<BTSmartSensorDelegate>
 {
  
     IBOutlet UIImageView *touchcircles;
+    
+     IBOutlet UILabel *ConnectionStatusLabel;
+     IBOutlet UILabel *TouchStatusLabel;
+    
+    NSTimer *TouchSensorUpdatetimer;
+    
+    IBOutlet UIView *settingsview;
+    IBOutlet UIButton *settings;
+
+    IBOutlet UISegmentedControl *sensorpinsegment;
 }
+
+@property (strong, nonatomic) CBPeripheral *peripheral;
+@property (strong, nonatomic) TAHble *sensor;
+
+ - (IBAction)settings:(id)sender;
+
 @end

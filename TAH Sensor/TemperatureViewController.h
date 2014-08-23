@@ -20,17 +20,28 @@
     IBOutlet UIImageView *tempbg;
     IBOutlet UIImageView *daynightstate;
     IBOutlet UILabel *temperaturelabel;
-    IBOutlet UILabel *humiditylabel;
-    IBOutlet UILabel *temperatureunitlabel;
-    IBOutlet UILabel *humidityunitlabel;
+
+
+
     
-    IBOutlet UIButton *command;
+    IBOutlet UILabel *ConnectionStatusLabel;
+    
+    IBOutlet UIView *settingsview;
+    IBOutlet UIButton *settings;
+    
+    NSTimer *TemperatureSensorUpdatetimer;
+    
+    IBOutlet UISegmentedControl *sensorpinsegment;
+    IBOutlet UISegmentedControl *sensorunitscalesegment;
+
     
 }
 -(void)updateTimer;
 
 @property (strong, nonatomic) CBPeripheral *peripheral;
 @property (strong, nonatomic) TAHble *sensor;
-- (IBAction)command:(id)sender;
+
+ - (IBAction)settings:(id)sender;
+
 
 @end

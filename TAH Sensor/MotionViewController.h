@@ -7,7 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TAHble.h"
 
-@interface MotionViewController : UIViewController
+@class CBPeripheral;
+@class TAHble;
+
+
+@interface MotionViewController : UIViewController<BTSmartSensorDelegate>
+{
+
+    IBOutlet UILabel *MotionStatusLabel;
+    
+    NSTimer *MotionSensorUpdatetimer;
+    
+    IBOutlet UIView *settingsview;
+    IBOutlet UIButton *settings;
+    
+    IBOutlet UISegmentedControl *sensorpinsegment;
+    
+    IBOutlet UILabel *ConnectionStatusLabel;
+}
+
+@property (strong, nonatomic) CBPeripheral *peripheral;
+@property (strong, nonatomic) TAHble *sensor;
+
+ - (IBAction)settings:(id)sender;
 
 @end

@@ -18,9 +18,10 @@
     NSArray *arrayOfdescription;
     NSArray *arrayofImages;
     NSArray *arrayofCellIdentifiers;
-    
-    AppDelegate *appdelegate;
-    
+
+
+    IBOutlet UILabel *ConnectionStatusLabel;
+
 }
 
 @property (strong, nonatomic) CBPeripheral *peripheral;
