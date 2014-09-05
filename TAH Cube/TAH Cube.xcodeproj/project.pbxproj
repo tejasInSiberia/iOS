@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15B77CB519B9F224000493C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B77CB419B9F224000493C8 /* Foundation.framework */; };
+		15B77CB719B9F224000493C8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B77CB619B9F224000493C8 /* CoreGraphics.framework */; };
+		15B77CB919B9F224000493C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B77CB819B9F224000493C8 /* UIKit.framework */; };
+		15B77CBF19B9F224000493C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15B77CBD19B9F224000493C8 /* InfoPlist.strings */; };
+		15B77CC119B9F224000493C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B77CC019B9F224000493C8 /* main.m */; };
+		15B77CC519B9F224000493C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B77CC419B9F224000493C8 /* AppDelegate.m */; };
+		15B77CC819B9F224000493C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B77CC619B9F224000493C8 /* Main.storyboard */; };
+		15B77CCD19B9F224000493C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B77CCC19B9F224000493C8 /* Images.xcassets */; };
+		15B77CD419B9F225000493C8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B77CD319B9F225000493C8 /* XCTest.framework */; };
+		15B77CD519B9F225000493C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B77CB419B9F224000493C8 /* Foundation.framework */; };
+		15B77CD619B9F225000493C8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B77CB819B9F224000493C8 /* UIKit.framework */; };
+		15B77CDE19B9F225000493C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15B77CDC19B9F225000493C8 /* InfoPlist.strings */; };
+		15B77CE019B9F225000493C8 /* TAH_CubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B77CDF19B9F225000493C8 /* TAH_CubeTests.m */; };
+		15B77CEC19B9F2C1000493C8 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B77CEB19B9F2C1000493C8 /* blue.png */; };
+		15B77CEE19B9F2C9000493C8 /* tah rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B77CED19B9F2C9000493C8 /* tah rabbit.png */; };
+		15B77CF319B9F5A1000493C8 /* TAHbleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B77CF219B9F5A1000493C8 /* TAHbleTableController.m */; };
+		15B77CF619B9F5B0000493C8 /* TAHble.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B77CF519B9F5B0000493C8 /* TAHble.m */; };
+		15B77CF919B9F5BB000493C8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B77CF819B9F5BB000493C8 /* HomeViewController.m */; };
+		15B77CFB19B9F5D8000493C8 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B77CFA19B9F5D8000493C8 /* home.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15B77CD719B9F225000493C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15B77CA919B9F224000493C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B77CB019B9F224000493C8;
+			remoteInfo = "TAH Cube";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15B77CB119B9F224000493C8 /* TAH Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAH Cube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B77CB419B9F224000493C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15B77CB619B9F224000493C8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15B77CB819B9F224000493C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15B77CBC19B9F224000493C8 /* TAH Cube-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH Cube-Info.plist"; sourceTree = "<group>"; };
+		15B77CBE19B9F224000493C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		15B77CC019B9F224000493C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15B77CC219B9F224000493C8 /* TAH Cube-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAH Cube-Prefix.pch"; sourceTree = "<group>"; };
+		15B77CC319B9F224000493C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15B77CC419B9F224000493C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15B77CC719B9F224000493C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15B77CCC19B9F224000493C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		15B77CD219B9F225000493C8 /* TAH CubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAH CubeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B77CD319B9F225000493C8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		15B77CDB19B9F225000493C8 /* TAH CubeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH CubeTests-Info.plist"; sourceTree = "<group>"; };
+		15B77CDD19B9F225000493C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		15B77CDF19B9F225000493C8 /* TAH_CubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAH_CubeTests.m; sourceTree = "<group>"; };
+		15B77CEB19B9F2C1000493C8 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		15B77CED19B9F2C9000493C8 /* tah rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tah rabbit.png"; sourceTree = "<group>"; };
+		15B77CF119B9F5A1000493C8 /* TAHbleTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHbleTableController.h; sourceTree = "<group>"; };
+		15B77CF219B9F5A1000493C8 /* TAHbleTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHbleTableController.m; sourceTree = "<group>"; };
+		15B77CF419B9F5B0000493C8 /* TAHble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHble.h; sourceTree = "<group>"; };
+		15B77CF519B9F5B0000493C8 /* TAHble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHble.m; sourceTree = "<group>"; };
+		15B77CF719B9F5BB000493C8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		15B77CF819B9F5BB000493C8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		15B77CFA19B9F5D8000493C8 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15B77CAE19B9F224000493C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B77CB719B9F224000493C8 /* CoreGraphics.framework in Frameworks */,
+				15B77CB919B9F224000493C8 /* UIKit.framework in Frameworks */,
+				15B77CB519B9F224000493C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B77CCF19B9F225000493C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B77CD419B9F225000493C8 /* XCTest.framework in Frameworks */,
+				15B77CD619B9F225000493C8 /* UIKit.framework in Frameworks */,
+				15B77CD519B9F225000493C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15B77CA819B9F224000493C8 = {
+			isa = PBXGroup;
+			children = (
+				15B77CF019B9F592000493C8 /* TAH Library */,
+				15B77CEF19B9F589000493C8 /* TAH ble Table View */,
+				15B77CBA19B9F224000493C8 /* TAH Cube */,
+				15B77CD919B9F225000493C8 /* TAH CubeTests */,
+				15B77CB319B9F224000493C8 /* Frameworks */,
+				15B77CB219B9F224000493C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15B77CB219B9F224000493C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15B77CB119B9F224000493C8 /* TAH Cube.app */,
+				15B77CD219B9F225000493C8 /* TAH CubeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15B77CB319B9F224000493C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15B77CB419B9F224000493C8 /* Foundation.framework */,
+				15B77CB619B9F224000493C8 /* CoreGraphics.framework */,
+				15B77CB819B9F224000493C8 /* UIKit.framework */,
+				15B77CD319B9F225000493C8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15B77CBA19B9F224000493C8 /* TAH Cube */ = {
+			isa = PBXGroup;
+			children = (
+				15B77CC319B9F224000493C8 /* AppDelegate.h */,
+				15B77CC419B9F224000493C8 /* AppDelegate.m */,
+				15B77CC619B9F224000493C8 /* Main.storyboard */,
+				15B77CF719B9F5BB000493C8 /* HomeViewController.h */,
+				15B77CF819B9F5BB000493C8 /* HomeViewController.m */,
+				15B77CCC19B9F224000493C8 /* Images.xcassets */,
+				15B77CBB19B9F224000493C8 /* Supporting Files */,
+			);
+			path = "TAH Cube";
+			sourceTree = "<group>";
+		};
+		15B77CBB19B9F224000493C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15B77CFA19B9F5D8000493C8 /* home.png */,
+				15B77CED19B9F2C9000493C8 /* tah rabbit.png */,
+				15B77CEB19B9F2C1000493C8 /* blue.png */,
+				15B77CBC19B9F224000493C8 /* TAH Cube-Info.plist */,
+				15B77CBD19B9F224000493C8 /* InfoPlist.strings */,
+				15B77CC019B9F224000493C8 /* main.m */,
+				15B77CC219B9F224000493C8 /* TAH Cube-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15B77CD919B9F225000493C8 /* TAH CubeTests */ = {
+			isa = PBXGroup;
+			children = (
+				15B77CDF19B9F225000493C8 /* TAH_CubeTests.m */,
+				15B77CDA19B9F225000493C8 /* Supporting Files */,
+			);
+			path = "TAH CubeTests";
+			sourceTree = "<group>";
+		};
+		15B77CDA19B9F225000493C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15B77CDB19B9F225000493C8 /* TAH CubeTests-Info.plist */,
+				15B77CDC19B9F225000493C8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15B77CEF19B9F589000493C8 /* TAH ble Table View */ = {
+			isa = PBXGroup;
+			children = (
+				15B77CF119B9F5A1000493C8 /* TAHbleTableController.h */,
+				15B77CF219B9F5A1000493C8 /* TAHbleTableController.m */,
+			);
+			name = "TAH ble Table View";
+			sourceTree = "<group>";
+		};
+		15B77CF019B9F592000493C8 /* TAH Library */ = {
+			isa = PBXGroup;
+			children = (
+				15B77CF419B9F5B0000493C8 /* TAHble.h */,
+				15B77CF519B9F5B0000493C8 /* TAHble.m */,
+			);
+			name = "TAH Library";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15B77CB019B9F224000493C8 /* TAH Cube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B77CE319B9F225000493C8 /* Build configuration list for PBXNativeTarget "TAH Cube" */;
+			buildPhases = (
+				15B77CAD19B9F224000493C8 /* Sources */,
+				15B77CAE19B9F224000493C8 /* Frameworks */,
+				15B77CAF19B9F224000493C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TAH Cube";
+			productName = "TAH Cube";
+			productReference = 15B77CB119B9F224000493C8 /* TAH Cube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15B77CD119B9F225000493C8 /* TAH CubeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B77CE619B9F225000493C8 /* Build configuration list for PBXNativeTarget "TAH CubeTests" */;
+			buildPhases = (
+				15B77CCE19B9F225000493C8 /* Sources */,
+				15B77CCF19B9F225000493C8 /* Frameworks */,
+				15B77CD019B9F225000493C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15B77CD819B9F225000493C8 /* PBXTargetDependency */,
+			);
+			name = "TAH CubeTests";
+			productName = "TAH CubeTests";
+			productReference = 15B77CD219B9F225000493C8 /* TAH CubeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15B77CA919B9F224000493C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = dhirajjadhao;
+				TargetAttributes = {
+					15B77CD119B9F225000493C8 = {
+						TestTargetID = 15B77CB019B9F224000493C8;
+					};
+				};
+			};
+			buildConfigurationList = 15B77CAC19B9F224000493C8 /* Build configuration list for PBXProject "TAH Cube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15B77CA819B9F224000493C8;
+			productRefGroup = 15B77CB219B9F224000493C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15B77CB019B9F224000493C8 /* TAH Cube */,
+				15B77CD119B9F225000493C8 /* TAH CubeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15B77CAF19B9F224000493C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B77CCD19B9F224000493C8 /* Images.xcassets in Resources */,
+				15B77CEC19B9F2C1000493C8 /* blue.png in Resources */,
+				15B77CFB19B9F5D8000493C8 /* home.png in Resources */,
+				15B77CEE19B9F2C9000493C8 /* tah rabbit.png in Resources */,
+				15B77CBF19B9F224000493C8 /* InfoPlist.strings in Resources */,
+				15B77CC819B9F224000493C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B77CD019B9F225000493C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B77CDE19B9F225000493C8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15B77CAD19B9F224000493C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B77CF319B9F5A1000493C8 /* TAHbleTableController.m in Sources */,
+				15B77CC519B9F224000493C8 /* AppDelegate.m in Sources */,
+				15B77CC119B9F224000493C8 /* main.m in Sources */,
+				15B77CF919B9F5BB000493C8 /* HomeViewController.m in Sources */,
+				15B77CF619B9F5B0000493C8 /* TAHble.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B77CCE19B9F225000493C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B77CE019B9F225000493C8 /* TAH_CubeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15B77CD819B9F225000493C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15B77CB019B9F224000493C8 /* TAH Cube */;
+			targetProxy = 15B77CD719B9F225000493C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15B77CBD19B9F224000493C8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15B77CBE19B9F224000493C8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		15B77CC619B9F224000493C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15B77CC719B9F224000493C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15B77CDC19B9F225000493C8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15B77CDD19B9F225000493C8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15B77CE119B9F225000493C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		15B77CE219B9F225000493C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15B77CE419B9F225000493C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Cube/TAH Cube-Prefix.pch";
+				INFOPLIST_FILE = "TAH Cube/TAH Cube-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		15B77CE519B9F225000493C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Cube/TAH Cube-Prefix.pch";
+				INFOPLIST_FILE = "TAH Cube/TAH Cube-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		15B77CE719B9F225000493C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Cube.app/TAH Cube";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Cube/TAH Cube-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TAH CubeTests/TAH CubeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		15B77CE819B9F225000493C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Cube.app/TAH Cube";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TAH Cube/TAH Cube-Prefix.pch";
+				INFOPLIST_FILE = "TAH CubeTests/TAH CubeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15B77CAC19B9F224000493C8 /* Build configuration list for PBXProject "TAH Cube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B77CE119B9F225000493C8 /* Debug */,
+				15B77CE219B9F225000493C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15B77CE319B9F225000493C8 /* Build configuration list for PBXNativeTarget "TAH Cube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B77CE419B9F225000493C8 /* Debug */,
+				15B77CE519B9F225000493C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		15B77CE619B9F225000493C8 /* Build configuration list for PBXNativeTarget "TAH CubeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B77CE719B9F225000493C8 /* Debug */,
+				15B77CE819B9F225000493C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15B77CA919B9F224000493C8 /* Project object */;
+}
