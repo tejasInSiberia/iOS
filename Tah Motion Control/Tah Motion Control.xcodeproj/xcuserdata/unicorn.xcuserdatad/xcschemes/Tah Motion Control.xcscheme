@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FFC36525190546EF00EC27A1"
-               BuildableName = "Tah Motion Control.app"
-               BlueprintName = "Tah Motion Control"
-               ReferencedContainer = "container:Tah Motion Control.xcodeproj">
+               BlueprintIdentifier = "1554C64619A8B15A00EE5A6E"
+               BuildableName = "TAH Motion Control.app"
+               BlueprintName = "TAH Motion Control"
+               ReferencedContainer = "container:TAH Motion Control.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FFC36549190546EF00EC27A1"
-               BuildableName = "Tah Motion ControlTests.xctest"
-               BlueprintName = "Tah Motion ControlTests"
-               ReferencedContainer = "container:Tah Motion Control.xcodeproj">
+               BlueprintIdentifier = "1554C66A19A8B15A00EE5A6E"
+               BuildableName = "TAH Motion ControlTests.xctest"
+               BlueprintName = "TAH Motion ControlTests"
+               ReferencedContainer = "container:TAH Motion Control.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FFC36525190546EF00EC27A1"
-            BuildableName = "Tah Motion Control.app"
-            BlueprintName = "Tah Motion Control"
-            ReferencedContainer = "container:Tah Motion Control.xcodeproj">
+            BlueprintIdentifier = "1554C64619A8B15A00EE5A6E"
+            BuildableName = "TAH Motion Control.app"
+            BlueprintName = "TAH Motion Control"
+            ReferencedContainer = "container:TAH Motion Control.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FFC36525190546EF00EC27A1"
-            BuildableName = "Tah Motion Control.app"
-            BlueprintName = "Tah Motion Control"
-            ReferencedContainer = "container:Tah Motion Control.xcodeproj">
+            BlueprintIdentifier = "1554C64619A8B15A00EE5A6E"
+            BuildableName = "TAH Motion Control.app"
+            BlueprintName = "TAH Motion Control"
+            ReferencedContainer = "container:TAH Motion Control.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FFC36525190546EF00EC27A1"
-            BuildableName = "Tah Motion Control.app"
-            BlueprintName = "Tah Motion Control"
-            ReferencedContainer = "container:Tah Motion Control.xcodeproj">
+            BlueprintIdentifier = "1554C64619A8B15A00EE5A6E"
+            BuildableName = "TAH Motion Control.app"
+            BlueprintName = "TAH Motion Control"
+            ReferencedContainer = "container:TAH Motion Control.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

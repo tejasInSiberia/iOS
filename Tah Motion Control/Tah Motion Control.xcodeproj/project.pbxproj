@@ -7,237 +7,428 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF45583E190E8896005D1C35 /* gestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF45583D190E8896005D1C35 /* gestureViewController.m */; };
-		FFC3652A190546EF00EC27A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC36529190546EF00EC27A1 /* Foundation.framework */; };
-		FFC3652C190546EF00EC27A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3652B190546EF00EC27A1 /* CoreGraphics.framework */; };
-		FFC3652E190546EF00EC27A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3652D190546EF00EC27A1 /* UIKit.framework */; };
-		FFC36534190546EF00EC27A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFC36532190546EF00EC27A1 /* InfoPlist.strings */; };
-		FFC36536190546EF00EC27A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC36535190546EF00EC27A1 /* main.m */; };
-		FFC3653A190546EF00EC27A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC36539190546EF00EC27A1 /* AppDelegate.m */; };
-		FFC3653D190546EF00EC27A1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC3653B190546EF00EC27A1 /* Main_iPhone.storyboard */; };
-		FFC36540190546EF00EC27A1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC3653E190546EF00EC27A1 /* Main_iPad.storyboard */; };
-		FFC36543190546EF00EC27A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC36542190546EF00EC27A1 /* ViewController.m */; };
-		FFC36545190546EF00EC27A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC36544190546EF00EC27A1 /* Images.xcassets */; };
-		FFC3654C190546EF00EC27A1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3654B190546EF00EC27A1 /* XCTest.framework */; };
-		FFC3654D190546EF00EC27A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC36529190546EF00EC27A1 /* Foundation.framework */; };
-		FFC3654E190546EF00EC27A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3652D190546EF00EC27A1 /* UIKit.framework */; };
-		FFC36556190546EF00EC27A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFC36554190546EF00EC27A1 /* InfoPlist.strings */; };
-		FFC36558190546EF00EC27A1 /* Tah_Motion_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC36557190546EF00EC27A1 /* Tah_Motion_ControlTests.m */; };
-		FFC365641905475F00EC27A1 /* SerialGATT.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC365631905475F00EC27A1 /* SerialGATT.m */; };
-		FFC365671905482000EC27A1 /* buttonpad.png in Resources */ = {isa = PBXBuildFile; fileRef = FFC365661905482000EC27A1 /* buttonpad.png */; };
+		1509419319D023660039757B /* Presentation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1509419119D023650039757B /* Presentation.png */; };
+		1509419419D023660039757B /* media player.png in Resources */ = {isa = PBXBuildFile; fileRef = 1509419219D023660039757B /* media player.png */; };
+		1509419819D02ECD0039757B /* right arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1509419719D02ECD0039757B /* right arrow.png */; };
+		1509419A19D02F400039757B /* left arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1509419919D02F400039757B /* left arrow.png */; };
+		1509419E19D02FAE0039757B /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1509419D19D02FAE0039757B /* PresentationViewController.m */; };
+		1538C8E419A9D12700595557 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E219A9D12700595557 /* fb.png */; };
+		1538C8E519A9D12700595557 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E319A9D12700595557 /* twitter.png */; };
+		1538C8E919A9D13200595557 /* web forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E619A9D13200595557 /* web forward.png */; };
+		1538C8EA19A9D13200595557 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E719A9D13200595557 /* reload.png */; };
+		1538C8EB19A9D13200595557 /* web backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8E819A9D13200595557 /* web backward.png */; };
+		1538C8ED19A9D1B900595557 /* tah.png in Resources */ = {isa = PBXBuildFile; fileRef = 1538C8EC19A9D1B900595557 /* tah.png */; };
+		1554C64B19A8B15A00EE5A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64A19A8B15A00EE5A6E /* Foundation.framework */; };
+		1554C64D19A8B15A00EE5A6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64C19A8B15A00EE5A6E /* CoreGraphics.framework */; };
+		1554C64F19A8B15A00EE5A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64E19A8B15A00EE5A6E /* UIKit.framework */; };
+		1554C65519A8B15A00EE5A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1554C65319A8B15A00EE5A6E /* InfoPlist.strings */; };
+		1554C65719A8B15A00EE5A6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C65619A8B15A00EE5A6E /* main.m */; };
+		1554C65B19A8B15A00EE5A6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C65A19A8B15A00EE5A6E /* AppDelegate.m */; };
+		1554C65E19A8B15A00EE5A6E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1554C65C19A8B15A00EE5A6E /* Main_iPhone.storyboard */; };
+		1554C66619A8B15A00EE5A6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1554C66519A8B15A00EE5A6E /* Images.xcassets */; };
+		1554C66D19A8B15A00EE5A6E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C66C19A8B15A00EE5A6E /* XCTest.framework */; };
+		1554C66E19A8B15A00EE5A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64A19A8B15A00EE5A6E /* Foundation.framework */; };
+		1554C66F19A8B15A00EE5A6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1554C64E19A8B15A00EE5A6E /* UIKit.framework */; };
+		1554C67719A8B15A00EE5A6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1554C67519A8B15A00EE5A6E /* InfoPlist.strings */; };
+		1554C67919A8B15A00EE5A6E /* TAH_Motion_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C67819A8B15A00EE5A6E /* TAH_Motion_ControlTests.m */; };
+		1554C68519A8B1E500EE5A6E /* TAHbleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C68419A8B1E500EE5A6E /* TAHbleTableController.m */; };
+		1554C68919A8B20300EE5A6E /* TAHble.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C68819A8B20300EE5A6E /* TAHble.m */; };
+		1554C68D19A8B21E00EE5A6E /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C68C19A8B21E00EE5A6E /* CustomCell.m */; };
+		1554C69319A8B27200EE5A6E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C69219A8B27200EE5A6E /* SettingsViewController.m */; };
+		1554C69619A8B27B00EE5A6E /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C69519A8B27B00EE5A6E /* MediaViewController.m */; };
+		1554C69919A8B28400EE5A6E /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C69819A8B28400EE5A6E /* SocialViewController.m */; };
+		1554C69C19A8B31600EE5A6E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1554C69B19A8B31600EE5A6E /* HomeViewController.m */; };
+		1554C69E19A8B43000EE5A6E /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1554C69D19A8B43000EE5A6E /* home.png */; };
+		156BB64419AAFB0600CBA4BD /* Main_iPhone3.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156BB64319AAFB0600CBA4BD /* Main_iPhone3.5.storyboard */; };
+		156BB64619AB093E00CBA4BD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156BB64519AB093E00CBA4BD /* AudioToolbox.framework */; };
+		156BB65419AB19DE00CBA4BD /* playpause.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB65319AB19DE00CBA4BD /* playpause.png */; };
+		156BB65B19AB212B00CBA4BD /* backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB65919AB212B00CBA4BD /* backward.png */; };
+		156BB66019AB24E400CBA4BD /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB65F19AB24E400CBA4BD /* forward.png */; };
+		156BB66719AB3DBF00CBA4BD /* voldown.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB66519AB3DBF00CBA4BD /* voldown.png */; };
+		156BB66819AB3DBF00CBA4BD /* volup.png in Resources */ = {isa = PBXBuildFile; fileRef = 156BB66619AB3DBF00CBA4BD /* volup.png */; };
+		156BB66A19AB46D600CBA4BD /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156BB66919AB46D600CBA4BD /* CoreMotion.framework */; };
+		1597A90319AA327E00D51685 /* MACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597A90219AA327E00D51685 /* MACViewController.m */; };
+		1597A90619AA328B00D51685 /* WindowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597A90519AA328B00D51685 /* WindowsViewController.m */; };
+		1597A90A19AA373B00D51685 /* iTunesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1597A90919AA373B00D51685 /* iTunesViewController.m */; };
+		1598788619D49C3C00B2E81A /* windows.png in Resources */ = {isa = PBXBuildFile; fileRef = 1598788419D49C3C00B2E81A /* windows.png */; };
+		1598788719D49C3C00B2E81A /* mac.png in Resources */ = {isa = PBXBuildFile; fileRef = 1598788519D49C3C00B2E81A /* mac.png */; };
+		1598788A19D4A47B00B2E81A /* up arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1598788819D4A47B00B2E81A /* up arrow.png */; };
+		1598788B19D4A47B00B2E81A /* down arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1598788919D4A47B00B2E81A /* down arrow.png */; };
+		15A43CF519A9AC48009FBA55 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A43CF419A9AC48009FBA55 /* red.png */; };
+		15A43CF819A9B1C8009FBA55 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A43CF619A9B1C8009FBA55 /* settings.png */; };
+		15A43CF919A9B1C8009FBA55 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A43CF719A9B1C8009FBA55 /* youtube.png */; };
+		15A43CFB19A9B1D1009FBA55 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 15A43CFA19A9B1D1009FBA55 /* share.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FFC3654F190546EF00EC27A1 /* PBXContainerItemProxy */ = {
+		1554C67019A8B15A00EE5A6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FFC3651E190546EF00EC27A1 /* Project object */;
+			containerPortal = 1554C63F19A8B15A00EE5A6E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FFC36525190546EF00EC27A1;
-			remoteInfo = "Tah Motion Control";
+			remoteGlobalIDString = 1554C64619A8B15A00EE5A6E;
+			remoteInfo = "TAH Motion Control";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FF45583C190E8896005D1C35 /* gestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gestureViewController.h; sourceTree = "<group>"; };
-		FF45583D190E8896005D1C35 /* gestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gestureViewController.m; sourceTree = "<group>"; };
-		FFC36526190546EF00EC27A1 /* Tah Motion Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tah Motion Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFC36529190546EF00EC27A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FFC3652B190546EF00EC27A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FFC3652D190546EF00EC27A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FFC36531190546EF00EC27A1 /* Tah Motion Control-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tah Motion Control-Info.plist"; sourceTree = "<group>"; };
-		FFC36533190546EF00EC27A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FFC36535190546EF00EC27A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FFC36537190546EF00EC27A1 /* Tah Motion Control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tah Motion Control-Prefix.pch"; sourceTree = "<group>"; };
-		FFC36538190546EF00EC27A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FFC36539190546EF00EC27A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FFC3653C190546EF00EC27A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		FFC3653F190546EF00EC27A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		FFC36541190546EF00EC27A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FFC36542190546EF00EC27A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FFC36544190546EF00EC27A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FFC3654A190546EF00EC27A1 /* Tah Motion ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tah Motion ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFC3654B190546EF00EC27A1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FFC36553190546EF00EC27A1 /* Tah Motion ControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tah Motion ControlTests-Info.plist"; sourceTree = "<group>"; };
-		FFC36555190546EF00EC27A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FFC36557190546EF00EC27A1 /* Tah_Motion_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tah_Motion_ControlTests.m; sourceTree = "<group>"; };
-		FFC365621905475F00EC27A1 /* SerialGATT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialGATT.h; sourceTree = "<group>"; };
-		FFC365631905475F00EC27A1 /* SerialGATT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerialGATT.m; sourceTree = "<group>"; };
-		FFC365661905482000EC27A1 /* buttonpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonpad.png; sourceTree = "<group>"; };
+		1509419119D023650039757B /* Presentation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Presentation.png; sourceTree = "<group>"; };
+		1509419219D023660039757B /* media player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "media player.png"; sourceTree = "<group>"; };
+		1509419719D02ECD0039757B /* right arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right arrow.png"; sourceTree = "<group>"; };
+		1509419919D02F400039757B /* left arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left arrow.png"; sourceTree = "<group>"; };
+		1509419C19D02FAE0039757B /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationViewController.h; sourceTree = "<group>"; };
+		1509419D19D02FAE0039757B /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationViewController.m; sourceTree = "<group>"; };
+		1538C8E219A9D12700595557 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		1538C8E319A9D12700595557 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		1538C8E619A9D13200595557 /* web forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web forward.png"; sourceTree = "<group>"; };
+		1538C8E719A9D13200595557 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+		1538C8E819A9D13200595557 /* web backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web backward.png"; sourceTree = "<group>"; };
+		1538C8EC19A9D1B900595557 /* tah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tah.png; sourceTree = "<group>"; };
+		1554C64719A8B15A00EE5A6E /* TAH Motion Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAH Motion Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1554C64A19A8B15A00EE5A6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1554C64C19A8B15A00EE5A6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1554C64E19A8B15A00EE5A6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1554C65219A8B15A00EE5A6E /* TAH Motion Control-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH Motion Control-Info.plist"; sourceTree = "<group>"; };
+		1554C65419A8B15A00EE5A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1554C65619A8B15A00EE5A6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1554C65819A8B15A00EE5A6E /* TAH Motion Control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAH Motion Control-Prefix.pch"; sourceTree = "<group>"; };
+		1554C65919A8B15A00EE5A6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1554C65A19A8B15A00EE5A6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1554C65D19A8B15A00EE5A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1554C66519A8B15A00EE5A6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1554C66B19A8B15A00EE5A6E /* TAH Motion ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAH Motion ControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1554C66C19A8B15A00EE5A6E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1554C67419A8B15A00EE5A6E /* TAH Motion ControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH Motion ControlTests-Info.plist"; sourceTree = "<group>"; };
+		1554C67619A8B15A00EE5A6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1554C67819A8B15A00EE5A6E /* TAH_Motion_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAH_Motion_ControlTests.m; sourceTree = "<group>"; };
+		1554C68319A8B1E500EE5A6E /* TAHbleTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHbleTableController.h; sourceTree = "<group>"; };
+		1554C68419A8B1E500EE5A6E /* TAHbleTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHbleTableController.m; sourceTree = "<group>"; };
+		1554C68719A8B20300EE5A6E /* TAHble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHble.h; sourceTree = "<group>"; };
+		1554C68819A8B20300EE5A6E /* TAHble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHble.m; sourceTree = "<group>"; };
+		1554C68B19A8B21E00EE5A6E /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		1554C68C19A8B21E00EE5A6E /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		1554C69119A8B27200EE5A6E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		1554C69219A8B27200EE5A6E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		1554C69419A8B27B00EE5A6E /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		1554C69519A8B27B00EE5A6E /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		1554C69719A8B28400EE5A6E /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		1554C69819A8B28400EE5A6E /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		1554C69A19A8B31600EE5A6E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		1554C69B19A8B31600EE5A6E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		1554C69D19A8B43000EE5A6E /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		156BB64319AAFB0600CBA4BD /* Main_iPhone3.5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPhone3.5.storyboard; path = ../Main_iPhone3.5.storyboard; sourceTree = "<group>"; };
+		156BB64519AB093E00CBA4BD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		156BB65319AB19DE00CBA4BD /* playpause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playpause.png; sourceTree = "<group>"; };
+		156BB65919AB212B00CBA4BD /* backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backward.png; sourceTree = "<group>"; };
+		156BB65F19AB24E400CBA4BD /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		156BB66519AB3DBF00CBA4BD /* voldown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voldown.png; sourceTree = "<group>"; };
+		156BB66619AB3DBF00CBA4BD /* volup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volup.png; sourceTree = "<group>"; };
+		156BB66919AB46D600CBA4BD /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1597A90119AA327E00D51685 /* MACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACViewController.h; sourceTree = "<group>"; };
+		1597A90219AA327E00D51685 /* MACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACViewController.m; sourceTree = "<group>"; };
+		1597A90419AA328B00D51685 /* WindowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowsViewController.h; sourceTree = "<group>"; };
+		1597A90519AA328B00D51685 /* WindowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowsViewController.m; sourceTree = "<group>"; };
+		1597A90819AA373B00D51685 /* iTunesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesViewController.h; sourceTree = "<group>"; };
+		1597A90919AA373B00D51685 /* iTunesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesViewController.m; sourceTree = "<group>"; };
+		1598788419D49C3C00B2E81A /* windows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windows.png; sourceTree = "<group>"; };
+		1598788519D49C3C00B2E81A /* mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mac.png; sourceTree = "<group>"; };
+		1598788819D4A47B00B2E81A /* up arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up arrow.png"; sourceTree = "<group>"; };
+		1598788919D4A47B00B2E81A /* down arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down arrow.png"; sourceTree = "<group>"; };
+		15A43CF419A9AC48009FBA55 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		15A43CF619A9B1C8009FBA55 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		15A43CF719A9B1C8009FBA55 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
+		15A43CFA19A9B1D1009FBA55 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FFC36523190546EF00EC27A1 /* Frameworks */ = {
+		1554C64419A8B15A00EE5A6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC3652C190546EF00EC27A1 /* CoreGraphics.framework in Frameworks */,
-				FFC3652E190546EF00EC27A1 /* UIKit.framework in Frameworks */,
-				FFC3652A190546EF00EC27A1 /* Foundation.framework in Frameworks */,
+				156BB66A19AB46D600CBA4BD /* CoreMotion.framework in Frameworks */,
+				156BB64619AB093E00CBA4BD /* AudioToolbox.framework in Frameworks */,
+				1554C64D19A8B15A00EE5A6E /* CoreGraphics.framework in Frameworks */,
+				1554C64F19A8B15A00EE5A6E /* UIKit.framework in Frameworks */,
+				1554C64B19A8B15A00EE5A6E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFC36547190546EF00EC27A1 /* Frameworks */ = {
+		1554C66819A8B15A00EE5A6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC3654C190546EF00EC27A1 /* XCTest.framework in Frameworks */,
-				FFC3654E190546EF00EC27A1 /* UIKit.framework in Frameworks */,
-				FFC3654D190546EF00EC27A1 /* Foundation.framework in Frameworks */,
+				1554C66D19A8B15A00EE5A6E /* XCTest.framework in Frameworks */,
+				1554C66F19A8B15A00EE5A6E /* UIKit.framework in Frameworks */,
+				1554C66E19A8B15A00EE5A6E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FFC3651D190546EF00EC27A1 = {
+		1509419B19D02F870039757B /* Presentation View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FFC3652F190546EF00EC27A1 /* Tah Motion Control */,
-				FFC365611905474F00EC27A1 /* Serial GATT */,
-				FFC36551190546EF00EC27A1 /* Tah Motion ControlTests */,
-				FFC36528190546EF00EC27A1 /* Frameworks */,
-				FFC36527190546EF00EC27A1 /* Products */,
+				1509419C19D02FAE0039757B /* PresentationViewController.h */,
+				1509419D19D02FAE0039757B /* PresentationViewController.m */,
+			);
+			name = "Presentation View Controller";
+			sourceTree = "<group>";
+		};
+		1554C63E19A8B15A00EE5A6E = {
+			isa = PBXGroup;
+			children = (
+				1554C65019A8B15A00EE5A6E /* TAH Motion Control */,
+				1597A8FF19AA325900D51685 /* MAC View Controller */,
+				1597A90019AA326700D51685 /* Windows View Controller */,
+				1554C68E19A8B24A00EE5A6E /* Social View Controller */,
+				1554C68F19A8B25800EE5A6E /* Media View Controller */,
+				1554C69019A8B26200EE5A6E /* Settings View Controller */,
+				1554C68219A8B1C900EE5A6E /* TAH ble Table View */,
+				1554C68619A8B1F700EE5A6E /* TAH Library */,
+				1554C68A19A8B21300EE5A6E /* Custom Cell */,
+				1554C67219A8B15A00EE5A6E /* TAH Motion ControlTests */,
+				1554C64919A8B15A00EE5A6E /* Frameworks */,
+				1554C64819A8B15A00EE5A6E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FFC36527190546EF00EC27A1 /* Products */ = {
+		1554C64819A8B15A00EE5A6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FFC36526190546EF00EC27A1 /* Tah Motion Control.app */,
-				FFC3654A190546EF00EC27A1 /* Tah Motion ControlTests.xctest */,
+				1554C64719A8B15A00EE5A6E /* TAH Motion Control.app */,
+				1554C66B19A8B15A00EE5A6E /* TAH Motion ControlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FFC36528190546EF00EC27A1 /* Frameworks */ = {
+		1554C64919A8B15A00EE5A6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FFC36529190546EF00EC27A1 /* Foundation.framework */,
-				FFC3652B190546EF00EC27A1 /* CoreGraphics.framework */,
-				FFC3652D190546EF00EC27A1 /* UIKit.framework */,
-				FFC3654B190546EF00EC27A1 /* XCTest.framework */,
+				156BB66919AB46D600CBA4BD /* CoreMotion.framework */,
+				156BB64519AB093E00CBA4BD /* AudioToolbox.framework */,
+				1554C64A19A8B15A00EE5A6E /* Foundation.framework */,
+				1554C64C19A8B15A00EE5A6E /* CoreGraphics.framework */,
+				1554C64E19A8B15A00EE5A6E /* UIKit.framework */,
+				1554C66C19A8B15A00EE5A6E /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FFC3652F190546EF00EC27A1 /* Tah Motion Control */ = {
+		1554C65019A8B15A00EE5A6E /* TAH Motion Control */ = {
 			isa = PBXGroup;
 			children = (
-				FFC36538190546EF00EC27A1 /* AppDelegate.h */,
-				FFC36539190546EF00EC27A1 /* AppDelegate.m */,
-				FFC3653B190546EF00EC27A1 /* Main_iPhone.storyboard */,
-				FFC3653E190546EF00EC27A1 /* Main_iPad.storyboard */,
-				FFC36541190546EF00EC27A1 /* ViewController.h */,
-				FFC36542190546EF00EC27A1 /* ViewController.m */,
-				FF45583C190E8896005D1C35 /* gestureViewController.h */,
-				FF45583D190E8896005D1C35 /* gestureViewController.m */,
-				FFC36544190546EF00EC27A1 /* Images.xcassets */,
-				FFC36530190546EF00EC27A1 /* Supporting Files */,
+				1554C65919A8B15A00EE5A6E /* AppDelegate.h */,
+				1554C65A19A8B15A00EE5A6E /* AppDelegate.m */,
+				156BB64319AAFB0600CBA4BD /* Main_iPhone3.5.storyboard */,
+				1554C65C19A8B15A00EE5A6E /* Main_iPhone.storyboard */,
+				1554C69A19A8B31600EE5A6E /* HomeViewController.h */,
+				1554C69B19A8B31600EE5A6E /* HomeViewController.m */,
+				1554C66519A8B15A00EE5A6E /* Images.xcassets */,
+				1554C65119A8B15A00EE5A6E /* Supporting Files */,
 			);
-			path = "Tah Motion Control";
+			path = "TAH Motion Control";
 			sourceTree = "<group>";
 		};
-		FFC36530190546EF00EC27A1 /* Supporting Files */ = {
+		1554C65119A8B15A00EE5A6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FFC365651905481300EC27A1 /* images */,
-				FFC36531190546EF00EC27A1 /* Tah Motion Control-Info.plist */,
-				FFC36532190546EF00EC27A1 /* InfoPlist.strings */,
-				FFC36535190546EF00EC27A1 /* main.m */,
-				FFC36537190546EF00EC27A1 /* Tah Motion Control-Prefix.pch */,
+				1554C69F19A8B43400EE5A6E /* Image Files */,
+				1554C65219A8B15A00EE5A6E /* TAH Motion Control-Info.plist */,
+				1554C65319A8B15A00EE5A6E /* InfoPlist.strings */,
+				1554C65619A8B15A00EE5A6E /* main.m */,
+				1554C65819A8B15A00EE5A6E /* TAH Motion Control-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FFC36551190546EF00EC27A1 /* Tah Motion ControlTests */ = {
+		1554C67219A8B15A00EE5A6E /* TAH Motion ControlTests */ = {
 			isa = PBXGroup;
 			children = (
-				FFC36557190546EF00EC27A1 /* Tah_Motion_ControlTests.m */,
-				FFC36552190546EF00EC27A1 /* Supporting Files */,
+				1554C67819A8B15A00EE5A6E /* TAH_Motion_ControlTests.m */,
+				1554C67319A8B15A00EE5A6E /* Supporting Files */,
 			);
-			path = "Tah Motion ControlTests";
+			path = "TAH Motion ControlTests";
 			sourceTree = "<group>";
 		};
-		FFC36552190546EF00EC27A1 /* Supporting Files */ = {
+		1554C67319A8B15A00EE5A6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FFC36553190546EF00EC27A1 /* Tah Motion ControlTests-Info.plist */,
-				FFC36554190546EF00EC27A1 /* InfoPlist.strings */,
+				1554C67419A8B15A00EE5A6E /* TAH Motion ControlTests-Info.plist */,
+				1554C67519A8B15A00EE5A6E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FFC365611905474F00EC27A1 /* Serial GATT */ = {
+		1554C68219A8B1C900EE5A6E /* TAH ble Table View */ = {
 			isa = PBXGroup;
 			children = (
-				FFC365621905475F00EC27A1 /* SerialGATT.h */,
-				FFC365631905475F00EC27A1 /* SerialGATT.m */,
+				1554C68319A8B1E500EE5A6E /* TAHbleTableController.h */,
+				1554C68419A8B1E500EE5A6E /* TAHbleTableController.m */,
 			);
-			name = "Serial GATT";
-			path = "Tah Motion Control";
+			name = "TAH ble Table View";
 			sourceTree = "<group>";
 		};
-		FFC365651905481300EC27A1 /* images */ = {
+		1554C68619A8B1F700EE5A6E /* TAH Library */ = {
 			isa = PBXGroup;
 			children = (
-				FFC365661905482000EC27A1 /* buttonpad.png */,
+				1554C68719A8B20300EE5A6E /* TAHble.h */,
+				1554C68819A8B20300EE5A6E /* TAHble.m */,
 			);
-			name = images;
+			name = "TAH Library";
+			sourceTree = "<group>";
+		};
+		1554C68A19A8B21300EE5A6E /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1554C68B19A8B21E00EE5A6E /* CustomCell.h */,
+				1554C68C19A8B21E00EE5A6E /* CustomCell.m */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		1554C68E19A8B24A00EE5A6E /* Social View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1554C69719A8B28400EE5A6E /* SocialViewController.h */,
+				1554C69819A8B28400EE5A6E /* SocialViewController.m */,
+			);
+			name = "Social View Controller";
+			sourceTree = "<group>";
+		};
+		1554C68F19A8B25800EE5A6E /* Media View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1554C69419A8B27B00EE5A6E /* MediaViewController.h */,
+				1554C69519A8B27B00EE5A6E /* MediaViewController.m */,
+			);
+			name = "Media View Controller";
+			sourceTree = "<group>";
+		};
+		1554C69019A8B26200EE5A6E /* Settings View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1554C69119A8B27200EE5A6E /* SettingsViewController.h */,
+				1554C69219A8B27200EE5A6E /* SettingsViewController.m */,
+			);
+			name = "Settings View Controller";
+			sourceTree = "<group>";
+		};
+		1554C69F19A8B43400EE5A6E /* Image Files */ = {
+			isa = PBXGroup;
+			children = (
+				1598788819D4A47B00B2E81A /* up arrow.png */,
+				1598788919D4A47B00B2E81A /* down arrow.png */,
+				1598788419D49C3C00B2E81A /* windows.png */,
+				1598788519D49C3C00B2E81A /* mac.png */,
+				1509419919D02F400039757B /* left arrow.png */,
+				1509419719D02ECD0039757B /* right arrow.png */,
+				1509419119D023650039757B /* Presentation.png */,
+				1509419219D023660039757B /* media player.png */,
+				156BB66519AB3DBF00CBA4BD /* voldown.png */,
+				156BB66619AB3DBF00CBA4BD /* volup.png */,
+				156BB65F19AB24E400CBA4BD /* forward.png */,
+				156BB65919AB212B00CBA4BD /* backward.png */,
+				156BB65319AB19DE00CBA4BD /* playpause.png */,
+				1538C8EC19A9D1B900595557 /* tah.png */,
+				1538C8E619A9D13200595557 /* web forward.png */,
+				1538C8E719A9D13200595557 /* reload.png */,
+				1538C8E819A9D13200595557 /* web backward.png */,
+				1538C8E219A9D12700595557 /* fb.png */,
+				1538C8E319A9D12700595557 /* twitter.png */,
+				15A43CFA19A9B1D1009FBA55 /* share.png */,
+				15A43CF619A9B1C8009FBA55 /* settings.png */,
+				15A43CF719A9B1C8009FBA55 /* youtube.png */,
+				15A43CF419A9AC48009FBA55 /* red.png */,
+				1554C69D19A8B43000EE5A6E /* home.png */,
+			);
+			name = "Image Files";
+			sourceTree = "<group>";
+		};
+		1597A8FF19AA325900D51685 /* MAC View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1597A90119AA327E00D51685 /* MACViewController.h */,
+				1597A90219AA327E00D51685 /* MACViewController.m */,
+				1597A90719AA370D00D51685 /* iTunes View Controller */,
+				1509419B19D02F870039757B /* Presentation View Controller */,
+			);
+			name = "MAC View Controller";
+			sourceTree = "<group>";
+		};
+		1597A90019AA326700D51685 /* Windows View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1597A90419AA328B00D51685 /* WindowsViewController.h */,
+				1597A90519AA328B00D51685 /* WindowsViewController.m */,
+			);
+			name = "Windows View Controller";
+			sourceTree = "<group>";
+		};
+		1597A90719AA370D00D51685 /* iTunes View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1597A90819AA373B00D51685 /* iTunesViewController.h */,
+				1597A90919AA373B00D51685 /* iTunesViewController.m */,
+			);
+			name = "iTunes View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FFC36525190546EF00EC27A1 /* Tah Motion Control */ = {
+		1554C64619A8B15A00EE5A6E /* TAH Motion Control */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFC3655B190546EF00EC27A1 /* Build configuration list for PBXNativeTarget "Tah Motion Control" */;
+			buildConfigurationList = 1554C67C19A8B15A00EE5A6E /* Build configuration list for PBXNativeTarget "TAH Motion Control" */;
 			buildPhases = (
-				FFC36522190546EF00EC27A1 /* Sources */,
-				FFC36523190546EF00EC27A1 /* Frameworks */,
-				FFC36524190546EF00EC27A1 /* Resources */,
+				1554C64319A8B15A00EE5A6E /* Sources */,
+				1554C64419A8B15A00EE5A6E /* Frameworks */,
+				1554C64519A8B15A00EE5A6E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Tah Motion Control";
-			productName = "Tah Motion Control";
-			productReference = FFC36526190546EF00EC27A1 /* Tah Motion Control.app */;
+			name = "TAH Motion Control";
+			productName = "TAH Motion Control";
+			productReference = 1554C64719A8B15A00EE5A6E /* TAH Motion Control.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FFC36549190546EF00EC27A1 /* Tah Motion ControlTests */ = {
+		1554C66A19A8B15A00EE5A6E /* TAH Motion ControlTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFC3655E190546EF00EC27A1 /* Build configuration list for PBXNativeTarget "Tah Motion ControlTests" */;
+			buildConfigurationList = 1554C67F19A8B15A00EE5A6E /* Build configuration list for PBXNativeTarget "TAH Motion ControlTests" */;
 			buildPhases = (
-				FFC36546190546EF00EC27A1 /* Sources */,
-				FFC36547190546EF00EC27A1 /* Frameworks */,
-				FFC36548190546EF00EC27A1 /* Resources */,
+				1554C66719A8B15A00EE5A6E /* Sources */,
+				1554C66819A8B15A00EE5A6E /* Frameworks */,
+				1554C66919A8B15A00EE5A6E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FFC36550190546EF00EC27A1 /* PBXTargetDependency */,
+				1554C67119A8B15A00EE5A6E /* PBXTargetDependency */,
 			);
-			name = "Tah Motion ControlTests";
-			productName = "Tah Motion ControlTests";
-			productReference = FFC3654A190546EF00EC27A1 /* Tah Motion ControlTests.xctest */;
+			name = "TAH Motion ControlTests";
+			productName = "TAH Motion ControlTests";
+			productReference = 1554C66B19A8B15A00EE5A6E /* TAH Motion ControlTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FFC3651E190546EF00EC27A1 /* Project object */ = {
+		1554C63F19A8B15A00EE5A6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = DHIRAJJADHAO;
+				ORGANIZATIONNAME = dhirajjadhao;
 				TargetAttributes = {
-					FFC36549190546EF00EC27A1 = {
-						TestTargetID = FFC36525190546EF00EC27A1;
+					1554C64619A8B15A00EE5A6E = {
+						DevelopmentTeam = DUXG8V348H;
+					};
+					1554C66A19A8B15A00EE5A6E = {
+						TestTargetID = 1554C64619A8B15A00EE5A6E;
 					};
 				};
 			};
-			buildConfigurationList = FFC36521190546EF00EC27A1 /* Build configuration list for PBXProject "Tah Motion Control" */;
+			buildConfigurationList = 1554C64219A8B15A00EE5A6E /* Build configuration list for PBXProject "TAH Motion Control" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -245,100 +436,123 @@
 				en,
 				Base,
 			);
-			mainGroup = FFC3651D190546EF00EC27A1;
-			productRefGroup = FFC36527190546EF00EC27A1 /* Products */;
+			mainGroup = 1554C63E19A8B15A00EE5A6E;
+			productRefGroup = 1554C64819A8B15A00EE5A6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FFC36525190546EF00EC27A1 /* Tah Motion Control */,
-				FFC36549190546EF00EC27A1 /* Tah Motion ControlTests */,
+				1554C64619A8B15A00EE5A6E /* TAH Motion Control */,
+				1554C66A19A8B15A00EE5A6E /* TAH Motion ControlTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FFC36524190546EF00EC27A1 /* Resources */ = {
+		1554C64519A8B15A00EE5A6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC36540190546EF00EC27A1 /* Main_iPad.storyboard in Resources */,
-				FFC36545190546EF00EC27A1 /* Images.xcassets in Resources */,
-				FFC365671905482000EC27A1 /* buttonpad.png in Resources */,
-				FFC3653D190546EF00EC27A1 /* Main_iPhone.storyboard in Resources */,
-				FFC36534190546EF00EC27A1 /* InfoPlist.strings in Resources */,
+				1538C8E919A9D13200595557 /* web forward.png in Resources */,
+				1538C8E419A9D12700595557 /* fb.png in Resources */,
+				15A43CF919A9B1C8009FBA55 /* youtube.png in Resources */,
+				1509419819D02ECD0039757B /* right arrow.png in Resources */,
+				1509419419D023660039757B /* media player.png in Resources */,
+				15A43CF819A9B1C8009FBA55 /* settings.png in Resources */,
+				1598788A19D4A47B00B2E81A /* up arrow.png in Resources */,
+				1538C8EA19A9D13200595557 /* reload.png in Resources */,
+				1598788B19D4A47B00B2E81A /* down arrow.png in Resources */,
+				1509419319D023660039757B /* Presentation.png in Resources */,
+				156BB66819AB3DBF00CBA4BD /* volup.png in Resources */,
+				1554C69E19A8B43000EE5A6E /* home.png in Resources */,
+				1509419A19D02F400039757B /* left arrow.png in Resources */,
+				1598788619D49C3C00B2E81A /* windows.png in Resources */,
+				156BB64419AAFB0600CBA4BD /* Main_iPhone3.5.storyboard in Resources */,
+				1538C8E519A9D12700595557 /* twitter.png in Resources */,
+				1554C66619A8B15A00EE5A6E /* Images.xcassets in Resources */,
+				1598788719D49C3C00B2E81A /* mac.png in Resources */,
+				15A43CF519A9AC48009FBA55 /* red.png in Resources */,
+				156BB66019AB24E400CBA4BD /* forward.png in Resources */,
+				15A43CFB19A9B1D1009FBA55 /* share.png in Resources */,
+				1538C8EB19A9D13200595557 /* web backward.png in Resources */,
+				156BB66719AB3DBF00CBA4BD /* voldown.png in Resources */,
+				1538C8ED19A9D1B900595557 /* tah.png in Resources */,
+				156BB65419AB19DE00CBA4BD /* playpause.png in Resources */,
+				156BB65B19AB212B00CBA4BD /* backward.png in Resources */,
+				1554C65E19A8B15A00EE5A6E /* Main_iPhone.storyboard in Resources */,
+				1554C65519A8B15A00EE5A6E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFC36548190546EF00EC27A1 /* Resources */ = {
+		1554C66919A8B15A00EE5A6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC36556190546EF00EC27A1 /* InfoPlist.strings in Resources */,
+				1554C67719A8B15A00EE5A6E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FFC36522190546EF00EC27A1 /* Sources */ = {
+		1554C64319A8B15A00EE5A6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC36543190546EF00EC27A1 /* ViewController.m in Sources */,
-				FF45583E190E8896005D1C35 /* gestureViewController.m in Sources */,
-				FFC3653A190546EF00EC27A1 /* AppDelegate.m in Sources */,
-				FFC36536190546EF00EC27A1 /* main.m in Sources */,
-				FFC365641905475F00EC27A1 /* SerialGATT.m in Sources */,
+				1554C68519A8B1E500EE5A6E /* TAHbleTableController.m in Sources */,
+				1597A90619AA328B00D51685 /* WindowsViewController.m in Sources */,
+				1554C65B19A8B15A00EE5A6E /* AppDelegate.m in Sources */,
+				1554C65719A8B15A00EE5A6E /* main.m in Sources */,
+				1554C69919A8B28400EE5A6E /* SocialViewController.m in Sources */,
+				1554C69619A8B27B00EE5A6E /* MediaViewController.m in Sources */,
+				1554C69C19A8B31600EE5A6E /* HomeViewController.m in Sources */,
+				1554C69319A8B27200EE5A6E /* SettingsViewController.m in Sources */,
+				1509419E19D02FAE0039757B /* PresentationViewController.m in Sources */,
+				1597A90A19AA373B00D51685 /* iTunesViewController.m in Sources */,
+				1554C68919A8B20300EE5A6E /* TAHble.m in Sources */,
+				1597A90319AA327E00D51685 /* MACViewController.m in Sources */,
+				1554C68D19A8B21E00EE5A6E /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFC36546190546EF00EC27A1 /* Sources */ = {
+		1554C66719A8B15A00EE5A6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC36558190546EF00EC27A1 /* Tah_Motion_ControlTests.m in Sources */,
+				1554C67919A8B15A00EE5A6E /* TAH_Motion_ControlTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FFC36550190546EF00EC27A1 /* PBXTargetDependency */ = {
+		1554C67119A8B15A00EE5A6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FFC36525190546EF00EC27A1 /* Tah Motion Control */;
-			targetProxy = FFC3654F190546EF00EC27A1 /* PBXContainerItemProxy */;
+			target = 1554C64619A8B15A00EE5A6E /* TAH Motion Control */;
+			targetProxy = 1554C67019A8B15A00EE5A6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FFC36532190546EF00EC27A1 /* InfoPlist.strings */ = {
+		1554C65319A8B15A00EE5A6E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FFC36533190546EF00EC27A1 /* en */,
+				1554C65419A8B15A00EE5A6E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FFC3653B190546EF00EC27A1 /* Main_iPhone.storyboard */ = {
+		1554C65C19A8B15A00EE5A6E /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FFC3653C190546EF00EC27A1 /* Base */,
+				1554C65D19A8B15A00EE5A6E /* Base */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		FFC3653E190546EF00EC27A1 /* Main_iPad.storyboard */ = {
+		1554C67519A8B15A00EE5A6E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FFC3653F190546EF00EC27A1 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		FFC36554190546EF00EC27A1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFC36555190546EF00EC27A1 /* en */,
+				1554C67619A8B15A00EE5A6E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -346,7 +560,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FFC36559190546EF00EC27A1 /* Debug */ = {
+		1554C67A19A8B15A00EE5A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -385,7 +599,7 @@
 			};
 			name = Debug;
 		};
-		FFC3655A190546EF00EC27A1 /* Release */ = {
+		1554C67B19A8B15A00EE5A6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -418,68 +632,70 @@
 			};
 			name = Release;
 		};
-		FFC3655C190546EF00EC27A1 /* Debug */ = {
+		1554C67D19A8B15A00EE5A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tah Motion Control/Tah Motion Control-Prefix.pch";
-				INFOPLIST_FILE = "Tah Motion Control/Tah Motion Control-Info.plist";
+				GCC_PREFIX_HEADER = "TAH Motion Control/TAH Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "TAH Motion Control/TAH Motion Control-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		FFC3655D190546EF00EC27A1 /* Release */ = {
+		1554C67E19A8B15A00EE5A6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tah Motion Control/Tah Motion Control-Prefix.pch";
-				INFOPLIST_FILE = "Tah Motion Control/Tah Motion Control-Info.plist";
+				GCC_PREFIX_HEADER = "TAH Motion Control/TAH Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "TAH Motion Control/TAH Motion Control-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		FFC3655F190546EF00EC27A1 /* Debug */ = {
+		1554C68019A8B15A00EE5A6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tah Motion Control.app/Tah Motion Control";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Motion Control.app/TAH Motion Control";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tah Motion Control/Tah Motion Control-Prefix.pch";
+				GCC_PREFIX_HEADER = "TAH Motion Control/TAH Motion Control-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Tah Motion ControlTests/Tah Motion ControlTests-Info.plist";
+				INFOPLIST_FILE = "TAH Motion ControlTests/TAH Motion ControlTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		FFC36560190546EF00EC27A1 /* Release */ = {
+		1554C68119A8B15A00EE5A6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tah Motion Control.app/Tah Motion Control";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Motion Control.app/TAH Motion Control";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tah Motion Control/Tah Motion Control-Prefix.pch";
-				INFOPLIST_FILE = "Tah Motion ControlTests/Tah Motion ControlTests-Info.plist";
+				GCC_PREFIX_HEADER = "TAH Motion Control/TAH Motion Control-Prefix.pch";
+				INFOPLIST_FILE = "TAH Motion ControlTests/TAH Motion ControlTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -489,34 +705,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FFC36521190546EF00EC27A1 /* Build configuration list for PBXProject "Tah Motion Control" */ = {
+		1554C64219A8B15A00EE5A6E /* Build configuration list for PBXProject "TAH Motion Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFC36559190546EF00EC27A1 /* Debug */,
-				FFC3655A190546EF00EC27A1 /* Release */,
+				1554C67A19A8B15A00EE5A6E /* Debug */,
+				1554C67B19A8B15A00EE5A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFC3655B190546EF00EC27A1 /* Build configuration list for PBXNativeTarget "Tah Motion Control" */ = {
+		1554C67C19A8B15A00EE5A6E /* Build configuration list for PBXNativeTarget "TAH Motion Control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFC3655C190546EF00EC27A1 /* Debug */,
-				FFC3655D190546EF00EC27A1 /* Release */,
+				1554C67D19A8B15A00EE5A6E /* Debug */,
+				1554C67E19A8B15A00EE5A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFC3655E190546EF00EC27A1 /* Build configuration list for PBXNativeTarget "Tah Motion ControlTests" */ = {
+		1554C67F19A8B15A00EE5A6E /* Build configuration list for PBXNativeTarget "TAH Motion ControlTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFC3655F190546EF00EC27A1 /* Debug */,
-				FFC36560190546EF00EC27A1 /* Release */,
+				1554C68019A8B15A00EE5A6E /* Debug */,
+				1554C68119A8B15A00EE5A6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FFC3651E190546EF00EC27A1 /* Project object */;
+	rootObject = 1554C63F19A8B15A00EE5A6E /* Project object */;
 }

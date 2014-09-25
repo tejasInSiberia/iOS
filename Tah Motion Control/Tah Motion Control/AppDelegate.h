@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  Tah Motion Control
+//  TAH Motion Control
 //
-//  Created by DHIRAJ JADHAO on 21/04/14.
-//  Copyright (c) 2014 DHIRAJJADHAO. All rights reserved.
+//  Created by Dhiraj on 23/08/14.
+//  Copyright (c) 2014 dhirajjadhao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

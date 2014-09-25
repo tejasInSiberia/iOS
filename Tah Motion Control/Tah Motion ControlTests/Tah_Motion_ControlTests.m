@@ -1,18 +1,18 @@
 //
-//  Tah_Motion_ControlTests.m
-//  Tah Motion ControlTests
+//  TAH_Motion_ControlTests.m
+//  TAH Motion ControlTests
 //
-//  Created by DHIRAJ JADHAO on 21/04/14.
-//  Copyright (c) 2014 DHIRAJJADHAO. All rights reserved.
+//  Created by Dhiraj on 23/08/14.
+//  Copyright (c) 2014 dhirajjadhao. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface Tah_Motion_ControlTests : XCTestCase
+@interface TAH_Motion_ControlTests : XCTestCase
 
 @end
 
-@implementation Tah_Motion_ControlTests
+@implementation TAH_Motion_ControlTests
 
 - (void)setUp
 {

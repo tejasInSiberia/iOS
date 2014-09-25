@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Tah Motion Control.xcscheme</key>
+		<key>TAH Motion Control.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>FFC36525190546EF00EC27A1</key>
+		<key>1554C64619A8B15A00EE5A6E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FFC36549190546EF00EC27A1</key>
+		<key>1554C66A19A8B15A00EE5A6E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
