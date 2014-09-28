@@ -21,8 +21,6 @@
     
 }
 
-@property (strong, nonatomic) IBOutlet UISlider *sensslider;
-@property (strong, nonatomic) IBOutlet UILabel *sensvalue;
 
 @property (strong, nonatomic) CMMotionManager *motionManager;
 

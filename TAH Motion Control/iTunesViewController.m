@@ -20,8 +20,8 @@
 
 @synthesize sensor;
 @synthesize peripheral;
-@synthesize sensslider;
-@synthesize sensvalue;
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,6 +45,9 @@
     // Set Connection Status Image
     [self UpdateConnectionStatusLabel];
     
+    // Initialize command string
+    command = @" ";
+    
     // Starts gyro updates
     self.motionManager = [[CMMotionManager alloc] init];
     self.motionManager.accelerometerUpdateInterval = .1;
@@ -53,16 +56,6 @@
     [self updateall];
     
 }
-
--(void)viewDidAppear:(BOOL)animated
-{
-    // Starts gyro updates
-    self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.gyroUpdateInterval = .1;
-    
-    [self updateall];
-}
-
 
 
 - (void)didReceiveMemoryWarning
@@ -95,6 +88,7 @@
 {
     
     [self.motionManager stopGyroUpdates];
+    [self.motionManager stopAccelerometerUpdates];
     
     NSLog(@"Motion Sensor Stopped");
 }
@@ -182,25 +176,28 @@
 
 -(void)outputRotationData:(CMRotationRate)rotation
 {
-    
-    //sensvalue.text = [NSString stringWithFormat:@"%.2f",sensslider.value];
-   
     /*
     NSLog(@"X Rotation: %.2f", rotation.x);
     NSLog(@"Y Rotation: %.2f", rotation.y);
     NSLog(@"Z Rotation: %.2f", rotation.z);
-   */
+    */
     
+
     
-    if (rotation.x >=  sensslider.value) {
+    if (rotation.x >= 6.0  && !volume.touchInside) {
         
         
         
         NSLog(@"Right to Left");
         
-        NSString *RtoL = @"65M";
         
-        command = [NSString stringWithFormat:@"%@",RtoL];
+        
+        NSString *end=@"M";
+        
+        NSString *L = @"5";
+        NSString *R = @"6";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",R,L,end];
         [self sendCommand];
     }
     
@@ -209,35 +206,96 @@
     
     
     
-    else if (rotation.x <= -sensslider.value)
+    else if (rotation.x <= -6.0  &&  !volume.touchInside)
     {
         
         
         NSLog(@"Left to Right");
         
-        NSString *LtoR = @"56M";
         
-        command = [NSString stringWithFormat:@"%@",LtoR];
+        
+        NSString *end=@"M";
+        
+        NSString *L = @"5";
+        NSString *R = @"6";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",L,R,end];
         
         [self sendCommand];
         
     }
     
+    else if (previous.touchInside)
+    {
+        
+        
+        NSLog(@"Left Arrow Key");
+        
+        
+        
+        NSString *end=@"M";
+        
+        NSString *L = @"2";
+        NSString *R = @"0";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",L,R,end];
+        
+        [self sendCommand];
+        
+    }
+    
+    if (next.touchInside) {
+        
+        
+        
+        NSLog(@"Right Arrow key");
+        
+        
+        
+        NSString *end=@"M";
+        
+        NSString *L = @"1";
+        NSString *R = @"0";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",L,R,end];
+        [self sendCommand];
+    }
     
     
     
-    
-    
-    if (rotation.z >= sensslider.value) {
+    else if (rotation.z >= 6.0  && !volume.touchInside ) {
         
         
         
         NSLog(@"Up to Down");
         
         
-        NSString *UtoD = @"34M";
         
-        command = [NSString stringWithFormat:@"%@",UtoD];
+        NSString *end=@"M";
+        
+        NSString *U = @"3";
+        NSString *D = @"4";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",U,D,end];
+        
+        [self sendCommand];
+        
+    }
+    
+    else if (play.touchInside) {
+        
+        
+        
+        NSLog(@"Space Bar");
+        
+        
+        
+        NSString *end=@"M";
+        
+        NSString *U = @"3";
+        NSString *D = @"0";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",U,D,end];
         
         [self sendCommand];
         
@@ -245,16 +303,38 @@
     
     
     
-    else if (rotation.z <= -sensslider.value)
+    
+    else if (rotation.z <= -6.0)
     {
         
         
         
         NSLog(@"Down to Up");
         
-        NSString *DtoU = @"43M";
         
-        command = [NSString stringWithFormat:@"%@",DtoU];
+        
+        NSString *end=@"M";
+        
+        NSString *U = @"3";
+        NSString *D = @"4";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",D,U,end];
+        
+        [self sendCommand];
+    }
+    
+    
+   else if(!volume.touchInside)
+    {
+        
+        
+        
+        NSString *end=@"M";
+        
+        NSString *M = @"0";
+        NSString *N = @"0";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",M,N,end];
         
         [self sendCommand];
     }
@@ -264,18 +344,27 @@
 
 
 
+
 - (void)MotionPad:(CMAcceleration)acceleration
 {
+   /*
     NSLog(@"X acceleration:%.2f",acceleration.x);
-    //NSLog(@"Y acceleration:%.2f",acceleration.y);
-    //NSLog(@"Z acceleration:%.2f",acceleration.z);
+    NSLog(@"Y acceleration:%.2f",acceleration.y);
+    NSLog(@"Z acceleration:%.2f",acceleration.z);
+*/
     
- if (volume.touchInside  && acceleration.x > 0.6)
+    if (volume.touchInside  && acceleration.x > 0.6)
     {
+ 
+        [self volumeupanimate];
+        [volumedownimage stopAnimating];
         
-        NSString *volumeup = @"96M";
+        NSString *end=@"M";
         
-        command = [NSString stringWithFormat:@"%@",volumeup];
+        NSString *M = @"9";
+        NSString *N = @"6";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",M,N,end];
         
         [self sendCommand];
     }
@@ -284,28 +373,40 @@
     else if (volume.touchInside  && acceleration.x < -0.6)
     {
         
-        NSString *volumedown = @"97M";
+        [self volumedownanimate];
+        [volumeupimage stopAnimating];
         
-        command = [NSString stringWithFormat:@"%@",volumedown];
+        NSString *end=@"M";
+        
+        NSString *M = @"9";
+        NSString *N = @"7";
+        
+        command = [NSString stringWithFormat:@"%@%@%@",M,N,end];
         
         [self sendCommand];
     }
     
-    else if(volume.touchInside)
-    {
-        
-        
-        
-        NSString *volumeuntouched = @"0M";
-        
-        command = [NSString stringWithFormat:@"%@",volumeuntouched];
+    
+    
+}
 
-        [self sendCommand];
-    }
-    
-    
-    
-    
+-(void)volumeupanimate
+{
+    volumeupimage.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"up red.png"],
+                                 [UIImage imageNamed:@"up white.png"],nil];
+    [volumeupimage setAnimationRepeatCount:-1];
+    volumeupimage.animationDuration = 0.5;
+    [volumeupimage startAnimating];
+}
+
+
+-(void)volumedownanimate
+{
+    volumedownimage.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"down red.png"],
+                                     [UIImage imageNamed:@"down white.png"],nil];
+    [volumedownimage setAnimationRepeatCount:-1];
+    volumedownimage.animationDuration = 0.5;
+    [volumedownimage startAnimating];
 }
 
 
@@ -332,52 +433,23 @@
 
 
 
-
-
-
-
-- (IBAction)play:(id)sender {
+- (IBAction)VolumeTouchDown:(id)sender {
     
-   NSString *string = @"30M";
-    
-    NSData *data = [string dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    [sensor write:sensor.activePeripheral data:data];
+    volumesilkscreen.hidden = NO;
+    volumeupimage.hidden = NO;
+    volumedownimage.hidden = NO;
+
+
 }
 
-- (IBAction)next:(id)sender {
-   
-    NSString *string = @"10M";
+- (IBAction)VolumeTouchInside:(id)sender {
     
-    NSData *data = [string dataUsingEncoding:[NSString defaultCStringEncoding]];
+    volumesilkscreen.hidden = YES;
+    volumeupimage.hidden = YES;
+    volumedownimage.hidden = YES;
     
-    [sensor write:sensor.activePeripheral data:data];
-}
-
-- (IBAction)previous:(id)sender {
+    [volumeupimage stopAnimating];
+    [volumedownimage stopAnimating];
     
-    NSString *string = @"20M";
-    
-    NSData *data = [string dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    [sensor write:sensor.activePeripheral data:data];
-}
-
-- (IBAction)volup:(id)sender {
-    
-    NSString *string = @"96M";
-    
-    NSData *data = [string dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    [sensor write:sensor.activePeripheral data:data];
-}
-
-- (IBAction)voldown:(id)sender {
-    
-    NSString *string = @"97M";
-    
-    NSData *data = [string dataUsingEncoding:[NSString defaultCStringEncoding]];
-    
-    [sensor write:sensor.activePeripheral data:data];
 }
 @end

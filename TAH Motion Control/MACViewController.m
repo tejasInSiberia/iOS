@@ -22,8 +22,8 @@
 
 @synthesize sensor;
 @synthesize peripheral;
-@synthesize sensslider;
-@synthesize sensvalue;
+
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -55,14 +55,9 @@
     
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
-    // Starts gyro updates
-    self.motionManager = [[CMMotionManager alloc] init];
-    self.motionManager.gyroUpdateInterval = .1;
-    
-    [self updateall];
-}
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -77,12 +72,25 @@
 {
     // Set Connection Status Image
     [self UpdateConnectionStatusLabel];
+    
+
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    // Starts gyro updates
+    self.motionManager = [[CMMotionManager alloc] init];
+    self.motionManager.accelerometerUpdateInterval = .1;
+    self.motionManager.gyroUpdateInterval = .1;
+    
+    [self updateall];
 }
 
 -(void)viewDidDisappear:(BOOL)animated
 {
     
     [self.motionManager stopGyroUpdates];
+    [self.motionManager stopAccelerometerUpdates];
     
     NSLog(@"Motion Sensor Stopped");
 }
@@ -223,13 +231,18 @@
 -(void)outputRotationData:(CMRotationRate)rotation
 {
     
-    //sensvalue.text = [NSString stringWithFormat:@"%.2f",sensslider.value];
     
-    NSLog(@"X Rotation: %.2f", rotation.x);
-    NSLog(@"Y Rotation: %.2f", rotation.y);
-    NSLog(@"Z Rotation: %.2f", rotation.z);
+    /*
+     NSLog(@"X Rotation: %.2f", rotation.x);
+     NSLog(@"Y Rotation: %.2f", rotation.y);
+     NSLog(@"Z Rotation: %.2f", rotation.z);
+     */
     
-    if (rotation.x >= sensslider.value) {
+    
+
+    
+
+    if (rotation.x >= 6.0) {
         
         
         
@@ -246,7 +259,7 @@
     
     
     
-    else if (rotation.x <= -sensslider.value)
+    else if (rotation.x <= -6.0)
     {
         
         
@@ -265,7 +278,7 @@
     
     
     
-    if (rotation.z >= sensslider.value) {
+    if (rotation.z >= 6.0) {
         
         
         
@@ -282,7 +295,7 @@
     
      
     
-    else if (rotation.z <= -sensslider.value)
+    else if (rotation.z <= -6.0)
     {
         
         

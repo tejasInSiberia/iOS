@@ -56,7 +56,7 @@
     
     
     /////////////// Setting array of Images and Identifiers for Collection View Cells /////////////
-    arrayofImages = [[NSArray alloc]initWithObjects:@"macicon.png",@"windowsicon.png",@"share",@"youtube.png",@"settings.png",nil];
+    arrayofImages = [[NSArray alloc]initWithObjects:@"mac.png",@"windows.png",@"share",@"youtube.png",@"settings.png",nil];
     arrayofCellIdentifiers = [[NSArray alloc]initWithObjects:@"Cell1",@"Cell2",@"Cell3",@"Cell4",@"Cell5", nil];
     
     ////////////////////////////////////////////////////////////////////////////
@@ -174,7 +174,7 @@
         
         detailViewController.sensor = self.sensor;
         
-        detailViewController.title = @"MAC";
+        detailViewController.title = @"Mac";
         
     }
     
@@ -184,7 +184,7 @@
         
         detailViewController.sensor = self.sensor;
         
-        detailViewController.title = @"WINDOWS";
+        detailViewController.title = @"Windows";
     }
     
     

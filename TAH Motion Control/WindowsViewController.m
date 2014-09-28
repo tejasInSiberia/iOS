@@ -8,6 +8,7 @@
 
 #import <AudioToolbox/AudioToolbox.h>
 #import "WindowsViewController.h"
+#import "PresentationViewController.h"
 
 @interface WindowsViewController ()
 
@@ -45,18 +46,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 -(void)viewWillAppear:(BOOL)animated
 {
     // Set Connection Status Image
     [self UpdateConnectionStatusLabel];
 }
-*/
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"Touched");
-}
 
 ///////////// Update Device Connection Status Image //////////
 -(void)UpdateConnectionStatusLabel
@@ -86,6 +82,42 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//////////////////////// Preparing Segue for Navigation //////////////////////////
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Changes title of the Back Button in destintion controller
+    UIBarButtonItem *newBackButton =
+    [[UIBarButtonItem alloc] initWithTitle:@"Home"
+                                     style:UIBarButtonItemStyleBordered
+                                    target:nil
+                                    action:nil];
+    [[self navigationItem] setBackBarButtonItem:newBackButton];
+
+    
+    
+    if ([[segue identifier] isEqualToString:@"presentation"])
+    {
+        
+        PresentationViewController *detailViewController = [segue destinationViewController];
+        
+        detailViewController.sensor = self.sensor;
+        
+        
+        detailViewController.title = @"Presentation";
+        
+    }
+    
+    
+    
+    
+    
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
 
 
 

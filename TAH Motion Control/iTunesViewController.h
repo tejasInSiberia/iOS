@@ -23,23 +23,29 @@
     IBOutlet UIButton *next;
     IBOutlet UIButton *previous;
 
+    IBOutlet UILabel *volumesilkscreen;
     
+  
+    
+    IBOutlet UIImageView *volumeupimage;
+    IBOutlet UIImageView *volumedownimage;
     IBOutlet UIButton *volume;
 
     
 }
 
-@property (strong, nonatomic) IBOutlet UISlider *sensslider;
-@property (strong, nonatomic) IBOutlet UILabel *sensvalue;
+
+
 
 @property (strong, nonatomic) CMMotionManager *motionManager;
 
 @property (strong, nonatomic) CBPeripheral *peripheral;
 @property (strong, nonatomic) TAHble *sensor;
 
-- (IBAction)play:(id)sender;
-- (IBAction)next:(id)sender;
-- (IBAction)previous:(id)sender;
+
+- (IBAction)VolumeTouchDown:(id)sender;
+- (IBAction)VolumeTouchInside:(id)sender;
+
 
 
 
