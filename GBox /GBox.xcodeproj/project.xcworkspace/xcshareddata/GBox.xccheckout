@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DAB3DCBB-1BE2-41D4-890E-EE41BE57AEF1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GBox</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>316472D4A185AAB3DD5A4F1C05C7A20A69E2DF81</key>
+		<string>https://github.com/tah-io/iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GBox /GBox.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>316472D4A185AAB3DD5A4F1C05C7A20A69E2DF81</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tah-io/iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>316472D4A185AAB3DD5A4F1C05C7A20A69E2DF81</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>316472D4A185AAB3DD5A4F1C05C7A20A69E2DF81</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

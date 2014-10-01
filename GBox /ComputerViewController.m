@@ -265,7 +265,7 @@
     
     NSString *command = @" ";
     NSString *comma=@",";
-    NSString *end=@"X";
+    NSString *end=@"C";
     
     //Right Joystick
     float anaX = [anaXvalue floatValue];
