@@ -40,6 +40,10 @@
     
     // Set Connection Status Image
     [self UpdateConnectionStatusLabel];
+    
+    // Set Scroll View for iPhone 3.5 inch
+    [Scroller setScrollEnabled:YES];
+    [Scroller setContentSize:CGSizeMake(320, 500)];
 
 }
 
@@ -381,37 +385,39 @@
         
         
         D3Sliderlabel.text = [NSString stringWithFormat:@"%.0f",D3Slider.value*255];
-        D3Sliderlabel.center = CGPointMake((value3 + 36.0),D3Sliderlabel.center.y);
-        
-        
-        
         D5Sliderlabel.text = [NSString stringWithFormat:@"%.0f",D5Slider.value*255];
-        D5Sliderlabel.center = CGPointMake((value5 + 36.0),D5Sliderlabel.center.y);
-        
-        
-        
         D6Sliderlabel.text = [NSString stringWithFormat:@"%.0f",D6Slider.value*255];
-        D6Sliderlabel.center = CGPointMake((value6 + 36.0),D6Sliderlabel.center.y);
-        
-        
-        
         D9Sliderlabel.text = [NSString stringWithFormat:@"%.0f",D9Slider.value*255];
-        D9Sliderlabel.center = CGPointMake((value9 + 36.0),D9Sliderlabel.center.y);
-        
-        
-        
         D10Sliderlabel.text = [NSString stringWithFormat:@"%.0f",D10Slider.value*255];
-        D10Sliderlabel.center = CGPointMake((value10 + 36.0),D10Sliderlabel.center.y);
-        
-        
-        
         D11Sliderlabel.text = [NSString stringWithFormat:@"%.0f",D11Slider.value*255];
-        D11Sliderlabel.center = CGPointMake((value11 + 36.0),D11Sliderlabel.center.y);
-        
-        
-        
         D13Sliderlabel.text = [NSString stringWithFormat:@"%.0f",D13Slider.value*255];
-        D13Sliderlabel.center = CGPointMake((value13 + 36.0),D13Sliderlabel.center.y);
+        
+        
+        if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone)
+        {
+        D3Sliderlabel.center = CGPointMake((value3 + 36.0),D3Sliderlabel.center.y);
+            D5Sliderlabel.center = CGPointMake((value5 + 36.0),D5Sliderlabel.center.y);
+            D6Sliderlabel.center = CGPointMake((value6 + 36.0),D6Sliderlabel.center.y);
+            D9Sliderlabel.center = CGPointMake((value9 + 36.0),D9Sliderlabel.center.y);
+            D10Sliderlabel.center = CGPointMake((value10 + 36.0),D10Sliderlabel.center.y);
+            D11Sliderlabel.center = CGPointMake((value11 + 36.0),D11Sliderlabel.center.y);
+            D13Sliderlabel.center = CGPointMake((value13 + 36.0),D13Sliderlabel.center.y);
+        }
+        
+        else
+        {
+        D3Sliderlabel.center = CGPointMake((value3 + 256.0),D3Sliderlabel.center.y);
+        D5Sliderlabel.center = CGPointMake((value5 + 256.0),D5Sliderlabel.center.y);
+        D6Sliderlabel.center = CGPointMake((value6 + 256.0),D6Sliderlabel.center.y);
+        D9Sliderlabel.center = CGPointMake((value9 + 256.0),D9Sliderlabel.center.y);
+        D10Sliderlabel.center = CGPointMake((value10 + 256.0),D10Sliderlabel.center.y);
+        D11Sliderlabel.center = CGPointMake((value11 + 256.0),D11Sliderlabel.center.y);
+        D13Sliderlabel.center = CGPointMake((value13 + 256.0),D13Sliderlabel.center.y);
+        }
+        
+        
+        
+ 
         
     
     }

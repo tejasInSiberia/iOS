@@ -18,6 +18,7 @@
 {
     NSTimer *TAHstatusupdatetimer;
     
+    IBOutlet UIScrollView *Scroller;
     IBOutlet UILabel *ConnectionStatusLabel;
     
     IBOutlet UILabel *a0ProgressLabel;

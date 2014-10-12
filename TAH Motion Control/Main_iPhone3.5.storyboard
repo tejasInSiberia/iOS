@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9te-LB-rrM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="9te-LB-rrM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller - HOME-->
+        <!--HOME-->
         <scene sceneID="UI0-Jf-kwa">
             <objects>
                 <viewController id="vRi-IM-os2" customClass="HomeViewController" sceneMemberID="viewController">
@@ -46,10 +47,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mac.png" id="0Ms-aE-93u">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ring.png" id="0Ms-aE-93u">
                                                     <rect key="frame" x="10" y="10" width="115" height="115"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zgy-QL-7Vx">
+                                                    <rect key="frame" x="36" y="55" width="62" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -66,10 +74,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windows.png" id="4GK-Ke-6cT">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ring.png" id="4GK-Ke-6cT">
                                                     <rect key="frame" x="7" y="10" width="115" height="115"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Windows" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fdM-Jp-7K9">
+                                                    <rect key="frame" x="19" y="55" width="95" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -200,9 +215,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="hzB-t0-HP5">
-                                <rect key="frame" x="108" y="115" width="98" height="88"/>
+                                <rect key="frame" x="110" y="111" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="media player.png">
+                                <state key="normal" image="mediaplayer.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -210,7 +225,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="hGm-pw-0uf">
-                                <rect key="frame" x="110" y="263" width="102" height="102"/>
+                                <rect key="frame" x="117" y="271" width="86" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Presentation.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -244,16 +259,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Pap-uH-1BI">
-                                <rect key="frame" x="109" y="189" width="102" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Presentation.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Z2c-1B-otm" kind="push" identifier="presentation" id="Dzc-RX-GSM"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Nq-b1-sg5">
                                 <rect key="frame" x="0.0" y="466" width="320" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
@@ -266,6 +271,16 @@
                                 <rect key="frame" x="273" y="25" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Pap-uH-1BI">
+                                <rect key="frame" x="117" y="191" width="86" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Presentation.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z2c-1B-otm" kind="push" identifier="presentation" id="Dzc-RX-GSM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -469,7 +484,7 @@
             </objects>
             <point key="canvasLocation" x="1390" y="-1549"/>
         </scene>
-        <!--Settings View Controller - SETTINGS-->
+        <!--SETTINGS-->
         <scene sceneID="X4m-Xe-WMN">
             <objects>
                 <viewController id="EDM-gC-ymw" customClass="SettingsViewController" sceneMemberID="viewController">
@@ -721,7 +736,7 @@
             </objects>
             <point key="canvasLocation" x="1140" y="-297"/>
         </scene>
-        <!--Hble Table Controller - TAH Scanner-->
+        <!--TAH Scanner-->
         <scene sceneID="owk-fL-5AW">
             <objects>
                 <viewController id="Giv-6V-Hy8" customClass="TAHbleTableController" sceneMemberID="viewController">
@@ -806,7 +821,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Presentation.png" width="122" height="122"/>
+        <image name="Presentation.png" width="185" height="235"/>
         <image name="backward.png" width="402" height="402"/>
         <image name="down arrow.png" width="209" height="338"/>
         <image name="down white.png" width="72" height="72"/>
@@ -814,12 +829,12 @@
         <image name="forward.png" width="402" height="402"/>
         <image name="home.png" width="40" height="38"/>
         <image name="left arrow.png" width="338" height="209"/>
-        <image name="mac.png" width="260" height="260"/>
-        <image name="media player.png" width="246" height="246"/>
+        <image name="mediaplayer.png" width="260" height="261"/>
         <image name="playpause.png" width="256" height="256"/>
         <image name="red.png" width="640" height="1136"/>
         <image name="reload.png" width="410" height="410"/>
         <image name="right arrow.png" width="338" height="209"/>
+        <image name="ring.png" width="260" height="261"/>
         <image name="settings.png" width="260" height="260"/>
         <image name="share.png" width="260" height="260"/>
         <image name="tah.png" width="100" height="100"/>
@@ -829,7 +844,6 @@
         <image name="volup.png" width="100" height="100"/>
         <image name="web backward.png" width="410" height="410"/>
         <image name="web forward.png" width="410" height="410"/>
-        <image name="windows.png" width="260" height="260"/>
         <image name="youtube.png" width="260" height="260"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -838,6 +852,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jW7-SQ-Woh"/>
+        <segue reference="Dzc-RX-GSM"/>
     </inferredMetricsTieBreakers>
 </document>

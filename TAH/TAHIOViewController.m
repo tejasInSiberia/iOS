@@ -575,6 +575,7 @@
     if (D13switch.on)
     {
         [sensor TAHPin13digitalWrite:sensor.activePeripheral HIGH:YES];
+        tahL13led.image = [UIImage imageNamed:@"ledb"] ;
 
     }
     

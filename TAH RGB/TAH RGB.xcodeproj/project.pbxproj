@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		150C2B3319B9DBDA0003644E /* TAHbleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C2B3219B9DBDA0003644E /* TAHbleTableController.m */; };
 		150C2B3619B9DBEC0003644E /* TAHble.m in Sources */ = {isa = PBXBuildFile; fileRef = 150C2B3519B9DBEC0003644E /* TAHble.m */; };
-		153E10EA197851F4007F37E4 /* RGB back.png in Resources */ = {isa = PBXBuildFile; fileRef = 153E10E9197851F4007F37E4 /* RGB back.png */; };
 		153E10EE197853DE007F37E4 /* tah.png in Resources */ = {isa = PBXBuildFile; fileRef = 153E10ED197853DE007F37E4 /* tah.png */; };
 		1543E0BF19D96CDF00EF16D1 /* Main_iPhone3.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1543E0BE19D96CDF00EF16D1 /* Main_iPhone3.5.storyboard */; };
 		1543E0C119D96F9000EF16D1 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1543E0C019D96F9000EF16D1 /* home.png */; };
@@ -61,7 +60,6 @@
 		150C2B3219B9DBDA0003644E /* TAHbleTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHbleTableController.m; sourceTree = "<group>"; };
 		150C2B3419B9DBEC0003644E /* TAHble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHble.h; sourceTree = "<group>"; };
 		150C2B3519B9DBEC0003644E /* TAHble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHble.m; sourceTree = "<group>"; };
-		153E10E9197851F4007F37E4 /* RGB back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RGB back.png"; sourceTree = "<group>"; };
 		153E10ED197853DE007F37E4 /* tah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tah.png; sourceTree = "<group>"; };
 		1543E0BE19D96CDF00EF16D1 /* Main_iPhone3.5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone3.5.storyboard; sourceTree = "<group>"; };
 		1543E0C019D96F9000EF16D1 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 				1598786E19D4880000B2E81A /* frame.png */,
 				1598785819D47E7100B2E81A /* rgb bg.png */,
 				153E10ED197853DE007F37E4 /* tah.png */,
-				153E10E9197851F4007F37E4 /* RGB back.png */,
 				156824A01977F3110051072F /* TAH RGB-Info.plist */,
 				156824A11977F3110051072F /* InfoPlist.strings */,
 				156824A41977F3110051072F /* main.m */,
@@ -373,7 +370,6 @@
 				1598788219D4895C00B2E81A /* reload.png in Resources */,
 				1598787719D4885000B2E81A /* youtube.png in Resources */,
 				1598787419D4883600B2E81A /* share.png in Resources */,
-				153E10EA197851F4007F37E4 /* RGB back.png in Resources */,
 				1598785919D47E7100B2E81A /* rgb bg.png in Resources */,
 				1598788119D4895C00B2E81A /* web forward.png in Resources */,
 				156824B41977F3110051072F /* Images.xcassets in Resources */,

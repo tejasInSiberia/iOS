@@ -19,6 +19,7 @@
 {
     IBOutlet UISegmentedControl *PWMtypesegment;
     
+    IBOutlet UIScrollView *Scroller;
     
     IBOutlet UISlider *D3Slider;
     IBOutlet UISlider *D5Slider;

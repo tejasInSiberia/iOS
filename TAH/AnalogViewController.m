@@ -41,6 +41,10 @@
     // Sets TAH class delegate
     self.sensor.delegate = self;
     
+    // Set Scroll View for iPhone 3.5 inch
+    [Scroller setScrollEnabled:YES];
+    [Scroller setContentSize:CGSizeMake(320, 500)];
+    
     
     
     ////// Setting Circle Progress Indicator ////////
