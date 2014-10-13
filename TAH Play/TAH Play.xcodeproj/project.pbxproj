@@ -7,179 +7,339 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF44E3E9191955BD0001FEE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3E8191955BD0001FEE9 /* Foundation.framework */; };
-		FF44E3EB191955BE0001FEE9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3EA191955BD0001FEE9 /* CoreGraphics.framework */; };
-		FF44E3ED191955BE0001FEE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3EC191955BE0001FEE9 /* UIKit.framework */; };
-		FF44E3F3191955BE0001FEE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF44E3F1191955BE0001FEE9 /* InfoPlist.strings */; };
-		FF44E3F5191955BE0001FEE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44E3F4191955BE0001FEE9 /* main.m */; };
-		FF44E3F9191955BE0001FEE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44E3F8191955BE0001FEE9 /* AppDelegate.m */; };
-		FF44E3FC191955BE0001FEE9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF44E3FA191955BE0001FEE9 /* Main_iPhone.storyboard */; };
-		FF44E3FF191955BE0001FEE9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF44E3FD191955BE0001FEE9 /* Main_iPad.storyboard */; };
-		FF44E402191955BE0001FEE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44E401191955BE0001FEE9 /* ViewController.m */; };
-		FF44E404191955BE0001FEE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF44E403191955BE0001FEE9 /* Images.xcassets */; };
-		FF44E40B191955BE0001FEE9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E40A191955BE0001FEE9 /* XCTest.framework */; };
-		FF44E40C191955BE0001FEE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3E8191955BD0001FEE9 /* Foundation.framework */; };
-		FF44E40D191955BE0001FEE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF44E3EC191955BE0001FEE9 /* UIKit.framework */; };
-		FF44E415191955BE0001FEE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF44E413191955BE0001FEE9 /* InfoPlist.strings */; };
-		FF44E417191955BE0001FEE9 /* TAH_PlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF44E416191955BE0001FEE9 /* TAH_PlayTests.m */; };
-		FF44E42119195F0A0001FEE9 /* buttonpad.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E42019195F0A0001FEE9 /* buttonpad.png */; };
-		FF44E425191964C80001FEE9 /* XboxLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E422191964C80001FEE9 /* XboxLogo.png */; };
-		FF44E426191964C80001FEE9 /* pcjoy logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E423191964C80001FEE9 /* pcjoy logo.png */; };
-		FF44E427191964C80001FEE9 /* PlayStation-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E424191964C80001FEE9 /* PlayStation-Logo.png */; };
-		FF44E4291919661B0001FEE9 /* setting icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF44E4281919661B0001FEE9 /* setting icon.png */; };
+		15D06D7019EAC0B2004EA858 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06D6F19EAC0B2004EA858 /* main.m */; };
+		15D06D7319EAC0B2004EA858 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06D7219EAC0B2004EA858 /* AppDelegate.m */; };
+		15D06D7B19EAC0B2004EA858 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D06D7A19EAC0B2004EA858 /* Images.xcassets */; };
+		15D06D8A19EAC0B2004EA858 /* TAH_PlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06D8919EAC0B2004EA858 /* TAH_PlayTests.m */; };
+		15D06D9519EAC146004EA858 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06D9419EAC146004EA858 /* HomeViewController.m */; };
+		15D06D9719EAC15D004EA858 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D06D9619EAC15D004EA858 /* Main_iPhone.storyboard */; };
+		15D06D9919EAC262004EA858 /* Main_iPhone3.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D06D9819EAC262004EA858 /* Main_iPhone3.5.storyboard */; };
+		15D06D9B19EAC268004EA858 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D06D9A19EAC268004EA858 /* Main_iPad.storyboard */; };
+		15D06DAE19EAC29D004EA858 /* A butt.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06D9D19EAC29D004EA858 /* A butt.png */; };
+		15D06DAF19EAC29D004EA858 /* B butt.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06D9E19EAC29D004EA858 /* B butt.png */; };
+		15D06DB019EAC29D004EA858 /* X butt.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06D9F19EAC29D004EA858 /* X butt.png */; };
+		15D06DB119EAC29D004EA858 /* Y butt.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA019EAC29D004EA858 /* Y butt.png */; };
+		15D06DB219EAC29D004EA858 /* control.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA119EAC29D004EA858 /* control.png */; };
+		15D06DB319EAC29D004EA858 /* web forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA219EAC29D004EA858 /* web forward.png */; };
+		15D06DB419EAC29D004EA858 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA319EAC29D004EA858 /* reload.png */; };
+		15D06DB519EAC29D004EA858 /* web backward.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA419EAC29D004EA858 /* web backward.png */; };
+		15D06DB619EAC29D004EA858 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA519EAC29D004EA858 /* fb.png */; };
+		15D06DB719EAC29D004EA858 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA619EAC29D004EA858 /* twitter.png */; };
+		15D06DB919EAC29D004EA858 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA819EAC29D004EA858 /* home.png */; };
+		15D06DBA19EAC29D004EA858 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DA919EAC29D004EA858 /* youtube.png */; };
+		15D06DBB19EAC29D004EA858 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DAA19EAC29D004EA858 /* setting.png */; };
+		15D06DBC19EAC29D004EA858 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DAB19EAC29D004EA858 /* share.png */; };
+		15D06DBD19EAC29D004EA858 /* tah rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DAC19EAC29D004EA858 /* tah rabbit.png */; };
+		15D06DBE19EAC29D004EA858 /* Tah Play bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DAD19EAC29D004EA858 /* Tah Play bg.png */; };
+		15D06DC219EAC2D1004EA858 /* ComputerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DC119EAC2D1004EA858 /* ComputerViewController.m */; };
+		15D06DCE19EAC34B004EA858 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DCD19EAC34B004EA858 /* CustomCell.m */; };
+		15D06DD119EAC353004EA858 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DD019EAC353004EA858 /* SettingsViewController.m */; };
+		15D06DD419EAC35B004EA858 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DD319EAC35B004EA858 /* SocialViewController.m */; };
+		15D06DD719EAC365004EA858 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DD619EAC365004EA858 /* MediaViewController.m */; };
+		15D06DDA19EAC36F004EA858 /* TAHbleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DD919EAC36F004EA858 /* TAHbleTableController.m */; };
+		15D06DE219EAC3DA004EA858 /* JSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DDD19EAC3DA004EA858 /* JSDPad.m */; };
+		15D06DE319EAC3DA004EA858 /* JSAnalogueStick.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DDF19EAC3DA004EA858 /* JSAnalogueStick.m */; };
+		15D06DE419EAC3DA004EA858 /* JSControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DE119EAC3DA004EA858 /* JSControlLayout.m */; };
+		15D06DE719EAC4B7004EA858 /* TAHble.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D06DE619EAC4B7004EA858 /* TAHble.m */; };
+		15D06DE919EAC5DA004EA858 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DE819EAC5DA004EA858 /* Default-568h@2x.png */; };
+		15D06DEB19EACAC0004EA858 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D06DEA19EACAC0004EA858 /* CoreGraphics.framework */; };
+		15D06DED19EACAC7004EA858 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D06DEC19EACAC7004EA858 /* UIKit.framework */; };
+		15D06DEF19EACACF004EA858 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15D06DEE19EACACF004EA858 /* Foundation.framework */; };
+		15D06DF219EB0283004EA858 /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DF119EB0283004EA858 /* frame.png */; };
+		15D06DF419EB0AEF004EA858 /* Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DF319EB0AEF004EA858 /* Up.png */; };
+		15D06DF819EB0B8B004EA858 /* Left.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DF519EB0B8B004EA858 /* Left.png */; };
+		15D06DF919EB0B8B004EA858 /* Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DF619EB0B8B004EA858 /* Down.png */; };
+		15D06DFA19EB0B8B004EA858 /* Right.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D06DF719EB0B8B004EA858 /* Right.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FF44E40E191955BE0001FEE9 /* PBXContainerItemProxy */ = {
+		15D06D8419EAC0B2004EA858 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FF44E3DD191955BD0001FEE9 /* Project object */;
+			containerPortal = 15D06D6219EAC0B2004EA858 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FF44E3E4191955BD0001FEE9;
+			remoteGlobalIDString = 15D06D6919EAC0B2004EA858;
 			remoteInfo = "TAH Play";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FF44E3E5191955BD0001FEE9 /* TAH Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAH Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF44E3E8191955BD0001FEE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FF44E3EA191955BD0001FEE9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FF44E3EC191955BE0001FEE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		FF44E3F0191955BE0001FEE9 /* TAH Play-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH Play-Info.plist"; sourceTree = "<group>"; };
-		FF44E3F2191955BE0001FEE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FF44E3F4191955BE0001FEE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FF44E3F6191955BE0001FEE9 /* TAH Play-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAH Play-Prefix.pch"; sourceTree = "<group>"; };
-		FF44E3F7191955BE0001FEE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FF44E3F8191955BE0001FEE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FF44E3FB191955BE0001FEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		FF44E3FE191955BE0001FEE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		FF44E400191955BE0001FEE9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FF44E401191955BE0001FEE9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FF44E403191955BE0001FEE9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FF44E409191955BE0001FEE9 /* TAH PlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAH PlayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF44E40A191955BE0001FEE9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FF44E412191955BE0001FEE9 /* TAH PlayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH PlayTests-Info.plist"; sourceTree = "<group>"; };
-		FF44E414191955BE0001FEE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FF44E416191955BE0001FEE9 /* TAH_PlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAH_PlayTests.m; sourceTree = "<group>"; };
-		FF44E42019195F0A0001FEE9 /* buttonpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonpad.png; sourceTree = "<group>"; };
-		FF44E422191964C80001FEE9 /* XboxLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XboxLogo.png; sourceTree = "<group>"; };
-		FF44E423191964C80001FEE9 /* pcjoy logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pcjoy logo.png"; sourceTree = "<group>"; };
-		FF44E424191964C80001FEE9 /* PlayStation-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayStation-Logo.png"; sourceTree = "<group>"; };
-		FF44E4281919661B0001FEE9 /* setting icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting icon.png"; sourceTree = "<group>"; };
+		15D06D6A19EAC0B2004EA858 /* TAH Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TAH Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D06D6E19EAC0B2004EA858 /* TAH Play-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TAH Play-Info.plist"; sourceTree = "<group>"; };
+		15D06D6F19EAC0B2004EA858 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15D06D7119EAC0B2004EA858 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15D06D7219EAC0B2004EA858 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15D06D7A19EAC0B2004EA858 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		15D06D8319EAC0B2004EA858 /* TAH PlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TAH PlayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15D06D8819EAC0B2004EA858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D06D8919EAC0B2004EA858 /* TAH_PlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAH_PlayTests.m; sourceTree = "<group>"; };
+		15D06D9319EAC146004EA858 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		15D06D9419EAC146004EA858 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		15D06D9619EAC15D004EA858 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		15D06D9819EAC262004EA858 /* Main_iPhone3.5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone3.5.storyboard; sourceTree = "<group>"; };
+		15D06D9A19EAC268004EA858 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		15D06D9D19EAC29D004EA858 /* A butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "A butt.png"; sourceTree = "<group>"; };
+		15D06D9E19EAC29D004EA858 /* B butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "B butt.png"; sourceTree = "<group>"; };
+		15D06D9F19EAC29D004EA858 /* X butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X butt.png"; sourceTree = "<group>"; };
+		15D06DA019EAC29D004EA858 /* Y butt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Y butt.png"; sourceTree = "<group>"; };
+		15D06DA119EAC29D004EA858 /* control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control.png; sourceTree = "<group>"; };
+		15D06DA219EAC29D004EA858 /* web forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web forward.png"; sourceTree = "<group>"; };
+		15D06DA319EAC29D004EA858 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+		15D06DA419EAC29D004EA858 /* web backward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "web backward.png"; sourceTree = "<group>"; };
+		15D06DA519EAC29D004EA858 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		15D06DA619EAC29D004EA858 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		15D06DA819EAC29D004EA858 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		15D06DA919EAC29D004EA858 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
+		15D06DAA19EAC29D004EA858 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		15D06DAB19EAC29D004EA858 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		15D06DAC19EAC29D004EA858 /* tah rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tah rabbit.png"; sourceTree = "<group>"; };
+		15D06DAD19EAC29D004EA858 /* Tah Play bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tah Play bg.png"; sourceTree = "<group>"; };
+		15D06DC019EAC2D1004EA858 /* ComputerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerViewController.h; sourceTree = "<group>"; };
+		15D06DC119EAC2D1004EA858 /* ComputerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerViewController.m; sourceTree = "<group>"; };
+		15D06DCC19EAC34B004EA858 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = "../Project Tah/TAH iOS App/TAH Play/CustomCell.h"; sourceTree = "<group>"; };
+		15D06DCD19EAC34B004EA858 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = "../Project Tah/TAH iOS App/TAH Play/CustomCell.m"; sourceTree = "<group>"; };
+		15D06DCF19EAC353004EA858 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = "../Project Tah/TAH iOS App/TAH Play/SettingsViewController.h"; sourceTree = "<group>"; };
+		15D06DD019EAC353004EA858 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = "../Project Tah/TAH iOS App/TAH Play/SettingsViewController.m"; sourceTree = "<group>"; };
+		15D06DD219EAC35B004EA858 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialViewController.h; path = "../Project Tah/TAH iOS App/TAH Play/SocialViewController.h"; sourceTree = "<group>"; };
+		15D06DD319EAC35B004EA858 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialViewController.m; path = "../Project Tah/TAH iOS App/TAH Play/SocialViewController.m"; sourceTree = "<group>"; };
+		15D06DD519EAC365004EA858 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaViewController.h; path = "../Project Tah/TAH iOS App/TAH Play/MediaViewController.h"; sourceTree = "<group>"; };
+		15D06DD619EAC365004EA858 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaViewController.m; path = "../Project Tah/TAH iOS App/TAH Play/MediaViewController.m"; sourceTree = "<group>"; };
+		15D06DD819EAC36F004EA858 /* TAHbleTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAHbleTableController.h; path = "../Project Tah/TAH iOS App/TAH Play/TAHbleTableController.h"; sourceTree = "<group>"; };
+		15D06DD919EAC36F004EA858 /* TAHbleTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAHbleTableController.m; path = "../Project Tah/TAH iOS App/TAH Play/TAHbleTableController.m"; sourceTree = "<group>"; };
+		15D06DDC19EAC3DA004EA858 /* JSDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSDPad.h; path = "../Project Tah/TAH iOS App/TAH Play/JSDPad.h"; sourceTree = "<group>"; };
+		15D06DDD19EAC3DA004EA858 /* JSDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSDPad.m; path = "../Project Tah/TAH iOS App/TAH Play/JSDPad.m"; sourceTree = "<group>"; };
+		15D06DDE19EAC3DA004EA858 /* JSAnalogueStick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSAnalogueStick.h; path = "../Project Tah/TAH iOS App/TAH Play/JSAnalogueStick.h"; sourceTree = "<group>"; };
+		15D06DDF19EAC3DA004EA858 /* JSAnalogueStick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSAnalogueStick.m; path = "../Project Tah/TAH iOS App/TAH Play/JSAnalogueStick.m"; sourceTree = "<group>"; };
+		15D06DE019EAC3DA004EA858 /* JSControlLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSControlLayout.h; path = "../Project Tah/TAH iOS App/TAH Play/JSControlLayout.h"; sourceTree = "<group>"; };
+		15D06DE119EAC3DA004EA858 /* JSControlLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSControlLayout.m; path = "../Project Tah/TAH iOS App/TAH Play/JSControlLayout.m"; sourceTree = "<group>"; };
+		15D06DE519EAC4B7004EA858 /* TAHble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAHble.h; path = "../Project Tah/TAH iOS App/TAH/TAHble.h"; sourceTree = "<group>"; };
+		15D06DE619EAC4B7004EA858 /* TAHble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAHble.m; path = "../Project Tah/TAH iOS App/TAH/TAHble.m"; sourceTree = "<group>"; };
+		15D06DE819EAC5DA004EA858 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		15D06DEA19EACAC0004EA858 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15D06DEC19EACAC7004EA858 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15D06DEE19EACACF004EA858 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15D06DF119EB0283004EA858 /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frame.png; path = "../../Project Tah/TAH iOS App/TAH RGB/TAH RGB/frame.png"; sourceTree = "<group>"; };
+		15D06DF319EB0AEF004EA858 /* Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Up.png; path = ../../Up.png; sourceTree = "<group>"; };
+		15D06DF519EB0B8B004EA858 /* Left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Left.png; path = ../../Left.png; sourceTree = "<group>"; };
+		15D06DF619EB0B8B004EA858 /* Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Down.png; path = ../../Down.png; sourceTree = "<group>"; };
+		15D06DF719EB0B8B004EA858 /* Right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Right.png; path = ../../Right.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FF44E3E2191955BD0001FEE9 /* Frameworks */ = {
+		15D06D6719EAC0B2004EA858 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44E3EB191955BE0001FEE9 /* CoreGraphics.framework in Frameworks */,
-				FF44E3ED191955BE0001FEE9 /* UIKit.framework in Frameworks */,
-				FF44E3E9191955BD0001FEE9 /* Foundation.framework in Frameworks */,
+				15D06DEF19EACACF004EA858 /* Foundation.framework in Frameworks */,
+				15D06DED19EACAC7004EA858 /* UIKit.framework in Frameworks */,
+				15D06DEB19EACAC0004EA858 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF44E406191955BE0001FEE9 /* Frameworks */ = {
+		15D06D8019EAC0B2004EA858 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44E40B191955BE0001FEE9 /* XCTest.framework in Frameworks */,
-				FF44E40D191955BE0001FEE9 /* UIKit.framework in Frameworks */,
-				FF44E40C191955BE0001FEE9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FF44E3DC191955BD0001FEE9 = {
+		15D06D6119EAC0B2004EA858 = {
 			isa = PBXGroup;
 			children = (
-				FF44E3EE191955BE0001FEE9 /* TAH Play */,
-				FF44E410191955BE0001FEE9 /* TAH PlayTests */,
-				FF44E3E7191955BD0001FEE9 /* Frameworks */,
-				FF44E3E6191955BD0001FEE9 /* Products */,
+				15D06DE819EAC5DA004EA858 /* Default-568h@2x.png */,
+				15D06D6C19EAC0B2004EA858 /* TAH Play */,
+				15D06DBF19EAC2C1004EA858 /* Computer View Controller */,
+				15D06DC319EAC2F6004EA858 /* TAH ble Table View */,
+				15D06DC419EAC303004EA858 /* Media View Controller */,
+				15D06DC519EAC313004EA858 /* Social View Controller */,
+				15D06DC619EAC320004EA858 /* Settings View Controller */,
+				15D06DC719EAC32D004EA858 /* Custom Cell */,
+				15D06DC819EAC333004EA858 /* TAH Library */,
+				15D06DDB19EAC3C7004EA858 /* Joystick Class */,
+				15D06D8619EAC0B2004EA858 /* TAH PlayTests */,
+				15D06DF019EACAF9004EA858 /* frameworks */,
+				15D06D6B19EAC0B2004EA858 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FF44E3E6191955BD0001FEE9 /* Products */ = {
+		15D06D6B19EAC0B2004EA858 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF44E3E5191955BD0001FEE9 /* TAH Play.app */,
-				FF44E409191955BE0001FEE9 /* TAH PlayTests.xctest */,
+				15D06D6A19EAC0B2004EA858 /* TAH Play.app */,
+				15D06D8319EAC0B2004EA858 /* TAH PlayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF44E3E7191955BD0001FEE9 /* Frameworks */ = {
+		15D06D6C19EAC0B2004EA858 /* TAH Play */ = {
 			isa = PBXGroup;
 			children = (
-				FF44E3E8191955BD0001FEE9 /* Foundation.framework */,
-				FF44E3EA191955BD0001FEE9 /* CoreGraphics.framework */,
-				FF44E3EC191955BE0001FEE9 /* UIKit.framework */,
-				FF44E40A191955BE0001FEE9 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FF44E3EE191955BE0001FEE9 /* TAH Play */ = {
-			isa = PBXGroup;
-			children = (
-				FF44E3F7191955BE0001FEE9 /* AppDelegate.h */,
-				FF44E3F8191955BE0001FEE9 /* AppDelegate.m */,
-				FF44E3FA191955BE0001FEE9 /* Main_iPhone.storyboard */,
-				FF44E3FD191955BE0001FEE9 /* Main_iPad.storyboard */,
-				FF44E400191955BE0001FEE9 /* ViewController.h */,
-				FF44E401191955BE0001FEE9 /* ViewController.m */,
-				FF44E403191955BE0001FEE9 /* Images.xcassets */,
-				FF44E3EF191955BE0001FEE9 /* Supporting Files */,
+				15D06D7119EAC0B2004EA858 /* AppDelegate.h */,
+				15D06D7219EAC0B2004EA858 /* AppDelegate.m */,
+				15D06D9819EAC262004EA858 /* Main_iPhone3.5.storyboard */,
+				15D06D9619EAC15D004EA858 /* Main_iPhone.storyboard */,
+				15D06D9A19EAC268004EA858 /* Main_iPad.storyboard */,
+				15D06D9319EAC146004EA858 /* HomeViewController.h */,
+				15D06D9419EAC146004EA858 /* HomeViewController.m */,
+				15D06D7A19EAC0B2004EA858 /* Images.xcassets */,
+				15D06D6D19EAC0B2004EA858 /* Supporting Files */,
 			);
 			path = "TAH Play";
 			sourceTree = "<group>";
 		};
-		FF44E3EF191955BE0001FEE9 /* Supporting Files */ = {
+		15D06D6D19EAC0B2004EA858 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FF44E4281919661B0001FEE9 /* setting icon.png */,
-				FF44E422191964C80001FEE9 /* XboxLogo.png */,
-				FF44E423191964C80001FEE9 /* pcjoy logo.png */,
-				FF44E424191964C80001FEE9 /* PlayStation-Logo.png */,
-				FF44E42019195F0A0001FEE9 /* buttonpad.png */,
-				FF44E3F0191955BE0001FEE9 /* TAH Play-Info.plist */,
-				FF44E3F1191955BE0001FEE9 /* InfoPlist.strings */,
-				FF44E3F4191955BE0001FEE9 /* main.m */,
-				FF44E3F6191955BE0001FEE9 /* TAH Play-Prefix.pch */,
+				15D06D9C19EAC285004EA858 /* Images */,
+				15D06D6E19EAC0B2004EA858 /* TAH Play-Info.plist */,
+				15D06D6F19EAC0B2004EA858 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FF44E410191955BE0001FEE9 /* TAH PlayTests */ = {
+		15D06D8619EAC0B2004EA858 /* TAH PlayTests */ = {
 			isa = PBXGroup;
 			children = (
-				FF44E416191955BE0001FEE9 /* TAH_PlayTests.m */,
-				FF44E411191955BE0001FEE9 /* Supporting Files */,
+				15D06D8919EAC0B2004EA858 /* TAH_PlayTests.m */,
+				15D06D8719EAC0B2004EA858 /* Supporting Files */,
 			);
 			path = "TAH PlayTests";
 			sourceTree = "<group>";
 		};
-		FF44E411191955BE0001FEE9 /* Supporting Files */ = {
+		15D06D8719EAC0B2004EA858 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FF44E412191955BE0001FEE9 /* TAH PlayTests-Info.plist */,
-				FF44E413191955BE0001FEE9 /* InfoPlist.strings */,
+				15D06D8819EAC0B2004EA858 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15D06D9C19EAC285004EA858 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DF519EB0B8B004EA858 /* Left.png */,
+				15D06DF619EB0B8B004EA858 /* Down.png */,
+				15D06DF719EB0B8B004EA858 /* Right.png */,
+				15D06DF319EB0AEF004EA858 /* Up.png */,
+				15D06DF119EB0283004EA858 /* frame.png */,
+				15D06D9D19EAC29D004EA858 /* A butt.png */,
+				15D06D9E19EAC29D004EA858 /* B butt.png */,
+				15D06D9F19EAC29D004EA858 /* X butt.png */,
+				15D06DA019EAC29D004EA858 /* Y butt.png */,
+				15D06DA119EAC29D004EA858 /* control.png */,
+				15D06DA219EAC29D004EA858 /* web forward.png */,
+				15D06DA319EAC29D004EA858 /* reload.png */,
+				15D06DA419EAC29D004EA858 /* web backward.png */,
+				15D06DA519EAC29D004EA858 /* fb.png */,
+				15D06DA619EAC29D004EA858 /* twitter.png */,
+				15D06DA819EAC29D004EA858 /* home.png */,
+				15D06DA919EAC29D004EA858 /* youtube.png */,
+				15D06DAA19EAC29D004EA858 /* setting.png */,
+				15D06DAB19EAC29D004EA858 /* share.png */,
+				15D06DAC19EAC29D004EA858 /* tah rabbit.png */,
+				15D06DAD19EAC29D004EA858 /* Tah Play bg.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		15D06DBF19EAC2C1004EA858 /* Computer View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DC019EAC2D1004EA858 /* ComputerViewController.h */,
+				15D06DC119EAC2D1004EA858 /* ComputerViewController.m */,
+			);
+			name = "Computer View Controller";
+			sourceTree = "<group>";
+		};
+		15D06DC319EAC2F6004EA858 /* TAH ble Table View */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DD819EAC36F004EA858 /* TAHbleTableController.h */,
+				15D06DD919EAC36F004EA858 /* TAHbleTableController.m */,
+			);
+			name = "TAH ble Table View";
+			sourceTree = "<group>";
+		};
+		15D06DC419EAC303004EA858 /* Media View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DD519EAC365004EA858 /* MediaViewController.h */,
+				15D06DD619EAC365004EA858 /* MediaViewController.m */,
+			);
+			name = "Media View Controller";
+			sourceTree = "<group>";
+		};
+		15D06DC519EAC313004EA858 /* Social View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DD219EAC35B004EA858 /* SocialViewController.h */,
+				15D06DD319EAC35B004EA858 /* SocialViewController.m */,
+			);
+			name = "Social View Controller";
+			sourceTree = "<group>";
+		};
+		15D06DC619EAC320004EA858 /* Settings View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DCF19EAC353004EA858 /* SettingsViewController.h */,
+				15D06DD019EAC353004EA858 /* SettingsViewController.m */,
+			);
+			name = "Settings View Controller";
+			sourceTree = "<group>";
+		};
+		15D06DC719EAC32D004EA858 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DCC19EAC34B004EA858 /* CustomCell.h */,
+				15D06DCD19EAC34B004EA858 /* CustomCell.m */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		15D06DC819EAC333004EA858 /* TAH Library */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DE519EAC4B7004EA858 /* TAHble.h */,
+				15D06DE619EAC4B7004EA858 /* TAHble.m */,
+			);
+			name = "TAH Library";
+			sourceTree = "<group>";
+		};
+		15D06DDB19EAC3C7004EA858 /* Joystick Class */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DDC19EAC3DA004EA858 /* JSDPad.h */,
+				15D06DDD19EAC3DA004EA858 /* JSDPad.m */,
+				15D06DDE19EAC3DA004EA858 /* JSAnalogueStick.h */,
+				15D06DDF19EAC3DA004EA858 /* JSAnalogueStick.m */,
+				15D06DE019EAC3DA004EA858 /* JSControlLayout.h */,
+				15D06DE119EAC3DA004EA858 /* JSControlLayout.m */,
+			);
+			name = "Joystick Class";
+			sourceTree = "<group>";
+		};
+		15D06DF019EACAF9004EA858 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15D06DEE19EACACF004EA858 /* Foundation.framework */,
+				15D06DEC19EACAC7004EA858 /* UIKit.framework */,
+				15D06DEA19EACAC0004EA858 /* CoreGraphics.framework */,
+			);
+			name = frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF44E3E4191955BD0001FEE9 /* TAH Play */ = {
+		15D06D6919EAC0B2004EA858 /* TAH Play */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF44E41A191955BE0001FEE9 /* Build configuration list for PBXNativeTarget "TAH Play" */;
+			buildConfigurationList = 15D06D8D19EAC0B2004EA858 /* Build configuration list for PBXNativeTarget "TAH Play" */;
 			buildPhases = (
-				FF44E3E1191955BD0001FEE9 /* Sources */,
-				FF44E3E2191955BD0001FEE9 /* Frameworks */,
-				FF44E3E3191955BD0001FEE9 /* Resources */,
+				15D06D6619EAC0B2004EA858 /* Sources */,
+				15D06D6719EAC0B2004EA858 /* Frameworks */,
+				15D06D6819EAC0B2004EA858 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -187,42 +347,47 @@
 			);
 			name = "TAH Play";
 			productName = "TAH Play";
-			productReference = FF44E3E5191955BD0001FEE9 /* TAH Play.app */;
+			productReference = 15D06D6A19EAC0B2004EA858 /* TAH Play.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF44E408191955BE0001FEE9 /* TAH PlayTests */ = {
+		15D06D8219EAC0B2004EA858 /* TAH PlayTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF44E41D191955BE0001FEE9 /* Build configuration list for PBXNativeTarget "TAH PlayTests" */;
+			buildConfigurationList = 15D06D9019EAC0B2004EA858 /* Build configuration list for PBXNativeTarget "TAH PlayTests" */;
 			buildPhases = (
-				FF44E405191955BE0001FEE9 /* Sources */,
-				FF44E406191955BE0001FEE9 /* Frameworks */,
-				FF44E407191955BE0001FEE9 /* Resources */,
+				15D06D7F19EAC0B2004EA858 /* Sources */,
+				15D06D8019EAC0B2004EA858 /* Frameworks */,
+				15D06D8119EAC0B2004EA858 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FF44E40F191955BE0001FEE9 /* PBXTargetDependency */,
+				15D06D8519EAC0B2004EA858 /* PBXTargetDependency */,
 			);
 			name = "TAH PlayTests";
 			productName = "TAH PlayTests";
-			productReference = FF44E409191955BE0001FEE9 /* TAH PlayTests.xctest */;
+			productReference = 15D06D8319EAC0B2004EA858 /* TAH PlayTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FF44E3DD191955BD0001FEE9 /* Project object */ = {
+		15D06D6219EAC0B2004EA858 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = DHIRAJJADHAO;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = dhirajjadhao;
 				TargetAttributes = {
-					FF44E408191955BE0001FEE9 = {
-						TestTargetID = FF44E3E4191955BD0001FEE9;
+					15D06D6919EAC0B2004EA858 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = DUXG8V348H;
+					};
+					15D06D8219EAC0B2004EA858 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 15D06D6919EAC0B2004EA858;
 					};
 				};
 			};
-			buildConfigurationList = FF44E3E0191955BD0001FEE9 /* Build configuration list for PBXProject "TAH Play" */;
+			buildConfigurationList = 15D06D6519EAC0B2004EA858 /* Build configuration list for PBXProject "TAH Play" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -230,110 +395,101 @@
 				en,
 				Base,
 			);
-			mainGroup = FF44E3DC191955BD0001FEE9;
-			productRefGroup = FF44E3E6191955BD0001FEE9 /* Products */;
+			mainGroup = 15D06D6119EAC0B2004EA858;
+			productRefGroup = 15D06D6B19EAC0B2004EA858 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF44E3E4191955BD0001FEE9 /* TAH Play */,
-				FF44E408191955BE0001FEE9 /* TAH PlayTests */,
+				15D06D6919EAC0B2004EA858 /* TAH Play */,
+				15D06D8219EAC0B2004EA858 /* TAH PlayTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FF44E3E3191955BD0001FEE9 /* Resources */ = {
+		15D06D6819EAC0B2004EA858 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44E3FF191955BE0001FEE9 /* Main_iPad.storyboard in Resources */,
-				FF44E404191955BE0001FEE9 /* Images.xcassets in Resources */,
-				FF44E426191964C80001FEE9 /* pcjoy logo.png in Resources */,
-				FF44E42119195F0A0001FEE9 /* buttonpad.png in Resources */,
-				FF44E4291919661B0001FEE9 /* setting icon.png in Resources */,
-				FF44E3FC191955BE0001FEE9 /* Main_iPhone.storyboard in Resources */,
-				FF44E427191964C80001FEE9 /* PlayStation-Logo.png in Resources */,
-				FF44E3F3191955BE0001FEE9 /* InfoPlist.strings in Resources */,
-				FF44E425191964C80001FEE9 /* XboxLogo.png in Resources */,
+				15D06D9B19EAC268004EA858 /* Main_iPad.storyboard in Resources */,
+				15D06DB619EAC29D004EA858 /* fb.png in Resources */,
+				15D06D9719EAC15D004EA858 /* Main_iPhone.storyboard in Resources */,
+				15D06DB119EAC29D004EA858 /* Y butt.png in Resources */,
+				15D06D9919EAC262004EA858 /* Main_iPhone3.5.storyboard in Resources */,
+				15D06DB419EAC29D004EA858 /* reload.png in Resources */,
+				15D06DF819EB0B8B004EA858 /* Left.png in Resources */,
+				15D06DBE19EAC29D004EA858 /* Tah Play bg.png in Resources */,
+				15D06DB919EAC29D004EA858 /* home.png in Resources */,
+				15D06DF419EB0AEF004EA858 /* Up.png in Resources */,
+				15D06DBC19EAC29D004EA858 /* share.png in Resources */,
+				15D06DF219EB0283004EA858 /* frame.png in Resources */,
+				15D06DBD19EAC29D004EA858 /* tah rabbit.png in Resources */,
+				15D06DAE19EAC29D004EA858 /* A butt.png in Resources */,
+				15D06DBA19EAC29D004EA858 /* youtube.png in Resources */,
+				15D06DB019EAC29D004EA858 /* X butt.png in Resources */,
+				15D06DB219EAC29D004EA858 /* control.png in Resources */,
+				15D06DF919EB0B8B004EA858 /* Down.png in Resources */,
+				15D06DAF19EAC29D004EA858 /* B butt.png in Resources */,
+				15D06DE919EAC5DA004EA858 /* Default-568h@2x.png in Resources */,
+				15D06DFA19EB0B8B004EA858 /* Right.png in Resources */,
+				15D06DBB19EAC29D004EA858 /* setting.png in Resources */,
+				15D06DB519EAC29D004EA858 /* web backward.png in Resources */,
+				15D06DB719EAC29D004EA858 /* twitter.png in Resources */,
+				15D06D7B19EAC0B2004EA858 /* Images.xcassets in Resources */,
+				15D06DB319EAC29D004EA858 /* web forward.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF44E407191955BE0001FEE9 /* Resources */ = {
+		15D06D8119EAC0B2004EA858 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44E415191955BE0001FEE9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FF44E3E1191955BD0001FEE9 /* Sources */ = {
+		15D06D6619EAC0B2004EA858 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44E402191955BE0001FEE9 /* ViewController.m in Sources */,
-				FF44E3F9191955BE0001FEE9 /* AppDelegate.m in Sources */,
-				FF44E3F5191955BE0001FEE9 /* main.m in Sources */,
+				15D06DC219EAC2D1004EA858 /* ComputerViewController.m in Sources */,
+				15D06D7319EAC0B2004EA858 /* AppDelegate.m in Sources */,
+				15D06DE219EAC3DA004EA858 /* JSDPad.m in Sources */,
+				15D06DE319EAC3DA004EA858 /* JSAnalogueStick.m in Sources */,
+				15D06DD419EAC35B004EA858 /* SocialViewController.m in Sources */,
+				15D06DD119EAC353004EA858 /* SettingsViewController.m in Sources */,
+				15D06DE719EAC4B7004EA858 /* TAHble.m in Sources */,
+				15D06DDA19EAC36F004EA858 /* TAHbleTableController.m in Sources */,
+				15D06DCE19EAC34B004EA858 /* CustomCell.m in Sources */,
+				15D06D7019EAC0B2004EA858 /* main.m in Sources */,
+				15D06D9519EAC146004EA858 /* HomeViewController.m in Sources */,
+				15D06DD719EAC365004EA858 /* MediaViewController.m in Sources */,
+				15D06DE419EAC3DA004EA858 /* JSControlLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF44E405191955BE0001FEE9 /* Sources */ = {
+		15D06D7F19EAC0B2004EA858 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44E417191955BE0001FEE9 /* TAH_PlayTests.m in Sources */,
+				15D06D8A19EAC0B2004EA858 /* TAH_PlayTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FF44E40F191955BE0001FEE9 /* PBXTargetDependency */ = {
+		15D06D8519EAC0B2004EA858 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF44E3E4191955BD0001FEE9 /* TAH Play */;
-			targetProxy = FF44E40E191955BE0001FEE9 /* PBXContainerItemProxy */;
+			target = 15D06D6919EAC0B2004EA858 /* TAH Play */;
+			targetProxy = 15D06D8419EAC0B2004EA858 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		FF44E3F1191955BE0001FEE9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF44E3F2191955BE0001FEE9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FF44E3FA191955BE0001FEE9 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF44E3FB191955BE0001FEE9 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		FF44E3FD191955BE0001FEE9 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF44E3FE191955BE0001FEE9 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		FF44E413191955BE0001FEE9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF44E414191955BE0001FEE9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		FF44E418191955BE0001FEE9 /* Debug */ = {
+		15D06D8B19EAC0B2004EA858 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -348,9 +504,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -365,14 +523,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FF44E419191955BE0001FEE9 /* Release */ = {
+		15D06D8C19EAC0B2004EA858 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -387,10 +546,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -398,112 +559,101 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FF44E41B191955BE0001FEE9 /* Debug */ = {
+		15D06D8E19EAC0B2004EA858 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TAH Play/TAH Play-Prefix.pch";
-				INFOPLIST_FILE = "TAH Play/TAH Play-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/TAH Play/TAH Play-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		FF44E41C191955BE0001FEE9 /* Release */ = {
+		15D06D8F19EAC0B2004EA858 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TAH Play/TAH Play-Prefix.pch";
-				INFOPLIST_FILE = "TAH Play/TAH Play-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/TAH Play/TAH Play-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		FF44E41E191955BE0001FEE9 /* Debug */ = {
+		15D06D9119EAC0B2004EA858 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Play.app/TAH Play";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TAH Play/TAH Play-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TAH PlayTests/TAH PlayTests-Info.plist";
+				INFOPLIST_FILE = "TAH PlayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAH Play.app/TAH Play";
 			};
 			name = Debug;
 		};
-		FF44E41F191955BE0001FEE9 /* Release */ = {
+		15D06D9219EAC0B2004EA858 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TAH Play.app/TAH Play";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TAH Play/TAH Play-Prefix.pch";
-				INFOPLIST_FILE = "TAH PlayTests/TAH PlayTests-Info.plist";
+				INFOPLIST_FILE = "TAH PlayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAH Play.app/TAH Play";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF44E3E0191955BD0001FEE9 /* Build configuration list for PBXProject "TAH Play" */ = {
+		15D06D6519EAC0B2004EA858 /* Build configuration list for PBXProject "TAH Play" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF44E418191955BE0001FEE9 /* Debug */,
-				FF44E419191955BE0001FEE9 /* Release */,
+				15D06D8B19EAC0B2004EA858 /* Debug */,
+				15D06D8C19EAC0B2004EA858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF44E41A191955BE0001FEE9 /* Build configuration list for PBXNativeTarget "TAH Play" */ = {
+		15D06D8D19EAC0B2004EA858 /* Build configuration list for PBXNativeTarget "TAH Play" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF44E41B191955BE0001FEE9 /* Debug */,
-				FF44E41C191955BE0001FEE9 /* Release */,
+				15D06D8E19EAC0B2004EA858 /* Debug */,
+				15D06D8F19EAC0B2004EA858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		FF44E41D191955BE0001FEE9 /* Build configuration list for PBXNativeTarget "TAH PlayTests" */ = {
+		15D06D9019EAC0B2004EA858 /* Build configuration list for PBXNativeTarget "TAH PlayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FF44E41E191955BE0001FEE9 /* Debug */,
-				FF44E41F191955BE0001FEE9 /* Release */,
+				15D06D9119EAC0B2004EA858 /* Debug */,
+				15D06D9219EAC0B2004EA858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FF44E3DD191955BD0001FEE9 /* Project object */;
+	rootObject = 15D06D6219EAC0B2004EA858 /* Project object */;
 }
